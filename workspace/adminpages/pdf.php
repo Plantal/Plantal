@@ -4,7 +4,7 @@ if(!isset($_SESSION['ativa'])){
      header('Location: login.php');
    
    }
-$db = new PDO('mysql:host=localhost;dbname=plantal','root','');
+$db = new PDO('mysql:host=localhost;dbname=plantal','root','root');
      require "fpdf.php";
 
      
