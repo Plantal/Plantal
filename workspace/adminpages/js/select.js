@@ -6,7 +6,7 @@ $("#imprimir").click( function(){
 
 
           function imprimir(nc) {
-            window.open("http://localhost/workspace/adminpages/pdff.php?nomeCientifico="+nc);
+            window.open("http://flora.ipvc.pt/workspace/adminpages/pdff.php?nomeCientifico="+nc);
 
           }
 	
