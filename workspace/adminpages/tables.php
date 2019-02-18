@@ -48,6 +48,7 @@ if(!isset($_SESSION['ativa'])){
 
 
     <link href="css/logonav.css" rel="stylesheet">
+    <link href="css/planta.css" rel="stylesheet">
 
     
 

@@ -48,6 +48,7 @@ if(!isset($_SESSION['ativa'])){
 
 
     <link href="css/logonav.css" rel="stylesheet">
+    <link href="css/planta.css" rel="stylesheet">
 
     
 
@@ -218,7 +219,7 @@ while($row = mysqli_fetch_array($result))
      
      <td><center>
 
-        
+
 
    
       
