@@ -18,7 +18,7 @@ $(document).ready(function(){
                      data:{nomeCientifico: nomeCientifico},  
                           success:function(data){  
                             $('#myModal').modal('hide');
-                            window.location.replace("http://localhost/workspace/adminpages/admin_users.php");
+                            window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_users.php");
                             
                             
                             
