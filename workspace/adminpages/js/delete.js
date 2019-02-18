@@ -18,7 +18,7 @@ $(document).ready(function(){
                      data:{nomeCientifico: nomeCientifico},  
                           success:function(data){  
                             $('#myModal').modal('hide');
-                            window.location.replace("http://localhost/ProjetoPlantal/workspace/adminpages/tables.php");
+                            window.location.replace("http://localhost/workspace/adminpages/tables.php");
                             
                             
                             

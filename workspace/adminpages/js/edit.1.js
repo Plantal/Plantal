@@ -68,7 +68,7 @@ $(document).ready(function(){
                      
                 });
                   $('#add_data_Modal').modal('hide');
-                  window.location.replace("http://localhost/ProjetoPlantal/workspace/adminpages/admin_tables.php");
+                  window.location.replace("http://localhost/workspace/adminpages/admin_tables.php");
                 
           }); 
       });

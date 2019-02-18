@@ -48,7 +48,7 @@ $(document).ready(function(){
                      
                 });
                   $('#editUtilizadores').modal('hide');
-                  window.location.replace("http://localhost/ProjetoPlantal/workspace/adminpages/admin_users.php");
+                  window.location.replace("http://localhost/workspace/adminpages/admin_users.php");
 
                 
           }); 
