@@ -218,10 +218,9 @@ while($row = mysqli_fetch_array($result))
      
      <td><center>
 
-      
+        
 
-    <!--<a href="#dataModal" name="view" class="view" id="<?php echo $row["nomeCientifico"]; ?>" data-toggle="modal"> 
-      <i class="material-icons" data-toggle="tooltip" style="color: blue;">visibility</i></a>-->
+   
       
       <a href="#editUtilizadores" name="edit" class="edit_data" id="<?php echo $row["iduser"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
 
