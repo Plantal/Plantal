@@ -285,6 +285,7 @@ foreach ($URLsImagens as $imagem) {
         <div class="my-auto">
           <h2 class="mb-5" >Ver mais ...</h2>
           <p style="font-size: 18px">Esta aplicação foi desenvolvida com a ajuda do Jardim Botânico da UTAD.</p>
+          <h3 class="mb-0" style="padding-bottom:25px">Parceiros ...</h3>
           <p><?php
           $site = str_replace(' ','_',$nomeCientifico);
           //var_dump($site);
