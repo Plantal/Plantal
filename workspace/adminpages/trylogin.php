@@ -15,7 +15,8 @@ if (isset($_SESSION['ativa'])) {
 }
 //	(...)
 session_write_close();
-$admin = ("admin");
+$admin = ("97");
+$id = ($_POST["iduser"]);
 $nomeuser = ($_POST["username"]); 
 $passuser = ($_POST["password"]);
 
@@ -25,7 +26,7 @@ $query = mysqli_query($connect,$sql);
 
 
 $result = $connect->query($sql);
-if($nomeuser === $admin){
+if($id === $admin){
 if (mysqli_num_rows($query) > 0) {
     // output data of each row
 	while($row = $result->fetch_assoc()) {
