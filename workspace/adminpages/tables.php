@@ -369,7 +369,7 @@ while($row = mysqli_fetch_array($result))
               </table>  
       </div>
               
-              <input type="submit" name="insert" id="insert" value="Insert" class="btn btn-success" />
+              <input type="button" name="insert" id="insert" value="Insert" class="btn btn-success" />
             
       </div>
     
