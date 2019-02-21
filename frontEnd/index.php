@@ -312,7 +312,13 @@ foreach ($URLsImagens as $imagem) {
       </section>
 
       <hr class="m-0">
-      <section>
+ 
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Parceiros</h2>
+          <ul class="fa-ul mb-0">
+          <section>
   <img class="mySlides" src="img/estg.png"
   style="width:100%; height: 530px">
   <img class="mySlides" src="img/ipvc.png"
@@ -323,12 +329,6 @@ foreach ($URLsImagens as $imagem) {
   style="width:100%; height: 530px">
 
 </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Parceiros</h2>
-          <ul class="fa-ul mb-0">
-
           <script src="js/carousel.js"></script>
           
           </ul>
