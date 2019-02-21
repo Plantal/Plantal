@@ -284,6 +284,7 @@ foreach ($URLsImagens as $imagem) {
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5" >Ver mais ...</h2>
+          <p style="font-size: 18px">Esta aplicação foi desenvolvida com a ajuda do Jardim Botânico da UTAD.</p>
           <p><?php
           $site = str_replace(' ','_',$nomeCientifico);
           //var_dump($site);
@@ -314,7 +315,7 @@ foreach ($URLsImagens as $imagem) {
       <hr class="m-0">
  
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+ <!--     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Parceiros</h2>
           <ul class="fa-ul mb-0">
@@ -335,7 +336,7 @@ foreach ($URLsImagens as $imagem) {
           </ul>
         </div>
       </section>
-
+-->
     </div>
 
     <!-- Bootstrap core JavaScript -->
