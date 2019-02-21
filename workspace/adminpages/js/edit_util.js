@@ -33,7 +33,8 @@ $(document).ready(function(){
                      data:{
                       iduser:iduser,
                       username: $("#usernameInput").val(),
-                      password:$("#passwordInput").val()
+                      password:$("#passwordInput").val(),
+                      email: $("#emailInput").val()
                       
 
                      }, 

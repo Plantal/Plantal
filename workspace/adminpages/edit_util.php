@@ -12,6 +12,7 @@ session_start();
     
     $username = mysqli_real_escape_string($connect, $_POST["username"]);
     $password = mysqli_real_escape_string($connect, $_POST["password"]);
+    $email = mysqli_real_escape_string($connect, $_POST["email"]);
     
      echo $username;
      echo $_POST["iduser"];
@@ -22,7 +23,8 @@ session_start();
            UPDATE users   
            SET 
            username = '$username',
-           password = '$password'
+           password = '$password',
+           email = '$email'
             
            WHERE iduser='".$_POST["iduser"]."'"; 
 
