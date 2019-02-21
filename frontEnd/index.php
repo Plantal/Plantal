@@ -329,7 +329,7 @@ foreach ($URLsImagens as $imagem) {
   style="width:100%; height: 530px">
 
 </section>
-          <script src="js/carousel.js"></script>
+          <script src="workspace/adminpages/js/carousel.js"></script>
           
           </ul>
         </div>
