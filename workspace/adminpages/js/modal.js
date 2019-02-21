@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$('#myForm').on('click', function(e){
+	$('#myForm').on('submit', function(e){
 		e.preventDefault();
 		$.ajax({
 			url: "addPlanta.php",
