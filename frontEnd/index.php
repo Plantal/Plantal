@@ -312,16 +312,25 @@ foreach ($URLsImagens as $imagem) {
       </section>
 
       <hr class="m-0">
+      <section>
+  <img class="mySlides" src="img/estg.png"
+  style="width:100%; height: 530px">
+  <img class="mySlides" src="img/ipvc.png"
+  style="width:100%; height: 530px">
+  <img class="mySlides" src="img/logo.png"
+  style="width:100%; height: 530px">
+  <img class="mySlides" src="img/utad.png"
+  style="width:100%; height: 530px">
+
+</section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Parceiros</h2>
           <ul class="fa-ul mb-0">
-           <p> <img src="img/logo.png"style="width:140px;margin-right: 30px; height:60px;">
-            <img src="img/utad.png"style="width:140px; height:180px;"> </p>
-            <p style="margin-top:30px;">
-            <img src="img/estg.png"style="width:140px; margin-right:55px height:110px;">
-            <img src="img/ipvc.png"style="width:140px; height:110px;"> </p>
+
+          <script src="js/carousel.js"></script>
+          
           </ul>
         </div>
       </section>
