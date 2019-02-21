@@ -321,7 +321,7 @@ foreach ($URLsImagens as $imagem) {
 
           <section>
   <img class="mySlides" src="img/estg.png"
-  style="width:100%; height: 530px">
+  style="width:50%; height:20%">
   <img class="mySlides" src="img/ipvc.png"
   style="width:100%; height: 530px">
   <img class="mySlides" src="img/logo.png"
