@@ -3,7 +3,7 @@ function redireccionarRegisto() {
 }
 
 function redireccionarInicio() {
-	window.location.replace("http://localhost/index.html")
+	window.location.replace("http://flora.ipvc.pt")
 }
 
 function redireccionarLogin() {
