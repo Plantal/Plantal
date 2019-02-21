@@ -313,12 +313,7 @@ foreach ($URLsImagens as $imagem) {
 
       <hr class="m-0">
  
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Parceiros</h2>
-          <ul class="fa-ul mb-0">
-          <section>
+      <section>
   <img class="mySlides" src="img/estg.png"
   style="width:100%; height: 530px">
   <img class="mySlides" src="img/ipvc.png"
@@ -329,7 +324,15 @@ foreach ($URLsImagens as $imagem) {
   style="width:100%; height: 530px">
 
 </section>
-          <script src="workspace/adminpages/js/carousel.js"></script>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Parceiros</h2>
+          <ul class="fa-ul mb-0">
+
+
+
+
+          
           
           </ul>
         </div>
@@ -346,6 +349,8 @@ foreach ($URLsImagens as $imagem) {
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <script src="workspace/adminpages/js/corrosel.js"></script>
 
   </body>
 
