@@ -51,6 +51,12 @@ $(document).ready(function(){
                   $('#editUtilizadores').modal('hide');
                   window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_users.php");
 
+                  function timedRefresh(timeoutPeriod) {
+                    setTimeout("location.reload(true);",timeoutPeriod);
+               }
+               
+               window.onload = timedRefresh(1000);
+
                 
           }); 
       });
