@@ -259,7 +259,7 @@
           </table>  
       </div>
               <input type="hidden" name="employee_id" id="employee_id" />  
-              <input type="button" name="insert" id="insert" value="Inserir" class="btn btn-success" />
+              <input type="submit" name="insert" id="insert" value="Inserir" class="btn btn-success" />
             </form>
       </div>
       <div class="modal-footer">

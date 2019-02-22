@@ -35,7 +35,7 @@ $(document).ready(function(){
 		});
 
 	});
-	$('#insert_form').on("click", function(event){  
+	$('#insert_form').on("submit", function(event){  
            event.preventDefault(); 
            event.stopImmediatePropagation();
            if($('#nomeComumInput').val() == '')  
