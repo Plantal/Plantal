@@ -42,20 +42,20 @@ $(document).ready(function(){
                      contentType: 'application/x-www-form-urlencoded',
                      beforeSend:function(){  
                           $('#insert').val("Atualizando");  
+                     },
+                     success:function(){
+                         $('#editUtilizadores').modal('hide');
+                         window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_users.php");
+         
                      }
+                     
                 
                      
                           
                      
                 });
-                  $('#editUtilizadores').modal('hide');
-                  window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_users.php");
 
-                  function timedRefresh(timeoutPeriod) {
-                    setTimeout("location.reload(true);",timeoutPeriod);
-               }
-               
-               window.onload = timedRefresh(1000);
+
 
                 
           }); 
