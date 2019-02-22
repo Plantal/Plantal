@@ -40,9 +40,9 @@ $(document).ready(function(){
                      }, 
                      dataType: "JSON",
                      contentType: 'application/x-www-form-urlencoded',
-                     beforeSend:function(){  
-                          $('#insert').val("Atualizando");  
-                     },
+                  //   beforeSend:function(){  
+                    //      $('#insert').val("Atualizando");  
+                    //},
                      success: function(data){
                           if(data.success == true){
                                setTimeout(function(){
