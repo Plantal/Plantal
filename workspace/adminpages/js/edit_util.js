@@ -28,6 +28,7 @@ $(document).ready(function(){
 
 
     $.ajax({  
+         
                      url:"edit_util.php",  
                      method:"POST",  
                      data:{
@@ -43,18 +44,18 @@ $(document).ready(function(){
                      beforeSend:function(){  
                           $('#insert').val("Atualizando");  
                      },
-                     success:function(){
+                     
+                     
+                
+                     ajaxSuccess:function(){
                          $('#editUtilizadores').modal('hide');
                          window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_users.php");
          
                      }
-                     
-                
-                     
+     
                           
                      
                 });
-
 
 
                 
