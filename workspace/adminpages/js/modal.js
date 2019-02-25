@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	$('#myForm').on('click', '#add' ,function(e){
-		e.preventDefault();
+		//e.preventDefault();
 		$.ajax({
 			url: "addPlanta.php",
 			dataType: "JSON",
@@ -36,8 +36,8 @@ $(document).ready(function(){
 
 	});
 	$('#insert_form').on("click", '#insert' ,function(event){  
-           event.preventDefault(); 
-           event.stopImmediatePropagation();
+           //event.preventDefault(); 
+          // event.stopImmediatePropagation();
            if($('#nomeComumInput').val() == '')  
            {  
                 alert("Introduza pelo menos um nome comum da planta !");  
