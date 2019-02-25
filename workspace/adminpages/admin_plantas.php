@@ -151,7 +151,7 @@
                   <form class="form"  method="GET" id="myForm">
                         <input type="text" style="width:40%" placeholder="Pesquise aqui as plantas que pretende adicionar..." name="search" id="searchPlanta">
                         <p></p>
-                        <button id="add" data-target="#add_data_Modal" type="submit" class="btn btn-primary" >Procurar Informação</button>
+                        <button id="add" data-target="#add_data_Modal" type="button" class="btn btn-primary" >Procurar Informação</button>
                   </form>
 
 
@@ -259,7 +259,7 @@
           </table>  
       </div>
               <input type="hidden" name="employee_id" id="employee_id" />  
-              <input type="submit" name="insert" id="insert" value="Inserir" class="btn btn-success" />
+              <input type="button" name="insert" id="insert" value="Inserir" class="btn btn-success" />
             </form>
       </div>
       <div class="modal-footer">
