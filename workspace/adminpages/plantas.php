@@ -137,7 +137,7 @@
                   <form class="form"  method="GET" id="myForm">
                         <input type="text" style="width:40%" placeholder="Pesquise aqui as plantas que pretende adicionar..." name="search" id="searchPlanta">
                         <p></p>
-                        <button id="add" data-target="#add_data_Modal"  class="btn btn-primary" >Procurar Informação</button>
+                        <button id="add" type="button" data-target="#add_data_Modal"  class="btn btn-primary" >Procurar Informação</button>
                   </form>
 
 
