@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$('#myForm').on('click', '#add' ,function(e){
+	$('#add').click(function(e){
 		//e.preventDefault();
 		$.ajax({
 			url: "addPlanta.php",
@@ -35,7 +35,7 @@ $(document).ready(function(){
 		});
 
 	});
-	$('#insert_form').on("click", '#insert' ,function(event){  
+	$('#insert').click(function(event){  
            //event.preventDefault(); 
           // event.stopImmediatePropagation();
            if($('#nomeComumInput').val() == '')  
