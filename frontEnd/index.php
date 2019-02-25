@@ -311,9 +311,19 @@ foreach ($URLsImagens as $imagem) {
 
 
         </div>
+
+        <section>
+  <img  src="img/estg.png"
+  style="width:92px; ">
+  <img  src="img/logo.png"
+  style="width:92px; ">
+  <img  src="img/utad.png"
+  style="width:92px; ">
+
+</section>
       </section>
 
-      <hr class="m-0">
+   <!--   <hr class="m-0">
  
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
@@ -336,9 +346,9 @@ foreach ($URLsImagens as $imagem) {
           
           </ul>
         </div>
-      </section>
+      </section> -->
 
-    </div>
+    </div> 
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
