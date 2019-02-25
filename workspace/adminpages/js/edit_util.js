@@ -43,12 +43,10 @@ $(document).ready(function(){
                      beforeSend:function(){  
                           $('#insert').val("Atualizando");  
                      },
-                     success: function(data){
-                          if(data.success == true){
-                               setTimeout(function(){
-                                    location.reload();
-                               }, 3000)
-                          }
+
+                     success : function () {
+                         $('#editUtilizadores').modal('hide');
+                         window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_tables.php");
                      }
                 
                      
@@ -56,8 +54,8 @@ $(document).ready(function(){
                      
                 });
                     
-                  $('#editUtilizadores').modal('hide');
-                  window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_users.php");
+                 // $('#editUtilizadores').modal('hide');
+                 // window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_users.php");
 
 
 

@@ -97,7 +97,7 @@ $(document).ready(function(){
                      
                 });
                 $('#insert_form')[0].reset();  
-                $('#add_data_Modal').modal('hide');  
+                $('#add_data_Modal').modal('hide');
                             
               
            }  
