@@ -17,14 +17,15 @@ session_start();
     $descricao = mysqli_real_escape_string($connect, $_POST["descricao"]);
     $tipofolha = mysqli_real_escape_string($connect, $_POST["tipofolha"]);
     $utilizacao = mysqli_real_escape_string($connect, $_POST["utilizacao"]);
-    echo $_POST["tipofolha"];
-    echo $descricao;
-    echo $tipofolha;
-    echo $utilizacao; 
+    //echo $_POST["tipofolha"];
+    //echo $descricao;
+    //echo $tipofolha;
+    //echo $utilizacao; 
     $verificar = "SELECT nomeCientifico  FROM planta WHERE nomeCientifico='".$nomeCientifico."' ";
     $result = mysqli_query($connect,$verificar);
     if ($result->num_rows >0) { 
       echo "<h3>Esta planta já está registada!</h3>";
+      echo json_encode(false);
     }else{
       $insert = "INSERT INTO planta (nomeCientifico, nomeComum, especie, familia, ordem, fotosURL, qrcode, descricao, tipofolha, utilizacao) VALUES ('$nomeCientifico','$nomeComum','$especie', '$familia', 
                                               '$ordem', '$fotosUrl', '$qrcode', '$descricao','$tipofolha','$utilizacao' )";
@@ -34,6 +35,8 @@ session_start();
           
 
       }
+      echo json_encode(true);
+      
     }
 }
 ?>
