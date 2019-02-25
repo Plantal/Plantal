@@ -316,20 +316,20 @@ foreach ($URLsImagens as $imagem) {
       <hr class="m-0">
  
 
- <!--     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Parceiros</h2>
           <ul class="fa-ul mb-0">
 
           <section>
-  <img class="mySlides" src="img/estg.png"
-  style="width:50%; height:20%">
-  <img class="mySlides" src="img/ipvc.png"
-  style="width:100%; height: 530px">
-  <img class="mySlides" src="img/logo.png"
-  style="width:100%; height: 530px">
-  <img class="mySlides" src="img/utad.png"
-  style="width:100%; height: 530px">
+  <img  src="img/estg.png"
+  style="width:24px; height:24px">
+  <img  src="img/ipvc.png"
+  style="width:24px; height: 24px">
+  <img  src="img/logo.png"
+  style="width:24px; height: 24px">
+  <img  src="img/utad.png"
+  style="width:24px; height: 24px">
 
 </section>
           
@@ -337,7 +337,7 @@ foreach ($URLsImagens as $imagem) {
           </ul>
         </div>
       </section>
--->
+
     </div>
 
     <!-- Bootstrap core JavaScript -->
