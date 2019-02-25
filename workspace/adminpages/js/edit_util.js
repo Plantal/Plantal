@@ -46,7 +46,7 @@ $(document).ready(function(){
 
                      success : function () {
                          $('#editUtilizadores').modal('hide');
-                         window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_tables.php");
+                         window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_users.php");
                      }
                 
                      
