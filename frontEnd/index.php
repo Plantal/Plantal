@@ -323,13 +323,13 @@ foreach ($URLsImagens as $imagem) {
 
           <section>
   <img  src="img/estg.png"
-  style="width:24px; height:24px">
+  style="width:64px; ">
   <img  src="img/ipvc.png"
-  style="width:24px; height: 24px">
+  style="width:64px; ">
   <img  src="img/logo.png"
-  style="width:24px; height: 24px">
+  style="width:64px; ">
   <img  src="img/utad.png"
-  style="width:24px; height: 24px">
+  style="width:64px; ">
 
 </section>
           
