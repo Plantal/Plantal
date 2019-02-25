@@ -95,6 +95,7 @@ $(document).ready(function(){
                      success : function (data) {
                          $('#insert_form')[0].reset();  
                          $('#add_data_Modal').modal('hide');
+                         $('#insert').val("Inserir");
                      }                  
                 });
 
