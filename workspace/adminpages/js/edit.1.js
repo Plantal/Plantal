@@ -61,14 +61,18 @@ $(document).ready(function(){
                      contentType: 'application/x-www-form-urlencoded',
                      beforeSend:function(){  
                           $('#insert').val("Atualizando");  
+                     },
+
+                     success : function () {
+                         $('#add_data_Modal').modal('hide');
+                         window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_tables.php");
                      }
                 
                      
                           
                      
                 });
-                  $('#add_data_Modal').modal('hide');
-                  window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_tables.php");
+
                 
           }); 
       });
