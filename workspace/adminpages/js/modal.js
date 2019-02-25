@@ -91,13 +91,13 @@ $(document).ready(function(){
                      contentType: 'application/x-www-form-urlencoded',
                      beforeSend:function(){  
                           $('#insert').val("Inserindo");  
-                     }  
-                     
-                          
-                     
+                     }  ,
+                     success : function () {
+                         $('#insert_form')[0].reset();  
+                         $('#add_data_Modal').modal('hide');
+                     }                  
                 });
-                $('#insert_form')[0].reset();  
-                $('#add_data_Modal').modal('hide');
+
                             
               
            }  
