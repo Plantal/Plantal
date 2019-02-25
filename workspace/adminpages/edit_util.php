@@ -14,11 +14,10 @@ session_start();
     $password = mysqli_real_escape_string($connect, $_POST["password"]);
     $email = mysqli_real_escape_string($connect, $_POST["email"]);
     
-     echo $username;
-     echo $_POST["iduser"];
+
       if($_POST["iduser"] != '')  
       {  
-         echo("aqui");
+        
            $query = "  
            UPDATE users   
            SET 
@@ -30,7 +29,7 @@ session_start();
 
          
           $result = mysqli_query($connect, $query);
-          echo $result;  
+          echo json_encode(true);
              
       }
 
