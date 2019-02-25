@@ -92,7 +92,7 @@ $(document).ready(function(){
                      beforeSend:function(){  
                           $('#insert').val("Inserindo");  
                      }  ,
-                     success : function () {
+                     success : function (data) {
                          $('#insert_form')[0].reset();  
                          $('#add_data_Modal').modal('hide');
                      }                  
