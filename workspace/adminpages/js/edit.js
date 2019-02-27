@@ -66,6 +66,7 @@ $(document).ready(function(){
                      success : function () {
                          $('#add_data_Modal').modal('hide');
                          window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_tables.php");
+                         
                      }
                 
                      
