@@ -63,7 +63,7 @@ $(document).ready(function(){
                           $('#insert').val("Atualizando");  
                      },
 
-                     success : function () {
+                     success : function (data) {
                         $('#insert').val("Inserir");
                          $('#add_data_Modal').modal('hide');
                          window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_tables.php");
