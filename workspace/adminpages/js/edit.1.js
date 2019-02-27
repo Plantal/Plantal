@@ -42,7 +42,7 @@ $(document).ready(function(){
            }); 
 
 
-           $('#insert').on("click", function(event){
+           $('#insert').click( function(event){
     
 
 
