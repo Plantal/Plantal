@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$(this).attr("id").click( function(){  
+	$(document).on('click', '.edit_data', function(){  
              var nomeCientifico = $(this).attr("id");
            
            $.ajax({  
@@ -42,7 +42,7 @@ $(document).ready(function(){
            }); 
 
 
-           $('#insert').click( function(event){
+           $('#insert').on("click", function(event){
     
 
 
@@ -63,8 +63,8 @@ $(document).ready(function(){
                           $('#insert').val("Atualizando");  
                      },
 
-                     success : function (data) {
-                        $('#insert').val("Inserir");
+                     success : function () {
+                         
                          $('#add_data_Modal').modal('hide');
                          window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_tables.php");
                      }
