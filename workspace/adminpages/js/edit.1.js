@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$('#insert').click( function(){  
+	$('#edit').click( function(){  
              var nomeCientifico = $(this).attr("id");
            
            $.ajax({  
