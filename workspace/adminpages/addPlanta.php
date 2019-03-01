@@ -38,16 +38,19 @@ if (@$_GET['search']) {
       $pageId = $key;
       break;
     }
-
+if($data){
     $content = $data->query->pages->$pageId->extract;
     
     header('Content-Type:text/html; charset=utf-8');
     
-    
+} else{
+  $content = ("");
+  
+}   
   }
   else{
     //echo $data;
-    $content = ("");
+   
   }
 }
 
