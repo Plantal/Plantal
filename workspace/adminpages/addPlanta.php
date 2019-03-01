@@ -32,19 +32,24 @@ if (@$_GET['search']) {
   //echo($api_url);
   //$api_url= str_replace('_','%20', $api_url);
 
-
+//$resposta = (file_get_contents($api_url));
+//var_dump($resposta);
   if ($data = json_decode(file_get_contents($api_url))) {
+
     foreach ($data->query->pages as $key => $val) {
       $pageId = $key;
       break;
     }
-if($data->query->pages->$pageId->extract == null){
+
+  }
+
+  if ($pageId != -1){
+    //var_dump($data);
+    
     $content = $data->query->pages->$pageId->extract;
     
     header('Content-Type:text/html; charset=utf-8');
-}else {
-  $content = ("");
-} 
+    
     
   }
   else{
