@@ -24,7 +24,7 @@ session_start();
            WHERE nomeCientifico='".$_POST["nomeCientifico"]."'"; 
 
           $result = mysqli_query($connect, $query);  
-             
+          echo json_encode(true);
       }
 
    }
