@@ -47,7 +47,7 @@ if (@$_GET['search']) {
   }
   else{
     //echo $data;
-    echo 'No result found...';
+    $content = ("")
   }
 }
 
