@@ -7,4 +7,13 @@
 
 .w3-wide {
 	color: green;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.w3-wide::after {
+	content: url('../imgs/logoLAB.png');
+}
+
+.w3-justify {
+	font-family: 'Open Sans Condensed', sans-serif;
 }
