@@ -24,7 +24,7 @@
   <div class="cont">
   <div class="demo">
     <div class="login">
-      <div  ><img align="center" src="imgs/logo.png" style="width: 200px; margin-top: 15px; max-height: 70px; margin-left: 28%;"></div>
+      <div  ><img align="center" src="imgs/logo.png" style="width: 100px; margin-top: 15px; max-height: 100px; margin-left: 28%;"></div>
       <div class="login__form">
         <div>
           <form action="trylogin.php" class="login__row" method="POST">
