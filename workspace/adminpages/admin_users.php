@@ -111,11 +111,7 @@ if(!isset($_SESSION['ativa'])){
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
         
-        <li class="nav-item">
-          <a class="nav-link" href="admin_plantas.php">
-            <i class="fas fa-fw fa-tree"></i>
-            <span>Adicionar Plantas</span></a>
-        </li>
+
         
         <li class="nav-item ">
           <a class="nav-link" href="admin_tables.php">

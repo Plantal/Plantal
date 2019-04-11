@@ -68,6 +68,7 @@ if(!isset($_SESSION['ativa'])){
     <script src="js/select.js"></script>
     <script src="js/edit.js"></script>
     <script src="js/delete.js"></script>
+    <script src="js/modal.js"></script>
     
     
 
@@ -111,11 +112,7 @@ if(!isset($_SESSION['ativa'])){
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
         
-        <li class="nav-item">
-          <a class="nav-link" href="plantas.php">
-            <i class="fas fa-fw fa-tree"></i>
-            <span>Adicionar Plantas</span></a>
-        </li>
+
         
         <li class="nav-item active">
           <a class="nav-link" href="tables.php">
@@ -129,12 +126,148 @@ if(!isset($_SESSION['ativa'])){
         <div class="container-fluid">
 
           <!-- Breadcrumbs-->
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <b>PLANTAS</b>
-            </li>
-            
-          </ol>
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-tree"></i>
+              Adicionar Plantas</div>
+            <div class="card-body">
+              <div class="form-group">
+                  <label>Introduza o <strong> nome da espécie:</strong></label>
+                      
+
+                  <form class="form"  method="GET" id="myForm">
+                        <input type="text" style="width:40%" placeholder="Pesquise aqui as plantas que pretende adicionar..." name="search" id="searchPlanta">
+                        <p></p>
+                        <button id="add" data-target="#add_data_Modal" type="button" class="btn btn-primary" >Procurar Informação</button>
+                  </form>
+
+
+
+
+
+<!--Insert Modal-->
+
+
+  <div id="add_data_Modal" class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <form method="post" name="insert_form" id="insert_form">
+        <h4 class="tittle" style="color: green;" id="tituloModal"  name="tituloModal"></h4>
+        <input type="hidden" name="titulo1" id="tituloInput">
+        
+      </div>
+      <div class="modal-body">
+
+        <div class="table-responsive">  
+           <table class="table table-bordered">
+                <tr>
+                  <div class="form-group">
+                  <td><b>Nome Comum:</b></td>
+                  <td><p id="nomeComumModal" name="nomeComum" ></p>
+                  <input type="hidden" name="nomeComum1" id="nomeComumInput"></input></td>
+                  
+                  
+              </div>
+            </tr>
+              <tr>
+              <div class="form-group">
+                  <td><b>Espécie:</b></td>
+                  <td><p id="especieModal" name="especie" ></p>
+                  <input type="hidden" name="especie1" id="especieInput"></input></td>
+                  
+              </div>
+            </tr>
+              <tr>
+              <div class="form-group">
+                  <td width="30%"><b>Família:</b></td>
+                  <td width="70%"><p id="familiaModal" name="familia" ></p>
+                  <input type="hidden" name="familia1" id="familiaInput"></input></td>
+                  
+                  
+              </div>
+            </tr>
+              <tr>
+              <div class="form-group">
+                  <td width="30%"><b>Ordem:</b></td>
+                 <td width="70%"><p id="ordemModal" name="ordem"></p>
+                  <input type="hidden" name="ordem1" id="ordemInput"></input></td>
+              </div>
+            </tr>
+              <tr>
+              <div class="form-group">
+                  <td width="30%"><b>Fotos:</b></td>
+                  <td width="70%"><div id="fotosModal" name="fotosUrl"  ></div></td>
+              </div>
+            </tr>
+
+
+              <tr>
+               <div class="form-group">
+                  <td width="30%"><b>Qr Code:</b></td>
+                  <td width="70%"><p id="qrCodeModal" name="qrcode"  ></p>
+                  <input type="hidden" name="qrcode1" id="qrcodeInput"></input></td>
+              </div>
+            </tr>
+
+             <tr>
+              <div class="form-group">
+                  <td width="30%"><b>Descrição:</b></td>
+                  <td width="70%"><textarea id="contentModal" name="descricao" style="min-width: 100%" class="form-control"  rows="10"></textarea></td>
+
+              </div>
+            </tr>
+
+            <tr>
+                  <div class="form-group">
+                  <td width="30%"><b>Tipo de Folha :</b></td>
+                  <td width="70%">
+                  <select id="folhaModal" name="tipofolha" class="form-control">
+                        <option value=""></option>
+                        <option value="Caduca">Folha Caduca</option>
+                        <option value="Persistente">Folha Persistente</option>
+                  </select></td>
+                  
+                  
+              </div>
+            </tr>
+
+                            <tr>
+                  <div class="form-group">
+                  <td width="30%"><b>Utilização Humana :</b></td>
+                  <td width="70%">
+                  <textarea class="form-control" rows="5" style="min-width:100%" name="utilizacao" id="utilModal"></textarea></td>
+                  
+                  
+              </div>
+            </tr>
+
+          </table>  
+      </div>
+              <input type="hidden" name="employee_id" id="employee_id" />  
+              <input type="button" name="insert" id="insert" value="Inserir" class="btn btn-success" />
+            </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+                      
+
+
+                          
+                      
+                  
+                      
+
+              </div>
+      <!-- /.content-wrapper -->
+
+    </div>
 
 
 
