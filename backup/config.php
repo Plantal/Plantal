@@ -1,7 +1,7 @@
 <?php
 
 return array(
-    'backup_dir'    => '/var/www/html/backup/plantal',
+    'backup_dir'    => '/var/www/html/backup/plantal/plantal',
     'keep_files'    => 50,
     'compression'   => '', 
     'db_host'       => 'localhost',
