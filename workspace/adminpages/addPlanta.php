@@ -11,9 +11,12 @@ $query = "SELECT * FROM planta WHERE nomeCientifico = '".$_GET["search"]."'";
 
 $result = mysqli_query($connect, $query);
 if($result->num_rows >0){
+
+
   
 
 }else{
+
 
 
 

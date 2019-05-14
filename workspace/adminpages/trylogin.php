@@ -16,6 +16,7 @@ if (isset($_SESSION['ativa'])) {
 //	(...)
 session_write_close();
 $admin = ("carlaramos");
+
 $id = ($_POST["iduser"]);
 $nomeuser = ($_POST["username"]); 
 $passuser = ($_POST["password"]);
@@ -28,6 +29,8 @@ $query = mysqli_query($connect,$sql);
 $result = $connect->query($sql);
 if($nomeuser === $admin){
 if (mysqli_num_rows($query) > 0) {
+
+
     // output data of each row
 	while($row = $result->fetch_assoc()) {
 		
@@ -42,12 +45,10 @@ if (mysqli_num_rows($query) > 0) {
 		
 	}
 
+
 } else {
 
-	
-             
-	header('Location: login.php');
-
+	$error = "Dados de login invalidos";
 
 	
 }
