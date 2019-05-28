@@ -37,8 +37,8 @@
   <div class="demo">
     <div class="login">
       <div  ><p style="text-align:center"><img align="center" src="imgs/logo.png" style="width: 100px;  margin-top: 15px; max-height: 100px; margin-left: ;"></p></div>
-      <div class="login__form">
-        <div>
+      <div class="login__form" style="margin-top: 15px">
+        <div class="message">
 
             <?php  
               if (isset($_SESSION['message'])) {
