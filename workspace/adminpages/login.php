@@ -1,3 +1,14 @@
+<?php
+    session_start();
+
+    include ("trylogin.php");
+
+    if(isset($_POST['done'])){
+        log_user_in($_POST['username'], $_POST['password']);
+    }
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en" >
@@ -27,10 +38,18 @@
     <div class="login">
       <div  ><p style="text-align:center"><img align="center" src="imgs/logo.png" style="width: 100px;  margin-top: 15px; max-height: 100px; margin-left: ;"></p></div>
       <div class="login__form">
-     
-      <p class="error"><?php $error; ?></p>
         <div>
-          <form action="trylogin.php" class="login__row" method="POST">
+
+            <?php  
+              if (isset($_SESSION['message'])) {
+                  display_message($_SESSION['message']);
+                
+              }
+            ?>
+     
+      
+        <div>
+          <form action="login.php" class="login__row" method="POST">
 
 
             
@@ -61,6 +80,11 @@
         
       </div>
     </div>
+  </div>
+</div>
+</div>
+</div>
+
 
      
     
