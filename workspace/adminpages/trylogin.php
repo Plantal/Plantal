@@ -15,7 +15,7 @@ if (mysqli_num_rows($query) > 0) {
 		$_SESSION["username"]=$row["username"];
 		$_SESSION["id"]=$row["id"];
 
-		header('Location: plantas.php');
+		header('Location: plantas.php');	
 
 	}
 
