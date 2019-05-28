@@ -10,9 +10,6 @@
 
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -39,9 +36,9 @@
   <div class="cont">
   <div class="demo">
     <div class="login">
-      <div  ><img align="center" src="imgs/logo.png" style=" margin-left: 35%;"></div>
-      <div class="login__form">
-        <div>
+      <div  ><p style="text-align:center"><img align="center" src="imgs/logo.png" style="width: 100px;  margin-top: 15px; max-height: 100px; margin-left: ;"></p></div>
+      <div class="login__form" style="margin-top: 15px">
+        <div class="message">
 
             <?php  
               if (isset($_SESSION['message'])) {
@@ -49,8 +46,9 @@
                 
               }
             ?>
-          
-
+     
+      
+        <div>
           <form action="login.php" class="login__row" method="POST">
 
 
@@ -68,8 +66,10 @@
       </svg>
           <input type="password" class="login__input pass" placeholder="Password" name="password" required />
         </div>
-        <input type="submit" value="Login" class="login__submit" name="done" />
+      <!--  <p class="login__signup">Esqueceu-se da sua password? &nbsp;<a onclick="redireccionarRegisto()">Recuperar</a></p> -->
+        <input type="submit" value="Login" class="login__submit" name="done"  />
         </form>
+     <!--   <p class="login__signupp">Ainda não tem conta? &nbsp;<a onclick="redireccionarRegisto()">Registar</a></p> -->
         <p ><a class="log" onclick="redireccionarInicio()"> <svg class="svg-icon" viewBox="0 0 20 20">
   <path fill="none" d="M18.271,9.212H3.615l4.184-4.184c0.306-0.306,0.306-0.801,0-1.107c-0.306-0.306-0.801-0.306-1.107,0
   L1.21,9.403C1.194,9.417,1.174,9.421,1.158,9.437c-0.181,0.181-0.242,0.425-0.209,0.66c0.005,0.038,0.012,0.071,0.022,0.109
@@ -80,7 +80,11 @@
         
       </div>
     </div>
-  
+  </div>
+</div>
+</div>
+</div>
+
 
      
     
@@ -88,7 +92,9 @@
 
   
 
-   
+    <script  src="js/index.js"></script>
+
+
 
 
 

@@ -36,7 +36,7 @@ exit();
 
 
 function display_message(){
-	echo '<div class="msg">';
+	echo '<div style="margin-top: 10px">';
 			echo '<b style="color:red;">'.$_SESSION['message'].'</b>';
 			unset($_SESSION['message']);
 	echo '</div>';
