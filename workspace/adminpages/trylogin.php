@@ -48,36 +48,49 @@ if (mysqli_num_rows($query) > 0) {
 
 } else {
 
-	$error = "Dados de login invalidos";
+   $_SESSION["message"] = "Login Inválido";        
+	header('Location: login.php');
+
 
 	
 }
+exit();
+	
 } else {
+
 	if (mysqli_num_rows($query) > 0) {
-		// output data of each row
-		while($row = $result->fetch_assoc()) {
-			
-			$_SESSION["username"]=$row["username"];
-			$_SESSION["id"]=$row["id"];
-			
+
+
+    // output data of each row
+	while($row = $result->fetch_assoc()) {
 		
-	
-			header('Location: tables.php');
-			
-			
-			
-		}
-	
-	} else {
+		$_SESSION["username"]=$row["username"];
+		$_SESSION["id"]=$row["id"];
+		
+		header('Location: tables.php');
+
 	
 		
-				 
-		header('Location: login.php');
-	
-	
+		
 		
 	}
+
+
+} else {
+
+   $_SESSION["message"] = "Login Inválido";        
+	header('Location: login.php');
+
+
+	
+}
+exit();
+
 }
 
-
-?>
+function display_message(){
+	echo '<div style="margin-top: 10px">';
+			echo '<b style="color:red;">'.$_SESSION['message'].'</b>';
+			unset($_SESSION['message']);
+	echo '</div>';
+}
