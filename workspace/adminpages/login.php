@@ -4,6 +4,7 @@
     include ("trylogin.php");
 
     if(isset($_POST['done'])){
+        //$_SESSION['message'] = "";      
         log_user_in($_POST['username'], $_POST['password']);
     }
 
@@ -37,21 +38,21 @@
   <div class="demo">
     <div class="login">
       <div  ><p style="text-align:center"><img align="center" src="imgs/logo.png" style="width: 100px;  margin-top: 15px; max-height: 100px; margin-left: ;"></p></div>
-<<<<<<< HEAD
       <div class="login__form" style="margin-top: 20px;">
-=======
-      <div class="login__form" style="margin-top: 15px">
-        <div class="message">
-
-            <?php  
-              if (isset($_SESSION['message'])) {
-                  display_message($_SESSION['message']);
-                
-              }
-            ?>
->>>>>>> 5f04111190b2828cd89523bef29bde063e42d39e
      
-      
+      <div class="message">
+
+<?php  
+  if (isset($_SESSION['message'])) {
+      display_message($_SESSION['message']);
+    
+  } else {
+    
+  }
+?>
+
+
+<div>
         <div>
           <form action="login.php" class="login__row" method="POST">
 
