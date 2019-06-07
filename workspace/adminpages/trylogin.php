@@ -1,85 +1,22 @@
 <?php 
+session_start();
+require_once ('connect.php');
 
-function log_user_in($username, $password){
-
-
-	require_once ('connect.php');
-
-	if (isset($_SESSION['ativa'])) {
-	//	sessão	foi	retomada
-	//...
-} else {
-	//	sessão	acabou	de	ser	criada
-	$_SESSION['ativa'] = true;
-	$_SESSION['user'] = $_POST["username"];
-	//...
-}
-//	(...)
-session_write_close();
-$admin = ("carlaramos");
-
-	$sql = "SELECT * FROM users WHERE  username='".$username."' AND password='".$password."'";
-
-	$query = mysqli_query($connect,$sql);
-$username = ($_POST["username"]);
-	$result = $connect->query($sql);
-	
-		if (mysqli_num_rows($query) > 0) {
+if(isset($_POST["username"]) && isset($_POST["password"]))
+{
     
-				while($row = $result->fetch_assoc()) {
-					$_SESSION["username"]=$row["username"];
-			$_SESSION["id"]=$row["id"];
-
-		header('Location: admin_tables.php');	
-
-	}
-
-} else {
-
-	
-           
-	header('Location: login.php');
-	$_SESSION["message"] = "Login Inválido"; 
-
-
-	
+ $username = mysqli_real_escape_string($connect, $_POST["username"]);
+ $password = mysqli_real_escape_string($connect, $_POST["password"]);
+ $sql = "SELECT * FROM users WHERE username = '".$username."' AND password = '".$password."'";
+ $result = mysqli_query($connect, $sql);
+ $num_row = mysqli_num_rows($result);
+ if($num_row > 0)
+ {
+  $data = mysqli_fetch_array($result);
+  
+  $_SESSION["username"] = $data["username"];
+  $_SESSION["ativa"] = "ativa";
+  echo $data["username"];
+ } 
 }
-
-
-
-
-
-
-}
-
-
-
-//exit();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function display_message(){
-	echo '<div style="margin-top: 1px">';
-			echo '<b style="color:red;">'.$_SESSION['message'].'</b>';
-			unset($_SESSION['message']);
-	echo '</div>';
-}
-
-
-
-
-
 ?>
