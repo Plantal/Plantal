@@ -2,7 +2,7 @@
 
 return array(
     'backup_dir'    => '/var/www/html/backup',
-    'keep_files'    => 50,
+    'keep_files'    => 5,
     'compression'   => '', 
     'db_host'       => 'localhost',
     'db_port'       => '3306',

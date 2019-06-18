@@ -1,0 +1,38 @@
+{
+    "name": "shop/api",
+    "description": "Shop API",
+    "type": "Project",
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "Joao",
+            "email": "bifektm@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "2.6.*"
+    },
+    "autoload": {
+
+        "files": [
+
+            "app/config.php",
+            "app/helpers/helper-functions.php",
+            "app/includes/bootstrapper.php",
+            "app/includes/external-files.php",
+
+            "app/routes/default.php",
+            "app/routes/teste.php",
+
+            "app/hoocks/before_route/api_auth.php"
+
+        ],
+
+        "psr-4": {
+            "App\\Core\\": "app/core",
+            "App\\Controllers\\": "app/controllers",
+            "App\\Models\\": "app/models"
+        }
+
+    }
+}

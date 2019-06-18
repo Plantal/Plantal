@@ -1,3 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
-php backup_db.php
+php /var/www/html/backup/backup_db.php
+ 
