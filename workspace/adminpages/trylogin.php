@@ -1,96 +1,22 @@
 <?php 
-
-
-require_once ('connect.php');
 session_start();
+require_once ('connect.php');
 
-if (isset($_SESSION['ativa'])) {
-	//	sessão	foi	retomada
-	//...
-} else {
-	//	sessão	acabou	de	ser	criada
-	$_SESSION['ativa'] = true;
-	$_SESSION['user'] = $_POST["username"];
-	//...
+if(isset($_POST["username"]) && isset($_POST["password"]))
+{
+    
+ $username = mysqli_real_escape_string($connect, $_POST["username"]);
+ $password = mysqli_real_escape_string($connect, $_POST["password"]);
+ $sql = "SELECT * FROM users WHERE username = '".$username."' AND password = '".$password."'";
+ $result = mysqli_query($connect, $sql);
+ $num_row = mysqli_num_rows($result);
+ if($num_row > 0)
+ {
+  $data = mysqli_fetch_array($result);
+  
+  $_SESSION["username"] = $data["username"];
+  $_SESSION["ativa"] = "ativa";
+  echo $data["username"];
+ } 
 }
-//	(...)
-session_write_close();
-$admin = ("carlaramos");
-
-$id = ($_POST["iduser"]);
-$nomeuser = ($_POST["username"]); 
-$passuser = ($_POST["password"]);
-
-$sql = "SELECT * FROM users WHERE  username='".$nomeuser."' AND password='".$passuser."'";
-
-$query = mysqli_query($connect,$sql);
-
-
-$result = $connect->query($sql);
-if($nomeuser === $admin){
-if (mysqli_num_rows($query) > 0) {
-
-
-    // output data of each row
-	while($row = $result->fetch_assoc()) {
-		
-		$_SESSION["username"]=$row["username"];
-		$_SESSION["id"]=$row["id"];
-		
-		header('Location: admin_tables.php');
-
-	
-		
-		
-		
-	}
-
-
-} else {
-
-   $_SESSION["message"] = "Login Inválido";        
-	header('Location: login.php');
-
-
-	
-}
-exit();
-	
-} else {
-
-	if (mysqli_num_rows($query) > 0) {
-
-
-    // output data of each row
-	while($row = $result->fetch_assoc()) {
-		
-		$_SESSION["username"]=$row["username"];
-		$_SESSION["id"]=$row["id"];
-		
-		header('Location: tables.php');
-
-	
-		
-		
-		
-	}
-
-
-} else {
-
-   $_SESSION["message"] = "Login Inválido";        
-	header('Location: login.php');
-
-
-	
-}
-exit();
-
-}
-
-function display_message(){
-	echo '<div style="margin-top: 10px">';
-			echo '<b style="color:red;">'.$_SESSION['message'].'</b>';
-			unset($_SESSION['message']);
-	echo '</div>';
-}
+?>
