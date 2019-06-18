@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-image: "css/nature.jpg";
 }
 
 [tabindex="-1"]:focus {
@@ -549,6 +549,10 @@ pre code {
 
 .container {
   width: 100%;
+  position: relative;
+  height: 100%;
+  background-image: url("nature.jpg");
+  background-position: center;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
