@@ -70,25 +70,29 @@ $(document).ready(function(){
            else  
            { 
 
-           
-              $.ajax({  
-                     url:"insert.php",  
-                     method:"POST",  
-                     data:{
-                      nomeCientifico: $("#tituloInput").val(),
-                      nomeComum: $("#nomeComumInput").val(),
-                      especie: $("#especieInput").val(),
-                      familia: $("#familiaInput").val(),
-                      ordem: $("#ordemInput").val(),
-                      fotosUrl: $("#fotosModal").html(),
-                      qrcode: $("#qrcodeInput").val(),
-                      descricao: $("#contentModal").val(),
-                      tipofolha: $("#folhaModal").val(),
-                      utilizacao: $("#utilModal").val()
+            obj = {
+                      
+                      "nomeCientifico" : $("#tituloInput").val(),
+                      "nomeComum" : $("#nomeComumInput").val(),
+                      "especie" : $("#especieInput").val(),
+                      "familia" : $("#familiaInput").val(),
+                      "ordem" : $("#ordemInput").val(),
+                      "fotosUrl" : $("#fotosModal").html(),
+                      "qrcode" : $("#qrcodeInput").val(),
+                      "descricao" : $("#contentModal").val(),
+                      "tipofolha" : $("#folhaModal").val(),
+                      "utilizacao" : $("#utilModal").val()
 
-                     }, 
-                     dataType: "JSON",
-                     contentType: 'application/x-www-form-urlencoded',
+                     }
+                     jsonData = JSON.stringify(Obj);
+                     console.log(jsonData);
+           
+              $.ajax({ 
+                     method:"POST",
+                     url:"insert.php",  
+                     contentType : "application/json",
+                     data : jsonData,
+                     dataType : "json",
                      beforeSend:function(){  
                           $('#insert').val("Inserindo");  
                      }  ,
@@ -96,7 +100,7 @@ $(document).ready(function(){
                          $('#insert_form')[0].reset();  
                          $('#add_data_Modal').modal('hide');
                          $('#insert').val("Inserir");
-                         $('#dataTable').DataTable().ajax.reload();
+                         //$('#dataTable').DataTable().ajax.reload();
 
                      }                  
                 });
