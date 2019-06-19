@@ -34,6 +34,8 @@ $outt = strrev($phpData->nomeComum);
 
 
 $output = new stdClass();
+$output->nomeCientifico = $out;
+$output->nomeComum = $outt;
 
 
 
