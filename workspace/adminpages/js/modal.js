@@ -96,7 +96,7 @@ $(document).ready(function(){
                          $('#insert_form')[0].reset();  
                          $('#add_data_Modal').modal('hide');
                          $('#insert').val("Inserir");
-                         $('#datatable').load(document.URL +  ' #dataTable');
+                         $('#table').load(document.URL +  ' #table');
                      }                  
                 });
 
