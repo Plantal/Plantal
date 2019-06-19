@@ -313,7 +313,7 @@ if(!isset($_SESSION['ativa'])){
               <i class="fas fa-table"></i>
               Tabela das plantas</div>
             <div class="card-body">
-              <div class="table-responsive" id="table">
+              <div class="table-responsive" >
 
                 
                 <table class="table table-striped" id="dataTable" name="dataTable" width="100%" data-toggle="table" data-search="true" data-show-refresh="true" data-show-columns="true" cellspacing="0" >
