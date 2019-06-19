@@ -308,7 +308,7 @@ if(!isset($_SESSION['ativa'])){
           <!-- Tabela com as plantas -->
 
 
-          <div class="card mb-3">
+          <div class="card mb-3" id="table">
             <div class="card-header">
               <i class="fas fa-table"></i>
               Tabela das plantas</div>
