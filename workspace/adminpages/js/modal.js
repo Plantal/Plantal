@@ -84,7 +84,7 @@ $(document).ready(function(){
                       "utilizacao" : $("#utilModal").val()
 
                      }
-                     jsonData = JSON.stringify(Obj);
+                     jsonData = JSON.stringify(obj);
                      console.log(jsonData);
            
               $.ajax({ 
