@@ -2,7 +2,7 @@
 <?php
 require_once("connect.php");
 session_start();
-require 'phpqrcode/qrlib.php';
+require 'phpqrcode/phpqrcode.php';
 if(!isset($_SESSION['ativa'])){
   header('Location: login.php');
 }
