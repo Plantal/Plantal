@@ -21,7 +21,7 @@ require_once("connect.php");
 foreach($obj as $item) {
 $insert_value = "INSERT INTO planta (nomeCientifico, nomeComum, especie, familia, ordem, fotosURL, qrcode, descricao, tipofolha, utilizacao) VALUES
 ('".$item['nomeCientifico']."', '".$item['nomeComum']."', '".$item['especie']."', '".$item['familia']."', '".$item['ordem']."', '".$item['fotosURL']."', '".$item['qrcode']."', '".$item['descricao']."', '".$item['tipofolha']."', '".$item['utilizacao']."')";
-if ($con->query($insert_value ) === TRUE) {
+if ($connect->query($insert_value ) === TRUE) {
 echo "Record added Successfully<br>";
 }
 }
