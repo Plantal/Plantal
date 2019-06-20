@@ -6,25 +6,11 @@ session_start();
 
 }
  
-
-    /*
-    $nomeCientifico = mysqli_real_escape_string($connect, $_POST["nomeCientifico"]);
-    $nomeComum = mysqli_real_escape_string($connect, $_POST["nomeComum"]);
-    $especie = mysqli_real_escape_string($connect, $_POST["especie"]);
-    $familia = mysqli_real_escape_string($connect, $_POST["familia"]);
-    $ordem = mysqli_real_escape_string($connect, $_POST["ordem"]);
-    $fotosUrl = mysqli_real_escape_string($connect, $_POST["fotosUrl"]);
-    $qrcode = mysqli_real_escape_string($connect, $_POST["qrcode"]);
-    $descricao = mysqli_real_escape_string($connect, $_POST["descricao"]);
-    $tipofolha = mysqli_real_escape_string($connect, $_POST["tipofolha"]);
-    $utilizacao = mysqli_real_escape_string($connect, $_POST["utilizacao"]);
-    */
-
-    $jsonData = file_get_contents('php://input');
+$jsonData = file_get_contents('php://input');
 
 //echo $jsonData;
 
-$phpData = json_decode($jsonData);
+$obj = json_decode($jsonData, true);
 
 //echo $phpData;
 
@@ -41,6 +27,13 @@ $output->nomeComum = $outt;
 
 
 echo json_encode($output);
+
+
+foreach($obj as $item) {
+       mysql_query("INSERT INTO planta (nomeCientifico, nomeComum, especie, familia, ordem, fotosURL, qrcode, descricao, tipofolha, utilizacao) 
+       VALUES ('".$item['nomeCientifico']."', '".$item['nomeComum']."', '".$item['especie']."', '".$item['familia']."', '".$item['ordem']."', '".$item['fotosURL']."', '".$item['qrcode']."', '".$item['descricao']."', '".$item['tipofolha']."', '".$item['utilizacao']."')");
+
+}
 
 /*
     $verificar = "SELECT nomeCientifico  FROM planta WHERE nomeCientifico='".$nomeCientifico."' ";
