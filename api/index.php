@@ -1,1 +1,2 @@
-<?php header("Location: v1");
+<?php //header("Location: v1");
+print "estou aqui";
