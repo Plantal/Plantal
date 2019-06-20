@@ -43,22 +43,24 @@ $(document).ready(function(){
 
 
            $('#insert').on("click", function(event){
+
+             obj = {
+                            "nomeCientifico" : $("#especieInput").val(),
+                            "descricao" : $("#contentModal").val(),
+                            "tipofolha" : $("#folhaModal").val(),
+                            "utilizacao" : $("#utilModal").val()
+                      }
+                     jsonData = JSON.stringify(obj);
+                     console.log(jsonData);
     
 
 
     $.ajax({  
-                     url:"edit.php",  
-                     method:"POST",  
-                     data:{
-                      
-                      nomeCientifico: $("#especieInput").val(),
-                      descricao: $("#contentModal").val(),
-                      tipofolha: $("#folhaModal").val(),
-                      utilizacao: $("#utilModal").val()
-
-                     }, 
-                     dataType: "JSON",
-                     contentType: 'application/x-www-form-urlencoded',
+                    method:"POST",
+                     url:"edit.php",   
+                     contentType : "application/json",
+                     data : jsonData,
+                     dataType : "json",
                      beforeSend:function(){  
                           $('#insert').val("Atualizando");  
                      },

@@ -1,19 +1,32 @@
 <?php 
 session_start();
- require_once("connect.php");
+
 
  if(!isset($_SESSION['ativa'])){
    header('Location: login.php');
  
  }
- if(isset($_POST["nomeCientifico"]))
- 	{  
+$jsonData = file_get_contents('php://input');
+
+//echo $jsonData;
+
+$content = json_decode($jsonData, true);
+
+ require_once("connect.php");
        
-    
+    /*
     $descricao = mysqli_real_escape_string($connect, $_POST["descricao"]);
     $tipofolha = mysqli_real_escape_string($connect, $_POST["tipofolha"]);  
-    $utilizacao = mysqli_real_escape_string($connect, $_POST["utilizacao"]);    
-      if($_POST["nomeCientifico"] != '')  
+    $utilizacao = mysqli_real_escape_string($connect, $_POST["utilizacao"]);  
+*/
+
+    $nomeCientifico = $content['nomeCientifico'];
+    $descricao = $content['descricao'];
+    $tipofolha = $content['tipofolha']; 
+    $utilizacao = $content['utilizacao']; 
+
+
+      if($nomeCientifico != '')  
       {  
            $query = "  
            UPDATE planta   
@@ -21,12 +34,12 @@ session_start();
            descricao = '$descricao',
            tipofolha = '$tipofolha',
            utilizacao = '$utilizacao'
-           WHERE nomeCientifico='".$_POST["nomeCientifico"]."'"; 
+           WHERE nomeCientifico='".$nomeCientifico."'"; 
 
           $result = mysqli_query($connect, $query);  
           echo json_encode(true);
       }
 
-   }
+   
 
 ?>
