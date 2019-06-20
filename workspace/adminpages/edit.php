@@ -25,9 +25,13 @@ $content = json_decode($jsonData, true);
     $tipofolha = $content['tipofolha']; 
     $utilizacao = $content['utilizacao']; 
 
+    echo $nomeCientifico;
+
 
       if($nomeCientifico != '')  
       {  
+            echo $nomeCientifico;
+
            $query = "  
            UPDATE planta   
            SET 

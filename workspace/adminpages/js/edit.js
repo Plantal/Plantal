@@ -44,7 +44,7 @@ $(document).ready(function(){
 
            $('#insert').on("click", function(event){
 
-             obj = {
+                     obj = {
                             "nomeCientifico" : $("#especieInput").val(),
                             "descricao" : $("#contentModal").val(),
                             "tipofolha" : $("#folhaModal").val(),
@@ -55,7 +55,7 @@ $(document).ready(function(){
     
 
 
-    $.ajax({  
+    $.ajax({      
                     method:"POST",
                      url:"edit.php",   
                      contentType : "application/json",
