@@ -28,15 +28,25 @@ $utilizacao = $content['utilizacao'];
 
 echo $nomeCientifico;
 
+$verificar = "SELECT nomeCientifico  FROM planta WHERE nomeCientifico='".$nomeCientifico."' ";
+$result = mysqli_query($connect,$verificar);
+if ($result->num_rows >0) { 
+      echo "<h3>Esta planta já está registada!</h3>";
+      echo json_encode(false);
+    }else{
+    	$insert = "INSERT INTO planta (nomeCientifico, nomeComum, especie, familia, ordem, fotosURL, qrcode, descricao, tipofolha, utilizacao) VALUES
+						('$nomeCientifico','$nomeComum','$especie', '$familia', '$ordem', '$fotosUrl', '$qrcode', '$descricao','$tipofolha','$utilizacao' )";
+    
+     
+      if (mysqli_query($connect, $insert)) {
+          
 
-$insert_value = "INSERT INTO planta (nomeCientifico, nomeComum, especie, familia, ordem, fotosURL, qrcode, descricao, tipofolha, utilizacao) VALUES
-('$nomeCientifico','$nomeComum','$especie', '$familia', '$ordem', '$fotosUrl', '$qrcode', '$descricao','$tipofolha','$utilizacao' )";
-if(!mysqli_query($insert_value,$connect)) { 
-	
-	echo "erro"; 
-} else{ 
-	echo "Data Inserted Successully!!!";
-}
+      }
+      echo json_encode(true);
+      
+    }
+
+
 
 
 
