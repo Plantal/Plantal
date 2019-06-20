@@ -5,7 +5,7 @@ session_start();
   header('Location: login.php');
 
 }
- if(!empty($_POST)){
+ 
 
     /*
     $nomeCientifico = mysqli_real_escape_string($connect, $_POST["nomeCientifico"]);
@@ -42,7 +42,7 @@ $output->nomeComum = $outt;
 
 echo json_encode($output);
 
-
+/*
     $verificar = "SELECT nomeCientifico  FROM planta WHERE nomeCientifico='".$nomeCientifico."' ";
     $result = mysqli_query($connect,$verificar);
     if ($result->num_rows >0) { 
@@ -58,8 +58,8 @@ echo json_encode($output);
       }
       echo json_encode(true);
       
-    }
-}
+    }*/
+
 ?>
 
 
