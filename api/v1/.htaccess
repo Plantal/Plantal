@@ -1,4 +1,4 @@
-﻿#Secure .htaccess file
+#Secure .htaccess file
 #####################################################################################################
 <Files .htaccess>
     order allow,deny
@@ -15,7 +15,7 @@ ServerSignature Off
 
 #File execution order
 #####################################################################################################
-DirectoryIndex index.php home.php default.php index.html home.html default.html index.htm home.htm default.htm teste.php
+DirectoryIndex index.php home.php default.php index.html home.html default.html index.htm home.htm default.htm
 
 #Enable rewrite engine
 #####################################################################################################
@@ -145,4 +145,4 @@ AddType video/ogg ogv
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule ^ index.php [QSA,L]
+RewriteRule .* index.php [QSA,L]

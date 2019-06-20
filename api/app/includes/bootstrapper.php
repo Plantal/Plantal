@@ -5,5 +5,5 @@ $app->contentType(
     $app->config('app.contentType')
 );
 date_default_timezone_get(
-   // $app->config('http.version')
+    $app->config('http.version')
 );

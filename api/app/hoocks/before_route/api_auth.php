@@ -6,7 +6,6 @@ $app->hook('slim.before.router', function() use ($app){
     //////
     $username="teste";
     $password="teste";
-    
     /////
 
     /*if (!isset($_SERVER['PHP_AUTH_USER'])) {

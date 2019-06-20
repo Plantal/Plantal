@@ -6,6 +6,3 @@ require_once "../vendor/autoload.php";
 
 $app = instance();
 $app->run();
-
-
-

@@ -15,12 +15,12 @@ function get_config(){
 
         //Database settings
         //=============================================
-        'app.db.host' => 'localhost',
+        'app.db.host' => '127.0.0.1',
         'app.db.port' => 3306,
-        'app.db.name' => 'id9128078_plantal',
+        'app.db.name' => 'bike',
         'app.db.charset' => 'utf8',
-        'app.db.user' => 'id9128078_plantal',
-        'app.db.pwd' => '12345678',
+        'app.db.user' => 'root',
+        'app.db.pwd' => '123456',
 
         //Do not touch
         //=============================================
