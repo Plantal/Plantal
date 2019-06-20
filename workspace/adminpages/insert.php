@@ -18,12 +18,11 @@ $obj = json_decode($jsonData, true);
 
 
 foreach($obj as $item) {
-       $insert = "INSERT INTO planta (nomeCientifico, nomeComum, especie, familia, ordem, fotosURL, qrcode, descricao, tipofolha, utilizacao) 
-       VALUES ('".$item['nomeCientifico']."', '".$item['nomeComum']."', '".$item['especie']."', '".$item['familia']."', '".$item['ordem']."', '".$item['fotosURL']."', '".$item['qrcode']."', '".$item['descricao']."', '".$item['tipofolha']."', '".$item['utilizacao']."')";
+       mysql_query("INSERT INTO 'plantal'.'planta' (nomeCientifico, nomeComum, especie, familia, ordem, fotosURL, qrcode, descricao, tipofolha, utilizacao) VALUES ('".$item['nomeCientifico']."', '".$item['nomeComum']."', '".$item['especie']."', '".$item['familia']."', '".$item['ordem']."', '".$item['fotosURL']."', '".$item['qrcode']."', '".$item['descricao']."', '".$item['tipofolha']."', '".$item['utilizacao']."')");
 
 }
 
-mysqli_query($connect, $insert);
+
 
 /*
     $verificar = "SELECT nomeCientifico  FROM planta WHERE nomeCientifico='".$nomeCientifico."' ";
