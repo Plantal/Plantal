@@ -10,21 +10,35 @@ $jsonData = file_get_contents('php://input');
 
 //echo $jsonData;
 
-$obj = json_decode($jsonData, true);
-
-//echo $phpData;
+$content = json_decode($jsonData, true);
 
 require_once("connect.php"); 
 
+$nomeCientifico = $content['nomeCientifico']; 
+$nomeComum = $content['nomeComum']; 
+$especie = $content['especie']; 
+$familia = $content['familia']; 
+$ordem = $content['ordem']; 
+$fotosUrl = $content['fotosUrl']; 
+$qrcode = $content['qrcode']; 
+$descricao = $content['descricao']; 
+$tipofolha = $content['tipofolha']; 
+$utilizacao = $content['utilizacao']; 
 
 
-foreach($obj as $item) {
+
+
+
 $insert_value = "INSERT INTO planta (nomeCientifico, nomeComum, especie, familia, ordem, fotosURL, qrcode, descricao, tipofolha, utilizacao) VALUES
-('".$item['nomeCientifico']."', '".$item['nomeComum']."', '".$item['especie']."', '".$item['familia']."', '".$item['ordem']."', '".$item['fotosURL']."', '".$item['qrcode']."', '".$item['descricao']."', '".$item['tipofolha']."', '".$item['utilizacao']."')";
-if ($connect->query($insert_value ) === TRUE) {
-echo "Record added Successfully<br>";
+('$nomeCientifico','$nomeComum','$especie', '$familia', '$ordem', '$fotosUrl', '$qrcode', '$descricao','$tipofolha','$utilizacao' )";
+if(!mysqli_query($insert_value,$connect)) { 
+	
+	echo "erro"; 
+} else{ 
+	echo "Data Inserted Successully!!!";
 }
-}
+
+
 
 
 
