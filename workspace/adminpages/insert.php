@@ -14,26 +14,16 @@ $obj = json_decode($jsonData, true);
 
 //echo $phpData;
 
-$out = strrev($phpData->nomeCientifico);
-$outt = strrev($phpData->nomeComum);
 
-
-
-$output = new stdClass();
-$output->nomeCientifico = $out;
-$output->nomeComum = $outt;
-
-
-
-
-echo json_encode($output);
 
 
 foreach($obj as $item) {
-       mysql_query("INSERT INTO planta (nomeCientifico, nomeComum, especie, familia, ordem, fotosURL, qrcode, descricao, tipofolha, utilizacao) 
-       VALUES ('".$item['nomeCientifico']."', '".$item['nomeComum']."', '".$item['especie']."', '".$item['familia']."', '".$item['ordem']."', '".$item['fotosURL']."', '".$item['qrcode']."', '".$item['descricao']."', '".$item['tipofolha']."', '".$item['utilizacao']."')");
+       $insert = "INSERT INTO planta (nomeCientifico, nomeComum, especie, familia, ordem, fotosURL, qrcode, descricao, tipofolha, utilizacao) 
+       VALUES ('".$item['nomeCientifico']."', '".$item['nomeComum']."', '".$item['especie']."', '".$item['familia']."', '".$item['ordem']."', '".$item['fotosURL']."', '".$item['qrcode']."', '".$item['descricao']."', '".$item['tipofolha']."', '".$item['utilizacao']."')";
 
 }
+
+mysqli_query($connect, $insert);
 
 /*
     $verificar = "SELECT nomeCientifico  FROM planta WHERE nomeCientifico='".$nomeCientifico."' ";
