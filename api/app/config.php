@@ -17,7 +17,7 @@ function get_config(){
         //=============================================
         'app.db.host' => '127.0.0.1',
         'app.db.port' => 3306,
-        'app.db.name' => 'bike',
+        'app.db.name' => 'plantal',
         'app.db.charset' => 'utf8',
         'app.db.user' => 'root',
         'app.db.pwd' => '123456',
