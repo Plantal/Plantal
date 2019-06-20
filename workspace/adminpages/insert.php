@@ -1,7 +1,7 @@
 <?php  
 session_start();
  
- if(!isset($_SESSION['ativa'])){
+if(!isset($_SESSION['ativa'])){
   header('Location: login.php');
 
 }
@@ -26,7 +26,7 @@ $tipofolha = $content['tipofolha'];
 $utilizacao = $content['utilizacao']; 
 
 
-
+echo $nomeCientifico;
 
 
 $insert_value = "INSERT INTO planta (nomeCientifico, nomeComum, especie, familia, ordem, fotosURL, qrcode, descricao, tipofolha, utilizacao) VALUES
