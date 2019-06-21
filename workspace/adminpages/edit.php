@@ -14,6 +14,8 @@ $jsonData = file_get_contents('php://input');
 
 $content = json_decode($jsonData, true);
 
+echo $content;
+
 
  require_once("connect.php");
        
@@ -32,14 +34,15 @@ $content = json_decode($jsonData, true);
            $query = "
            UPDATE planta   
            SET 
-           (descricao = '$descricao',
+           descricao = '$descricao',
            tipofolha = '$tipofolha',
            utilizacao = '$utilizacao'
            WHERE nomeCientifico = '$nomeCientifico'"; 
 
            echo $query;
 
-          $result = mysqli_query($connect, $query);  
+          $result = mysqli_query($connect, $query); 
+          echo $result; 
           echo json_encode(true);
       
 

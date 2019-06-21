@@ -43,7 +43,7 @@ $(document).ready(function(){
 
 
            $('#insert').on("click", function(event){
-            
+
 
                      obj = {
                             "nomeCientifico" : $("#especieInput").val(),
@@ -56,8 +56,8 @@ $(document).ready(function(){
     
 
 
-    $.ajax({      
-                    method:"POST",
+                   $.ajax({      
+                     method:"POST",
                      url:"edit.php",   
                      contentType : "application/json",
                      data : jsonData,

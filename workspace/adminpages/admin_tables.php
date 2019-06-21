@@ -160,7 +160,7 @@ if(!isset($_SESSION['ativa'])){
 <!--Insert Modal-->
 
 
-  <div id="add_data_Modal" class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div id="add_data_Modal" class="modal fade" tabindex="-1" role="dialog" >
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
