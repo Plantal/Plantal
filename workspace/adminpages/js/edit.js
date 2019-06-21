@@ -35,7 +35,7 @@ $(document).ready(function(){
                             $("#fotosInput").val(res.fotosURL);
                     
                     $('#insert').val("Atualizar");  
-                    $('#add_data_Modal').modal('show');  
+                    $('#edit_data_Modal').modal('show');  
 
 
                 }  
@@ -67,7 +67,7 @@ $(document).ready(function(){
                      },
 
                      success : function () {
-                         $('#add_data_Modal').modal('hide');
+                         $('#edit_data_Modal').modal('hide');
                          window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_tables.php");
                          
                      }

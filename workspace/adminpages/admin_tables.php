@@ -268,6 +268,10 @@ if(!isset($_SESSION['ativa'])){
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+
+
+
+
                       
 
 
@@ -432,7 +436,7 @@ while($row = mysqli_fetch_array($result))
 
 
 
- <div id="add_data_Modal" class="modal fade" tabindex="-1" role="dialog">
+ <div id="edit_data_Modal" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -521,8 +525,7 @@ while($row = mysqli_fetch_array($result))
                   
               </div>
             </tr>
-
-                            <tr>
+                  <tr>
                   <div class="form-group">
                   <td width="30%"><b>Utilização Humana :</b></td>
                   <td width="70%">
@@ -541,17 +544,15 @@ while($row = mysqli_fetch_array($result))
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    </div>
+  </div>
+</div>
+
+
 
 
 
 <!-- Modal para apagar plantas -->
-
-
-
-
 
 <div id="myModal" class="modal fade">
   <div class="modal-dialog modal-confirm">

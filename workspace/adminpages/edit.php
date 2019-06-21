@@ -1,6 +1,6 @@
 <?php 
 session_start();
-
+require_once("connect.php");
 
  if(!isset($_SESSION['ativa'])){
    header('Location: login.php');
@@ -10,14 +10,11 @@ session_start();
 
 $jsonData = file_get_contents('php://input');
 
-//echo $jsonData;
 
 $content = json_decode($jsonData, true);
 
-echo $content;
 
-
- require_once("connect.php");
+ 
        
 
     $nomeCientifico = $content['nomeCientifico'];
@@ -26,12 +23,13 @@ echo $content;
     $utilizacao = $content['utilizacao']; 
 
     echo $nomeCientifico;
-    echo "asdasdas";
 
-      
-            echo $nomeCientifico;
 
-           $query = "
+      if($nomeCientifico != '')  
+      {  
+          echo $nomeCientifico;
+
+          $query = "
            UPDATE planta   
            SET 
            descricao = '$descricao',
@@ -39,12 +37,9 @@ echo $content;
            utilizacao = '$utilizacao'
            WHERE nomeCientifico = '$nomeCientifico'"; 
 
-           echo $query;
-
-          $result = mysqli_query($connect, $query); 
-          echo $result; 
+           $result = mysqli_query($connect, $query);  
           echo json_encode(true);
-      
+      }
 
    
 
