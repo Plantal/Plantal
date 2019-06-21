@@ -24,23 +24,24 @@ $content = json_decode($jsonData, true);
     $utilizacao = $content['utilizacao']; 
 
     echo $nomeCientifico;
+    echo "asdasdas";
 
-
-      if($nomeCientifico != '')  
-      {  
+      
             echo $nomeCientifico;
 
            $query = "
            UPDATE planta   
            SET 
-           descricao = '$descricao',
+           (descricao = '$descricao',
            tipofolha = '$tipofolha',
            utilizacao = '$utilizacao'
            WHERE nomeCientifico = '$nomeCientifico'"; 
 
+           echo $query;
+
           $result = mysqli_query($connect, $query);  
           echo json_encode(true);
-      }
+      
 
    
 
