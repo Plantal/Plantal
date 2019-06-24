@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require_once("connect.php");
+
 
  if(!isset($_SESSION['ativa'])){
    header('Location: login.php');
@@ -13,8 +13,9 @@ $jsonData = file_get_contents('php://input');
 
 $content = json_decode($jsonData, true);
 
-
+echo $content;
  
+ require_once("connect.php");
        
 
     $nomeCientifico = $content['nomeCientifico'];
