@@ -453,8 +453,8 @@ while($row = mysqli_fetch_array($result))
         
                   <div class="form-group">
                   <td width="30%"><b>Nome Comum:</b></td>
-                  <td width="70%"><p id="nomeComumModal" name="nomeComum" ></p>
-                  <input type="hidden" name="nomeComum1" id="nomeComumInput"></input></td>
+                  <td width="70%"><p id="nomeComumModal1" name="nomeComum" ></p>
+                  <input type="hidden" name="nomeComum1" id="nomeComumInput1"></input></td>
                   
                   
               </div>
@@ -462,16 +462,16 @@ while($row = mysqli_fetch_array($result))
               <tr>
               <div class="form-group">
                   <td width="30%"><b>Espécie:</b></td>
-                  <td  width="70%"><p id="especieModal" name="especie" ></p>
-                  <input type="hidden" name="especie1" id="especieInput"></input></td>
+                  <td  width="70%"><p id="especieModal1" name="especie" ></p>
+                  <input type="hidden" name="especie1" id="especieInput1"></input></td>
                  
               </div>
               </tr>
               <tr>
               <div class="form-group">
                   <td width="30%"><b>Família:</b></td>
-                  <td width="70%"><p id="familiaModal" name="familia" ></p>
-                  <input type="hidden" name="familia1" id="familiaInput"></input></td>
+                  <td width="70%"><p id="familiaModal1" name="familia" ></p>
+                  <input type="hidden" name="familia1" id="familiaInput1"></input></td>
                 
                   
               </div>
@@ -479,16 +479,16 @@ while($row = mysqli_fetch_array($result))
               <tr>
               <div class="form-group">
                  <td width="30%"> <b>Ordem:</b></td>
-                  <td width="70%"> <p id="ordemModal" name="ordem"></p>
-                  <input type="hidden" name="ordem1" id="ordemInput"></input></td>
+                  <td width="70%"> <p id="ordemModal1" name="ordem"></p>
+                  <input type="hidden" name="ordem1" id="ordemInput1"></input></td>
                  
               </div>
               </tr>
               <tr>
               <div class="form-group">
                  <td width="30%"> <b>Fotos:</b></td>
-                 <td width="70%"> <div id="fotosModal" name="fotosUrl"  ></div>
-                  <input type="hidden" name="fotos1" id="fotosInput"></input></td>
+                 <td width="70%"> <div id="fotosModal1" name="fotosUrl"  ></div>
+                  <input type="hidden" name="fotos1" id="fotosInput1"></input></td>
                  
                  
 
@@ -498,15 +498,15 @@ while($row = mysqli_fetch_array($result))
               <tr>
                <div class="form-group">
                  <td width="30%" > <b>Qr Code:</b></td>
-                 <td width="70%"> <p id="qrCodeModal" name="qrcode"  ></p>
-                  <input type="hidden" name="qrcode1" id="qrcodeInput"></input></td>
+                 <td width="70%"> <p id="qrCodeModal1" name="qrcode"  ></p>
+                  <input type="hidden" name="qrcode1" id="qrcodeInput1"></input></td>
               </div>
               </tr>
             <tr>
               <div class="form-group">
                   <td width="30%"><b>Descrição:</b></td>
                   
-                  <td width="70%"><textarea id="contentModal" name="descricao" style="min-width: 100%" class="form-control"  rows="10"></textarea></td>
+                  <td width="70%"><textarea id="contentModal1" name="descricao" style="min-width: 100%" class="form-control"  rows="10"></textarea></td>
                   
 
               </div>
@@ -516,7 +516,7 @@ while($row = mysqli_fetch_array($result))
                   <div class="form-group">
                   <td width="30%"><b>Tipo de Folha :</b></td>
                   <td width="70%">
-                  <select id="folhaModal" name="tipofolha" class="form-control">
+                  <select id="folhaModal1" name="tipofolha" class="form-control">
                   <option value=""></option>
                         <option value="Caduca">Folha Caduca</option>
                         <option value="Persistente">Folha Persistente</option>
@@ -529,7 +529,7 @@ while($row = mysqli_fetch_array($result))
                   <div class="form-group">
                   <td width="30%"><b>Utilização Humana :</b></td>
                   <td width="70%">
-                  <textarea class="form-control" rows="5" style="min-width:100%" name="utilizacao" id="utilModal"></textarea></td>
+                  <textarea class="form-control" rows="5" style="min-width:100%" name="utilizacao" id="utilModal1"></textarea></td>
                   
                   
               </div>
@@ -537,7 +537,7 @@ while($row = mysqli_fetch_array($result))
               </table>  
       </div>
               
-              <input type="button" name="insert" id="insert" value="Insert" class="btn btn-success" />
+              <input type="button" name="insert" id="atualizar" value="Insert" class="btn btn-success" />
             
       </div>
     
