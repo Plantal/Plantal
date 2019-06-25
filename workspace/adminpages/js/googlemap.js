@@ -1,7 +1,7 @@
 var map;
 var geocoder;
 
-setIntervsl(function () {
+setInterval(function () {
 
 
 
