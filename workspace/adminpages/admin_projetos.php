@@ -232,16 +232,23 @@ if(!isset($_SESSION['ativa'])){
 <!-- /#mapa -->
 
 
-           <?php 
+          
+        
+        
+
+      </div>
+      <!-- /.content-wrapper -->
+
+ <?php 
       require 'projeto.php';
       $pro = new projeto;
       $coll = $pro->getProjetosBlankLatLng();
       $coll = json_encode($coll, true);
-      echo '<div id="data">' . $coll . '</div>';
+      //echo '<div id="data">' . $coll . '</div>';
 
       $allData = $pro->getAllProjetos();
       $allData = json_encode($allData, true);
-      echo '<div id="allData">' . $allData . '</div>';      
+      //echo '<div id="allData">' . $allData . '</div>';      
      ?>
 
 
@@ -258,11 +265,8 @@ if(!isset($_SESSION['ativa'])){
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx67Sngc8Ij0vkQDl2Uy9Ffwc6Eb_GPxo&callback=initMap">
     </script>
  
-        
-        
 
-      </div>
-      <!-- /.content-wrapper -->
+
 
     </div>
 
