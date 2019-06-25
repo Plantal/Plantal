@@ -69,8 +69,7 @@ if(!isset($_SESSION['ativa'])){
     <script src="js/select.js"></script>
     <script src="js/edit.1.js"></script>
     <script src="js/delete.1.js"></script>
-    <script  type="text/javascript" src="js/modal.js"></script>
-
+    
     
     
 
