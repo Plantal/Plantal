@@ -262,7 +262,7 @@ if(!isset($_SESSION['ativa'])){
 
       
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx67Sngc8Ij0vkQDl2Uy9Ffwc6Eb_GPxo&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx67Sngc8Ij0vkQDl2Uy9Ffwc6Eb_GPxo&callback=loadMap">
     </script>
  
 
