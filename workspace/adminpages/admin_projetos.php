@@ -195,6 +195,7 @@ if(!isset($_SESSION['ativa'])){
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Orientador:</label>
             <select id="orientadorInput" name="tipofolha" class="form-control">
+                        <option value=""></option>
                         <?php echo $options; ?>
             </select>
           </div>
