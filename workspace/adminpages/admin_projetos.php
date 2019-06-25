@@ -50,11 +50,13 @@ if(!isset($_SESSION['ativa'])){
 
     <link href="css/logonav.css" rel="stylesheet">
     <link href="css/planta.css" rel="stylesheet">
-
+     <link href="css/mapa.css" rel="stylesheet">
     
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
 
 
 
@@ -65,7 +67,7 @@ if(!isset($_SESSION['ativa'])){
 
      <script type="text/javascript" src="js/jquery/jquery.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/select.js"></script>
     <script src="js/edit.1.js"></script>
     <script src="js/delete.1.js"></script>
@@ -235,7 +237,14 @@ if(!isset($_SESSION['ativa'])){
 
 
 
-        
+        </div>
+
+      </div>
+
+      <div id = "mapid"></div>
+      <script>
+        var mymap = L.map('mapid').setView([51.505, -0.09], 13); 
+      </script>
 
 
 

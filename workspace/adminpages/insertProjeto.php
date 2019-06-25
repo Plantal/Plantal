@@ -30,7 +30,7 @@ if ($result->num_rows >0) {
     }else{
     	$insert = "INSERT INTO projeto (nome, latitude, longitude, userId) VALUES
 						('$nomeProjeto','$latitude','$longitude', '$orientador' )";
-    
+      echo $insert;
      
       if (mysqli_query($connect, $insert)) {
           echo $insert;
