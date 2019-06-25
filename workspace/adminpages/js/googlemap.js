@@ -1,5 +1,5 @@
 
-setInterval(function () {
+
 
 var map;
 var geocoder;
@@ -42,6 +42,9 @@ function showAllProjetos(allData) {
 	      map: map
 	    });
 
+
+	    marker.setMap(map);
+
 	    marker.addListener('click', function(){
 	    	infoWind.setContent(content);
 	    	infoWind.open(map, marker);
@@ -79,4 +82,3 @@ function updateProjetosWithLatLng(points) {
 	
 }
 
-}, 5000);
