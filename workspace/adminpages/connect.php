@@ -6,15 +6,7 @@
     exit();
 	}
 
-	$query = "SELECT * FROM users";
-
-	$result = mysql_query($connect, $query);
-	$options = "";
-
-	while ($row = mysqli_fetch_array($result)) {
-		$options = $options."<option>$row[1]</option>";
-	}
-
+	
 
 
  ?>
