@@ -149,8 +149,10 @@ if(!isset($_SESSION['ativa'])){
             <div class="card-body">
               <div class="form-group">
                   
-                        <button id="add" data-target="#projeto" type="button" class="btn btn-primary" >Criar Projeto</button>
-                  
+                        <div class="text-center">
+  <a  class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#projeto">Launch
+   Criar Projeto</a>
+</div>
 
 
 
