@@ -206,11 +206,7 @@ if(!isset($_SESSION['ativa'])){
 
 
 
-                     <div id = "mapid"></div>
-      <script>
-        var mymap = L.map('mapid').setView([51.505, -0.09], 13); 
-      </script>
- 
+                     
 
 
                           
@@ -225,7 +221,11 @@ if(!isset($_SESSION['ativa'])){
     <!-- /#wrapper -->
     
             
-            
+            <div id = "mapid"></div>
+      <script>
+        var mymap = L.map('mapid').setView([51.505, -0.09], 13); 
+      </script>
+ 
         
         
 
