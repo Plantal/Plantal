@@ -231,11 +231,11 @@ if(!isset($_SESSION['ativa'])){
       <script>
         var mymap = L.map('mapid').setView([51.505, -0.09], 13); 
 
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={sk.eyJ1Ijoic2FtYW5hcmFzIiwiYSI6ImNqeGJkNGV2cjBhOHYzbnBubXQ3MmVrbmYifQ.D0HuY6r-Sy4ysRD5LlKeuQ}', {
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={pk.eyJ1Ijoic2FtYW5hcmFzIiwiYSI6ImNqeGJkMGJxcTBhOGMzenBuamk1d2hwNnIifQ.UQ6ZZj66vFkkXSdURMapXw}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox.streets',
-    accessToken: 'sk.eyJ1Ijoic2FtYW5hcmFzIiwiYSI6ImNqeGJkNGV2cjBhOHYzbnBubXQ3MmVrbmYifQ.D0HuY6r-Sy4ysRD5LlKeuQ'
+    accessToken: 'pk.eyJ1Ijoic2FtYW5hcmFzIiwiYSI6ImNqeGJkMGJxcTBhOGMzenBuamk1d2hwNnIifQ.UQ6ZZj66vFkkXSdURMapXw'
 }).addTo(mymap);
       </script>
  
