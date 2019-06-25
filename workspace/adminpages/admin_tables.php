@@ -294,7 +294,7 @@ if(!isset($_SESSION['ativa'])){
             
             
         <!-- /.container-fluid -->
-        <div class="form-group">
+        <div class="form-group"></div>
          <div class="card mb-3" >
             <div class="card-header">
               <i class="fas fa-table"></i>
@@ -384,7 +384,7 @@ while($row = mysqli_fetch_array($result))
           
 
         </div>
-</div>
+
         
 
       </div>
