@@ -1,8 +1,8 @@
-var map;
-var geocoder;
 
 setInterval(function () {
 
+var map;
+var geocoder;
 
 
 
