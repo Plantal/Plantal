@@ -230,7 +230,7 @@ if(!isset($_SESSION['ativa'])){
     
 </div>
 
-<div>
+<div style="padding-bottom: 30px:">
 <!-- /#mapa -->
 <?php 
       require 'projeto.php';
@@ -270,29 +270,6 @@ if(!isset($_SESSION['ativa'])){
 
 
  </div>
-
-
-
-
-
-       
-
-
-
-          
-
-
-         
-
-
-
-
-
-
-
-
-
-
 
 
 
