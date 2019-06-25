@@ -306,7 +306,7 @@ if(!isset($_SESSION['ativa'])){
 
 
 
-    <footer class="sticky-footer">
+    <footer class="sticky-footer" style="padding-top: 30px;" >
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
               <span>Copyright © Your Website 2018</span>
