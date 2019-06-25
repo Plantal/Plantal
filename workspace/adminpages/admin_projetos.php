@@ -283,8 +283,7 @@ if(!isset($_SESSION['ativa'])){
 
 
     <!-- /#wrapper -->
-
-
+<div>
 
     <footer class="sticky-footer" style="padding-top: 30px;" >
           <div class="container my-auto">
@@ -293,6 +292,7 @@ if(!isset($_SESSION['ativa'])){
             </div>
           </div>
         </footer>
+</div>
 
 
     <!-- Scroll to Top Button-->
