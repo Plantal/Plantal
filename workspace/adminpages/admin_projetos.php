@@ -162,7 +162,7 @@ if(!isset($_SESSION['ativa'])){
 <div class="modal fade" id="projeto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header" color="blue">
+      <div class="modal-header" >
         <h5 class="modal-title" id="exampleModalLabel">Criar Projeto</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -172,25 +172,25 @@ if(!isset($_SESSION['ativa'])){
         <form>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Nome projeto:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" id="nomeInput">
           </div>
          <div class="form-group">
             <label for="recipient-name" class="col-form-label">Latitude:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" id="latitudeInput">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Longitude:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" id="longitudeInput">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Orientador:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" id="orientadorInput">
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <div class="options text-right">
-                  <button class="btn btn-info">Criar Projeto<i class="fas fa-sign-in ml-1"></i></button>
+                  <button id="addProjeto" class="btn btn-info">Criar Projeto<i class="fas fa-sign-in ml-1"></i></button>
               </div>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
