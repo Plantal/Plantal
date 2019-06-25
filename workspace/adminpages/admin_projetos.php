@@ -150,7 +150,7 @@ if(!isset($_SESSION['ativa'])){
             <div class="card-body">
               <div class="form-group">
                   
-                        <button id="add" data-target="#add_data_Modal" type="button" class="btn btn-primary" >Criar Projeto</button>
+                        <button id="add" data-target="#projeto" type="button" class="btn btn-primary" >Criar Projeto</button>
                   
 
 
@@ -160,7 +160,7 @@ if(!isset($_SESSION['ativa'])){
 <!--Insert Modal-->
 
 <!--Modal: Login / Register Form-->
-<div class="modal fade" id="add_data_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="projeto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog cascading-modal" role="document">
     <!--Content-->
     <div class="modal-content">
