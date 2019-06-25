@@ -34,7 +34,7 @@ if(!isset($_SESSION['ativa'])){
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
 
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
     <!-- Page level plugin CSS-->
@@ -358,3 +358,7 @@ if(!isset($_SESSION['ativa'])){
   </body>
 
 </html>
+
+
+
+
