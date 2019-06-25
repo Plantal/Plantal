@@ -230,6 +230,7 @@ if(!isset($_SESSION['ativa'])){
     
 </div>
 
+<div>
 <!-- /#mapa -->
 <?php 
       require 'projeto.php';
@@ -268,7 +269,7 @@ if(!isset($_SESSION['ativa'])){
 </div>
 
 
-</div>
+ </div>
 
 
 
