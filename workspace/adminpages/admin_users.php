@@ -119,6 +119,11 @@ if(!isset($_SESSION['ativa'])){
             <span>Plantas</span></a>
         </li>
         <li class="nav-item active">
+          <a class="nav-link" href="admin_projetos.php">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Projetos</span></a>
+        </li>
+        <li class="nav-item active">
           <a class="nav-link" href="admin_users.php">
             <i class="fas fa-fw fa-table"></i>
             <span>Utilizadores</span></a>

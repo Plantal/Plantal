@@ -146,17 +146,12 @@ if(!isset($_SESSION['ativa'])){
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-tree"></i>
-              Adicionar Plantas</div>
+              Adicionar Projetos</div>
             <div class="card-body">
               <div class="form-group">
-                  <label>Introduza o <strong> nome da espécie:</strong></label>
-                      
-
-                  <form class="form"  method="GET" id="myForm">
-                        <input type="text" style="width:40%" placeholder="Pesquise aqui as plantas que pretende adicionar..." name="search" id="searchPlanta">
-                        <p></p>
-                        <button id="add" data-target="#add_data_Modal" type="button" class="btn btn-primary" >Procurar Informação</button>
-                  </form>
+                  
+                        <button id="add" data-target="#add_data_Modal" type="button" class="btn btn-primary" >Criar Projeto</button>
+                  
 
 
 
@@ -164,8 +159,79 @@ if(!isset($_SESSION['ativa'])){
 
 <!--Insert Modal-->
 
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="add_data_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
 
-  
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <li class="nav-item">
+            <center>
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+              Criar Projeto</a>
+          </li>
+          </center>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+            <!--Body-->
+           <div class="modal-body">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input id="modalLRInput12" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput12">Nome do projeto</label>
+              </div>
+
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-lock prefix"></i>
+                <input  id="modalLRInput13" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput13">Latitude</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input  id="modalLRInput14" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput14">Longitude</label>
+              </div>
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input  id="modalLRInput14" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput14">Orientador</label>
+              </div>
+
+              
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                  <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!--/.Panel 7-->
+
+          
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+
 
 
 
@@ -218,146 +284,7 @@ if(!isset($_SESSION['ativa'])){
 
 
 
-<!-- /.Modal para ver informação -->
 
-
-<div id="dataModal" class="modal fade">  
-      <div class="modal-dialog">  
-           <div class="modal-content">  
-                <div class="modal-header">  
-                       
-                     <h4 class="modal-title" style="color: green;">Informação da Planta</h4>  
-                </div>  
-                <div class="modal-body" id="planta_detalhe">  
-                </div>  
-                <div class="modal-footer"> 
-                     
-                <button type="button" class="btn btn-primary" id="imprimir">Imprimir</button>
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>  
-                </div>  
-           </div>  
-      </div>  
- </div>
-
-
-
-
-<!-- /Modal para Editar-->
-
-
-
-
- <div id="add_projeto" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        
-        
-        <h4 class="modal-title" style="color: green;" id="tituloModal" name="tituloModal"></h4>
-        <input type="hidden" name="titulo1" id="tituloInput">
-      </div>
-      <div class="modal-body">
-
-        <div class="table-responsive">  
-           <table class="table table-bordered">
-                <tr>
-        
-                  <div class="form-group">
-                  <td width="30%"><b>Nome Comum:</b></td>
-                  <td width="70%"><p id="nomeComumModal1" name="nomeComum" ></p>
-                  <input type="hidden" name="nomeComum1" id="nomeComumInput1"></input></td>
-                  
-                  
-              </div>
-              </tr>
-              <tr>
-              <div class="form-group">
-                  <td width="30%"><b>Espécie:</b></td>
-                  <td  width="70%"><p id="especieModal1" name="especie" ></p>
-                  <input type="hidden" name="especie1" id="especieInput1"></input></td>
-                 
-              </div>
-              </tr>
-              <tr>
-              <div class="form-group">
-                  <td width="30%"><b>Família:</b></td>
-                  <td width="70%"><p id="familiaModal1" name="familia" ></p>
-                  <input type="hidden" name="familia1" id="familiaInput1"></input></td>
-                
-                  
-              </div>
-              </tr>
-              <tr>
-              <div class="form-group">
-                 <td width="30%"> <b>Ordem:</b></td>
-                  <td width="70%"> <p id="ordemModal1" name="ordem"></p>
-                  <input type="hidden" name="ordem1" id="ordemInput1"></input></td>
-                 
-              </div>
-              </tr>
-              <tr>
-              <div class="form-group">
-                 <td width="30%"> <b>Fotos:</b></td>
-                 <td width="70%"> <div id="fotosModal1" name="fotosUrl"  ></div>
-                  <input type="hidden" name="fotos1" id="fotosInput1"></input></td>
-                 
-                 
-
-
-              </div>
-              </tr>
-              <tr>
-               <div class="form-group">
-                 <td width="30%" > <b>Qr Code:</b></td>
-                 <td width="70%"> <p id="qrCodeModal1" name="qrcode"  ></p>
-                  <input type="hidden" name="qrcode1" id="qrcodeInput1"></input></td>
-              </div>
-              </tr>
-            <tr>
-              <div class="form-group">
-                  <td width="30%"><b>Descrição:</b></td>
-                  
-                  <td width="70%"><textarea id="contentModal1" name="descricao" style="min-width: 100%" class="form-control"  rows="10"></textarea></td>
-                  
-
-              </div>
-            </tr>
-
-            <tr>
-                  <div class="form-group">
-                  <td width="30%"><b>Tipo de Folha :</b></td>
-                  <td width="70%">
-                  <select id="folhaModal1" name="tipofolha" class="form-control">
-                  <option value=""></option>
-                        <option value="Caduca">Folha Caduca</option>
-                        <option value="Persistente">Folha Persistente</option>
-                  </select></td>
-                  
-                  
-              </div>
-            </tr>
-                  <tr>
-                  <div class="form-group">
-                  <td width="30%"><b>Utilização Humana :</b></td>
-                  <td width="70%">
-                  <textarea class="form-control" rows="5" style="min-width:100%" name="utilizacao" id="utilModal1"></textarea></td>
-                  
-                  
-              </div>
-            </tr>
-              </table>  
-      </div>
-              
-              <input type="button" name="insert" id="atualizar" value="Insert" class="btn btn-success" />
-            
-      </div>
-    
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
