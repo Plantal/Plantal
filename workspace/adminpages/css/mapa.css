@@ -3,3 +3,8 @@
 	margin-top: 30px;
 
 }
+
+#data, #allData {
+
+	display: none;
+}

@@ -245,11 +245,11 @@ if(!isset($_SESSION['ativa'])){
       $pro = new projeto;
       $coll = $pro->getProjetosBlankLatLng();
       $coll = json_encode($coll, true);
-      //echo '<div id="data">' . $coll . '</div>';
+      echo '<div id="data">' . $coll . '</div>';
 
       $allData = $pro->getAllProjetos();
       $allData = json_encode($allData, true);
-      //echo '<div id="allData">' . $allData . '</div>';      
+      echo '<div id="allData">' . $allData . '</div>';      
      ?>
     <div id = "mapid"></div>
 
