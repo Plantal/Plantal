@@ -64,14 +64,7 @@ if(!isset($_SESSION['ativa'])){
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
 
-
-
-
-  </head>
-
-  <body id="page-top">
-
-     <script type="text/javascript" src="js/jquery/jquery.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/select.js"></script>
@@ -80,6 +73,14 @@ if(!isset($_SESSION['ativa'])){
     <script src="js/insertProjeto.js"></script>
     <script src="js/googlemap.js"></script>
     
+
+
+
+  </head>
+
+  <body id="page-top">
+
+     
     
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
@@ -250,12 +251,7 @@ if(!isset($_SESSION['ativa'])){
       $allData = json_encode($allData, true);
       //echo '<div id="allData">' . $allData . '</div>';      
      ?>
-
-
-
-
-            
-            <div id = "mapid"></div>
+    <div id = "mapid"></div>
 
 
 
