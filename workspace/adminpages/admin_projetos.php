@@ -228,7 +228,7 @@ if(!isset($_SESSION['ativa'])){
     </div>
     <!-- /#wrapper -->
     
-
+</div>
 
 <!-- /#mapa -->
 <?php 
@@ -267,7 +267,7 @@ if(!isset($_SESSION['ativa'])){
 
 </div>
 
-</div>
+
 
 
 
