@@ -390,8 +390,7 @@ while($row = mysqli_fetch_array($result))
       </div>
       <!-- /.content-wrapper -->
 
-    </div>
-
+ 
 
 
 
