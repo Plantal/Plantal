@@ -134,13 +134,7 @@ if(!isset($_SESSION['ativa'])){
 
         <div class="container-fluid">
 
-          <!-- Breadcrumbs-->
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <b>UTILIZADORES</b>
-            </li>
-            
-          </ol>
+          
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-tree"></i>
