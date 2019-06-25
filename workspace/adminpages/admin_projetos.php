@@ -149,9 +149,9 @@ if(!isset($_SESSION['ativa'])){
             <div class="card-body">
               <div class="form-group">
                   
-                        <div class="text-center">
+                        
   <a  class="btn btn-primary" data-toggle="modal" data-target="#projeto">Criar Projeto</a>
-</div>
+
 
 
 
@@ -160,40 +160,41 @@ if(!isset($_SESSION['ativa'])){
 <!--Insert Modal-->
 
 <div class="modal fade" id="projeto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
-    <header class="w3-container w3-blue"> 
-   
-   <center><h2>Criar Projeto</h2></center>
-  </header>
-
-      <div class="w3-center"><br>
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-        
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" color="blue">
+        <h5 class="modal-title" id="exampleModalLabel">Criar Projeto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-
-      
-        <div class="w3-section w3-container">
-          <label><b>Nome do projeto</b></label>
-          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Introduzir nome do projeto" name="usrname" required>
-          <label><b>Latitude</b></label>
-          <input class="w3-input w3-border" type="text" placeholder="Introduzir latitude" name="psw" required>
-          <div class="w3-section ">
-          <label><b>Longitude</b></label>
-          <input class="w3-input w3-border" type="text" placeholder="Introduzir longitude" name="psw" required>
-          <div class="w3-section ">
-          <label><b>Orientador</b></label>
-          <input class="w3-input w3-border" type="text" placeholder="Introduza o nome do orientador" name="psw" required>
-        </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Nome projeto:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+         <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Latitude:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Longitude:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Orientador:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+        </form>
       </div>
-</div>
-      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+      <div class="modal-footer">
         <div class="options text-right">
-                  <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                  <button class="btn btn-info">Criar Projeto<i class="fas fa-sign-in ml-1"></i></button>
               </div>
-              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
-
     </div>
   </div>
 </div>
