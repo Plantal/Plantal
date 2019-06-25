@@ -295,50 +295,7 @@ if(!isset($_SESSION['ativa'])){
             
         <!-- /.container-fluid -->
 
-        
-
-      </div>
-      <!-- /.content-wrapper -->
-
-    </div>
-
-
-
-<div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-tree"></i>
-              Adicionar Plantas</div>
-            <div class="card-body">
-              <div class="form-group">
-
-
-  </div>
-      <!-- /.content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-    
-            
-            
-        <!-- /.container-fluid -->
-
-        
-
-      </div>
-      <!-- /.content-wrapper -->
-
-    </div>
-
-        
-
-
-
-
-
-          <!-- Tabela com as plantas -->
-
-
-          <div class="card mb-3" >
+         <div class="card mb-3" >
             <div class="card-header">
               <i class="fas fa-table"></i>
               Tabela das plantas</div>
@@ -428,6 +385,27 @@ while($row = mysqli_fetch_array($result))
 
         </div>
 
+        
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+
+
+
+
+
+        
+
+
+
+
+
+          <!-- Tabela com as plantas -->
+
+
+         
 
 
 
