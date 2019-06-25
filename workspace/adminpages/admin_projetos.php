@@ -126,17 +126,17 @@ if(!isset($_SESSION['ativa'])){
         
         <li class="nav-item ">
           <a class="nav-link" href="admin_tables.php">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-fw fa-tree"></i>
             <span>Plantas</span></a>
         </li>
          <li class="nav-item active">
           <a class="nav-link" href="admin_projetos.php">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-fw fa-project-diagram"></i>
             <span>Projetos</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="admin_users.php">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-fw fa-users"></i>
             <span>Utilizadores</span></a>
         </li>
       </ul>
