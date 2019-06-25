@@ -124,12 +124,12 @@ if(!isset($_SESSION['ativa'])){
       <ul class="sidebar navbar-nav">
         
         
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link" href="admin_tables.php">
             <i class="fas fa-fw fa-table"></i>
             <span>Plantas</span></a>
         </li>
-         <li class="nav-item">
+         <li class="nav-item active">
           <a class="nav-link" href="admin_projetos.php">
             <i class="fas fa-fw fa-table"></i>
             <span>Projetos</span></a>

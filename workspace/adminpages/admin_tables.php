@@ -325,7 +325,7 @@ if(!isset($_SESSION['ativa'])){
               <div class="table-responsive" >
 
                 
-                <table class="table table-striped" id="dataTable" name="dataTable" width="100%" data-toggle="table" data-search="true" data-show-refresh="true" data-show-columns="true" cellspacing="0" >
+                <table class="table table-striped" id="dataTable" name="dataTable"  data-toggle="table" data-search="true" data-show-refresh="true" data-show-columns="true" cellspacing="0" >
 
                   <thead bgcolor="#00a156">
 
