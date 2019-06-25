@@ -289,15 +289,7 @@ if(!isset($_SESSION['ativa'])){
 
               </div>
       <!-- /.content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-    
-            
-            
-        <!-- /.container-fluid -->
-       
-         <div class="card mb-3" >
+      <div class="card mb-3" >
             <div class="card-header">
               <i class="fas fa-table"></i>
               Tabela das plantas</div>
@@ -390,9 +382,15 @@ while($row = mysqli_fetch_array($result))
         
 
       </div>
-      <!-- /.content-wrapper -->
 
- 
+
+
+    </div>
+    <!-- /#wrapper -->
+    
+            
+            
+      
 
 
 
