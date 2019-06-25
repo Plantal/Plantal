@@ -54,7 +54,7 @@ function codeAddress(cdata) {
 	        points.id = data.idProjeto;
 	        points.lat = map.getCenter().lat();
 	        points.lng = map.getCenter().lng();
-	        updateCollegeWithLatLng(points);
+	        updateProjetosWithLatLng(points);
 	      } else {
 	        alert('Geocode was not successful for the following reason: ' + status);
 	      }
