@@ -1,6 +1,11 @@
 var map;
 var geocoder;
 
+setIntervsl(function () {
+
+
+
+
 function loadMap() {
 	var viana = {lat: 41.6946, lng: -8.83016};
     map = new google.maps.Map(document.getElementById('mapid'), {
@@ -73,3 +78,5 @@ function updateProjetosWithLatLng(points) {
 	})
 	
 }
+
+}, 5000);
