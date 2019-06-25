@@ -33,7 +33,7 @@ if ($result->num_rows >0) {
     
      
       if (mysqli_query($connect, $insert)) {
-          
+          echo $insert;
 
       }
       echo json_encode(true);
