@@ -78,6 +78,7 @@ if(!isset($_SESSION['ativa'])){
     <script src="js/edit.1.js"></script>
     <script src="js/delete.1.js"></script>
     <script src="js/insertProjeto.js"></script>
+    <script src="js/googlemap.js"></script>
     
     
 
@@ -226,20 +227,33 @@ if(!isset($_SESSION['ativa'])){
     </div>
     <!-- /#wrapper -->
     
+
+
+<!-- /#mapa -->
+
+
+           <?php 
+      require 'projeto.php';
+      $pro = new projeto;
+      $coll = $pro->getProjetosBlankLatLng();
+      $coll = json_encode($coll, true);
+      echo '<div id="data">' . $coll . '</div>';
+
+      $allData = $pro->getAllProjetos();
+      $allData = json_encode($allData, true);
+      echo '<div id="allData">' . $allData . '</div>';      
+     ?>
+
+
+
+
             
             <div id = "mapid"></div>
-      <script>
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: -25.344, lng: 131.036};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('mapid'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-    </script>
+
+
+
+
+      
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx67Sngc8Ij0vkQDl2Uy9Ffwc6Eb_GPxo&callback=initMap">
     </script>

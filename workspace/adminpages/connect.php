@@ -4,7 +4,7 @@
 	if ($connect->connect_errno) {
     printf("Connect failed: %s\n", $connect->connect_error);
     exit();
-}
+	}
 
 
  ?>
