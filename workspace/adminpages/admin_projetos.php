@@ -6,15 +6,6 @@ if(!isset($_SESSION['ativa'])){
 
 }
 
-$query = "SELECT * FROM users";
-
-  $result = mysqli_query($connect, $query);
-  $options = "";
-
-  while ($row = mysqli_fetch_array($result)) {
-    $options = $options."<option>$row[1]</option>";
-  }
-
 
 
 ?>
