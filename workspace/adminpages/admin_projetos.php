@@ -229,15 +229,20 @@ if(!isset($_SESSION['ativa'])){
             
             <div id = "mapid"></div>
       <script>
-        var mymap = L.map('mapid').setView([51.505, -0.09], 13); 
-
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1Ijoic2FtYW5hcmFzIiwiYSI6ImNqeGJkOWFvazBkaHUzb21iN3BpdWFicncifQ.X1hC8wt85s_Uok8aaQzKSw'
-}).addTo(mymap);
-      </script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('mapid'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx67Sngc8Ij0vkQDl2Uy9Ffwc6Eb_GPxo&callback=initMap">
+    </script>
  
         
         
