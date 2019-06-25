@@ -159,7 +159,7 @@ if(!isset($_SESSION['ativa'])){
 
 <!--Insert Modal-->
 
-<div id="projeto" class="w3-modal">
+<div class="modal fade" id="projeto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
     <header class="w3-container w3-blue"> 
    
