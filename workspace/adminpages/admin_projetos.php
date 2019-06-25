@@ -150,8 +150,7 @@ if(!isset($_SESSION['ativa'])){
               <div class="form-group">
                   
                         <div class="text-center">
-  <a  class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#projeto">Launch
-   Criar Projeto</a>
+  <a  class="btn btn-primary" data-toggle="modal" data-target="#projeto">Criar Projeto</a>
 </div>
 
 
@@ -160,78 +159,44 @@ if(!isset($_SESSION['ativa'])){
 
 <!--Insert Modal-->
 
-<!--Modal: Login / Register Form-->
-<div class="modal fade" id="projeto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog cascading-modal" role="document">
-    <!--Content-->
-    <div class="modal-content">
+<div id="projeto" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+    <header class="w3-container w3-blue"> 
+   
+   <center><h2>Criar Projeto</h2></center>
+  </header>
 
-      <!--Modal cascading tabs-->
-      <div class="modal-c-tabs">
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        
+      </div>
 
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
-          <li class="nav-item">
-            <center>
-            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
-              Criar Projeto</a>
-          </li>
-          </center>
-        </ul>
-
-        <!-- Tab panels -->
-        <div class="tab-content">
-          <!--Panel 7-->
-          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-
-            <!--Body-->
-           <div class="modal-body">
-              <div class="md-form form-sm mb-5">
-                <i class="fas fa-envelope prefix"></i>
-                <input id="modalLRInput12" class="form-control form-control-sm validate">
-                <label data-error="wrong" data-success="right" for="modalLRInput12">Nome do projeto</label>
-              </div>
-
-              <div class="md-form form-sm mb-5">
-                <i class="fas fa-lock prefix"></i>
-                <input  id="modalLRInput13" class="form-control form-control-sm validate">
-                <label data-error="wrong" data-success="right" for="modalLRInput13">Latitude</label>
-              </div>
-
-              <div class="md-form form-sm mb-4">
-                <i class="fas fa-lock prefix"></i>
-                <input  id="modalLRInput14" class="form-control form-control-sm validate">
-                <label data-error="wrong" data-success="right" for="modalLRInput14">Longitude</label>
-              </div>
-              <div class="md-form form-sm mb-4">
-                <i class="fas fa-lock prefix"></i>
-                <input  id="modalLRInput14" class="form-control form-control-sm validate">
-                <label data-error="wrong" data-success="right" for="modalLRInput14">Orientador</label>
-              </div>
-
-              
-
-            </div>
-            <!--Footer-->
-            <div class="modal-footer">
-              <div class="options text-right">
+      
+        <div class="w3-section w3-container">
+          <label><b>Nome do projeto</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Introduzir nome do projeto" name="usrname" required>
+          <label><b>Latitude</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Introduzir latitude" name="psw" required>
+          <div class="w3-section ">
+          <label><b>Longitude</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Introduzir longitude" name="psw" required>
+          <div class="w3-section ">
+          <label><b>Orientador</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Introduza o nome do orientador" name="psw" required>
+        </div>
+      </div>
+</div>
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <div class="options text-right">
                   <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
               </div>
               <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!--/.Panel 7-->
-
-          
-        </div>
-
+        
       </div>
+
     </div>
-    <!--/.Content-->
   </div>
 </div>
-<!--Modal: Login / Register Form-->
-
 
 
 
