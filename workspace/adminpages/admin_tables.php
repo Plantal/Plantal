@@ -304,9 +304,30 @@ if(!isset($_SESSION['ativa'])){
 
 
 
+<div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-tree"></i>
+              Adicionar Plantas</div>
+            <div class="card-body">
+              <div class="form-group">
 
 
+  </div>
+      <!-- /.content-wrapper -->
 
+    </div>
+    <!-- /#wrapper -->
+    
+            
+            
+        <!-- /.container-fluid -->
+
+        
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
 
         
 
@@ -588,6 +609,9 @@ while($row = mysqli_fetch_array($result))
 
 
     </div>
+
+  
+
 
 
     <!-- /#wrapper -->
