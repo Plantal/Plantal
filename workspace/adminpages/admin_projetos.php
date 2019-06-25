@@ -229,8 +229,6 @@ if(!isset($_SESSION['ativa'])){
     <!-- /#wrapper -->
     
 </div>
-
-<div style="padding-bottom: 30px:">
 <!-- /#mapa -->
 <?php 
       require 'projeto.php';
@@ -256,7 +254,7 @@ if(!isset($_SESSION['ativa'])){
         
         
 
-      </div>
+      
       <!-- /.content-wrapper -->
 
  
@@ -271,7 +269,7 @@ if(!isset($_SESSION['ativa'])){
 
  </div>
 
-
+<div class="form-group">
 
         
 
@@ -283,7 +281,7 @@ if(!isset($_SESSION['ativa'])){
 
 
     <!-- /#wrapper -->
-<div>
+
 
     <footer class="sticky-footer" style="padding-top: 30px;" >
           <div class="container my-auto">
@@ -292,7 +290,7 @@ if(!isset($_SESSION['ativa'])){
             </div>
           </div>
         </footer>
-</div>
+
 
 
     <!-- Scroll to Top Button-->
