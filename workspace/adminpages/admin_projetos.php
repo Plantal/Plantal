@@ -8,7 +8,7 @@ if(!isset($_SESSION['ativa'])){
 
 $query = "SELECT * FROM users";
 
-  $result = mysql_query($connect, $query);
+  $result = mysqli_query($connect, $query);
   $options = "";
 
   while ($row = mysqli_fetch_array($result)) {
