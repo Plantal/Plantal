@@ -50,3 +50,23 @@ $app->get('/login/:user_id/:pass',function($user_id,$pass){
     $db=new \App\Controllers\CPlantal();
     $db->check_login($user_id,$pass);
 });
+
+$app->get('/plant/:q/',function($q){
+    $db=new \App\Controllers\CPlantal();
+    $db->get_plant($q);
+});
+
+$app->post('/register',function() use ($app){
+    $body = $app->request->getBody();
+    $db=new \App\Controllers\CPlantal();
+    $db->register($body);
+});
+
+$app->post('/addPlant',function() use ($app){
+    $body = $app->request->getBody();
+    $db=new \App\Controllers\CPlantal();
+    $db->addPlant($body);
+});
+
+
+
