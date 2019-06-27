@@ -44,7 +44,7 @@ $(document).ready(function(){
                           $('#addProjeto').val("Inserindo");  
                      }  ,
                      success : function (data) { 
-                     	$('#mapid').load('#mapid');
+                     	$('#mapid').load(document.URL +  '#mapid');
                          $('#projeto').modal('hide');
                          $('#addProjeto').val("Inserir");
                          
