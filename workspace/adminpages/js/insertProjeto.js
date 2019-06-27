@@ -44,9 +44,10 @@ $(document).ready(function(){
                           $('#addProjeto').val("Inserindo");  
                      }  ,
                      success : function (data) { 
+                     	$('#mapid').load('#mapid');
                          $('#projeto').modal('hide');
                          $('#addProjeto').val("Inserir");
-                         $('#mapid').load('#mapid')
+                         
 
                      }                  
                 });
