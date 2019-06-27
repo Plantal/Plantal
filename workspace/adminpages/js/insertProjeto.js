@@ -46,7 +46,7 @@ $(document).ready(function(){
                      success : function (data) { 
                          $('#projeto').modal('hide');
                          $('#addProjeto').val("Inserir");
-                         //$('#dataTable').DataTable().ajax.reload();
+                         $('#mapid').load('#mapid')
 
                      }                  
                 });
