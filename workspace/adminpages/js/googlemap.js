@@ -43,7 +43,7 @@ function showAllProjetos(allData) {
 	    });
 
 
-	    marker.setMap(map);
+	    
 
 	    marker.addListener('click', function(){
 	    	infoWind.setContent(content);
