@@ -5,9 +5,9 @@ if(!isset($_SESSION['ativa'])){
   header('Location: login.php');
 
 }
- if(isset($_POST["nomeCientifico"]))  
+ if(isset($_GET["idProjeto"]))  
  {  
-      $query = "SELECT * FROM projeto WHERE idProjeto = '".$_POST["idProjeto"]."'";  
+      $query = "SELECT * FROM projeto WHERE idProjeto = '".$_GET["idProjeto"]."'";  
       $result = mysqli_query($connect, $query);  
       $row = mysqli_fetch_array($result);
  }
