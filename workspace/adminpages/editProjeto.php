@@ -23,13 +23,12 @@ echo $content;
     $longitude = $content['longitude']; 
     $orientador = $content['userId']; 
 
-    echo $nomeCientifico;
+    echo $idProjeto;
 
 
-      if($nomeCientifico != '')  
+      if($idProjeto != '')  
       {  
-          echo $nomeCientifico;
-
+          
           $query = "
            UPDATE projeto   
            SET 
