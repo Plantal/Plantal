@@ -444,8 +444,8 @@ while($row = mysqli_fetch_array($result))
       <div class="modal-header">
         
         
-        <h4 class="modal-title" style="color: green;" id="tituloModal" name="tituloModal"></h4>
-        <input type="hidden" name="titulo1" id="tituloInput">
+        <h4 class="modal-title" style="color: green;" id="tituloModal1" name="tituloModal"></h4>
+        <input type="hidden" name="titulo1" id="tituloInput1">
       </div>
       <div class="modal-body">
 

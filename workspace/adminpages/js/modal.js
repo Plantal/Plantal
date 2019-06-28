@@ -10,7 +10,7 @@ $(document).ready(function(){
 		}).done(function(res) {
 
       $("#fotosModal").empty();
-			$('#add_data_Modal').modal('show');
+			
 			$("#qrCodeModal").html("<img src='"+res.qrcode+"'/>");
       $("#qrcodeInput").val(res.qrcode);
       $("#contentModal").val(res.content);
@@ -31,6 +31,7 @@ $(document).ready(function(){
 			$.each(res['imagens'], function( index, value ){
     			$("#fotosModal").append("<img class='imgPlanta' src='"+value+"' />");
           $("#fotosInput").val("<img class='imgPlanta' src='"+value+"' />");
+        $('#add_data_Modal').modal('show');
 			});
 		});
 
