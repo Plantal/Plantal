@@ -12,7 +12,7 @@ function loadMap() {
 
     
    google.maps.event.addListener(map, 'click', function(event) {
-   	$('#latitudeInput').val() = location.lat();
+   	$('#latitudeInput').val(location.lat());
 
 
   $('#local').modal('show');
