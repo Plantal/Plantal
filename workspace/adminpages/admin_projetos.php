@@ -280,10 +280,10 @@ while($row = mysqli_fetch_array($result))
 
 
   </table>
-</div>
 
 
-<?php 
+
+  <?php 
       require 'projeto.php';
       $pro = new projeto;
       $coll = $pro->getProjetosBlankLatLng();
@@ -303,7 +303,10 @@ while($row = mysqli_fetch_array($result))
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx67Sngc8Ij0vkQDl2Uy9Ffwc6Eb_GPxo&callback=loadMap">
     </script>
-          
+</div>
+
+
+
         
         
 

@@ -1,10 +1,16 @@
 #mapid { 
 	height: 500px; 
 	margin-top: 30px;
+	width: 50%;
 	
 }
 
 #data, #allData {
 
 	display: none;
+}
+
+#table {
+
+	width: 50%;
 }
