@@ -261,9 +261,9 @@ while($row = mysqli_fetch_array($result))
 
       
       
-      <a href="#" name="edit" class="edit_data" id="<?php echo $row["idProjeto"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
+      <a href="#editProjeto" name="edit" class="edit_data" id="<?php echo $row["idProjeto"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
 
-      <a href="#" name="delete" class="delete_data" data-toggle="modal" id="<?php echo $row["idProjeto"]; ?>"><i class="material-icons" data-toggle="tooltip" title="Delete" style="color: red;">&#xE872;</i></a>
+      <a href="#myModal" name="delete" class="delete_data" data-toggle="modal" id="<?php echo $row["idProjeto"]; ?>"><i class="material-icons" data-toggle="tooltip" title="Delete" style="color: red;">&#xE872;</i></a>
      
      </center></td>  
        
