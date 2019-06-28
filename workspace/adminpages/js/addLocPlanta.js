@@ -13,11 +13,17 @@ function loadMap() {
 
     
    google.maps.event.addListener(map, 'click', function(event) {
+    console.log(event);
    	$('#latitudeInput').val(lat);
 
 
+
   $('#local').modal('show');
-  //placeMarker(map, event.latLng);
+  placeMarker(map, event.latLng);
+
+
+
+
 });
 
   
