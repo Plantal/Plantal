@@ -13,8 +13,10 @@ function loadMap() {
 
     
    google.maps.event.addListener(map, 'click', function(event) {
-    console.log(event);
-   	$('#latitudeInput').val(lat);
+    console.log(event.latLng.lat());
+   	$('#latitudeInput').val(event.latLng.lat());
+    $('#longitudeInput').val(event.latLng.lng());
+
 
 
 
