@@ -59,9 +59,10 @@ $(document).ready(function(){
                           $('#editarProjeto').val("Atualizando");  
                      },
 
-                     success : function () {
+                     success : function (data) {
                          $('#editProjeto').modal('hide');
-                         window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_projetos.php");
+                          window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_projetos.php");
+                            
                          
                      }
                 
