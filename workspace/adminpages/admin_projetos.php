@@ -228,7 +228,7 @@ if(!isset($_SESSION['ativa'])){
 </div>
 <!-- /#mapa -->
 
-<div class="inline">
+<div class="inline" style="float: left; clear: none;">
 <div class="table-responsive">
   <table class="table" style="width: 50%;">
     <caption>Lista de Projetos</caption>
