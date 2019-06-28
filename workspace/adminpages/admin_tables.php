@@ -155,7 +155,7 @@ if(!isset($_SESSION['ativa'])){
                   <form class="form"  method="GET" id="myForm">
                         <input type="text" style="width:40%" placeholder="Pesquise aqui as plantas que pretende adicionar..." name="search" id="searchPlanta">
                         <p></p>
-                        <button id="add" data-target="#add_data_Modal" type="button" class="btn btn-primary" >Procurar Informação</button>
+                        <button id="add" data-target="#addModal" type="button" class="btn btn-primary" >Procurar Informação</button>
                   </form>
 
 
@@ -165,7 +165,7 @@ if(!isset($_SESSION['ativa'])){
 <!--Insert Modal-->
 
 
-  <div id="add_data_Modal" class="modal fade" tabindex="-1" role="dialog" >
+  <div id="addModal" class="modal fade" tabindex="-1" role="dialog" >
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -549,6 +549,11 @@ while($row = mysqli_fetch_array($result))
     </div>
   </div>
 </div>
+
+
+
+
+
 
 
 

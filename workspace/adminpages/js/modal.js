@@ -31,7 +31,7 @@ $(document).ready(function(){
 			$.each(res['imagens'], function( index, value ){
     			$("#fotosModal").append("<img class='imgPlanta' src='"+value+"' />");
           $("#fotosInput").val("<img class='imgPlanta' src='"+value+"' />");
-        $('#add_data_Modal').modal('show');
+        $('#addModal').modal('show');
 			});
 		});
 
@@ -99,7 +99,7 @@ $(document).ready(function(){
                      }  ,
                      success : function (data) {
                          $('#insert_form')[0].reset();  
-                         $('#add_data_Modal').modal('hide');
+                         $('#addModal').modal('hide');
                          $('#insert').val("Inserir");
                          //$('#dataTable').DataTable().ajax.reload();
 
