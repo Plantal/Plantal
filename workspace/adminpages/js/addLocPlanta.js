@@ -1,3 +1,18 @@
+var map;
+
+
+
+
+function loadMap() {
+	var viana = {lat: 41.6946, lng: -8.83016};
+    map = new google.maps.Map(document.getElementById('mapid'), {
+      zoom: 11,
+      center: viana
+    });
+
+   
+
+
 google.maps.event.addListener(map, 'click', function(event) {
   placeMarker(map, event.latLng);
 });
