@@ -1,5 +1,6 @@
 var map;
-
+var lat;
+var lng;
 
 
 
@@ -29,6 +30,11 @@ function placeMarker(map, location) {
     position: location,
     map: map
   });
+  lat = location.lat();
+  console.log(lat);
+  lng = location.lng();
+
+
   var infowindow = new google.maps.InfoWindow({
     content: 'Latitude: ' + location.lat() +
     '<br>Longitude: ' + location.lng()
