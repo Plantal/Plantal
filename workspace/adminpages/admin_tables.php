@@ -348,7 +348,7 @@ while($row = mysqli_fetch_array($result))
       <a href="#dataModal" name="view" class="view" id="<?php echo $row["nomeCientifico"]; ?>" data-toggle="modal">
       <i class="material-icons" data-toggle="tooltip" style="color: blue;">visibility</i></a>
       
-      <a href="#add_data_Modal" name="edit" class="edit_data" id="<?php echo $row["nomeCientifico"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
+      <a href="#edit_data_Modal" name="edit" class="edit_data" id="<?php echo $row["nomeCientifico"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
 
       <a href="#myModal" name="delete" class="delete_data" data-toggle="modal" id="<?php echo $row["nomeCientifico"]; ?>"><i class="material-icons" data-toggle="tooltip" title="Delete" style="color: red;">&#xE872;</i></a>
      
