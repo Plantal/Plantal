@@ -313,7 +313,7 @@ while($row = mysqli_fetch_array($result))
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Orientador:</label>
             <select id="orientadorEditar" name="tipofolha" class="form-control">
-                        <option value=""></option>
+                        
                         <?php echo $options; ?>
             </select>
           </div>

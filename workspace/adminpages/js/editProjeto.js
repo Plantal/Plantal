@@ -16,6 +16,8 @@ $(document).ready(function(){
                    // $("#folhaModal").html(res.tipofolha);
                     $("#latitudeEditar").val(res.latitude);
 
+                    $("#longitudeEditar").val(res.longitude);
+
                  //   $("#tituloModal").html(res.especie);
                    
                     $("#orientadorEditar").val(res.username);
@@ -37,10 +39,10 @@ $(document).ready(function(){
 
                      obj = {
                             "idProjeto" : idProjeto,
-                            "nome" : $("#especieInput").val(),
-                            "latitude" : $("#contentModal").val(),
-                            "longitude" : $("#folhaModal").val(),
-                            "userId" : $("#utilModal").val()
+                            "nome" : $("#nomeEditar").val(),
+                            "latitude" : $("#latitudeEditar").val(),
+                            "longitude" : $("#longitudeEditar").val(),
+                            "userId" : $("#orientadorEditar").val()
                       }
                      jsonData = JSON.stringify(obj);
                      console.log(jsonData);
