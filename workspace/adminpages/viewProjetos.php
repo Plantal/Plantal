@@ -7,7 +7,7 @@ if(!isset($_SESSION['ativa'])){
 }
  if(isset($_GET["idProjeto"]))  
  {  
-      $query = "SELECT * FROM projeto WHERE idProjeto = '".$_GET["idProjeto"]."'";  
+      $query = "SELECT * FROM projeto, users WHERE  projeto.userId = users.iduser AND idProjeto = '".$_GET["idProjeto"]."' ";  
       $result = mysqli_query($connect, $query);  
       $row = mysqli_fetch_array($result);
  }
@@ -154,36 +154,18 @@ if(!isset($_SESSION['ativa'])){
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-project-diagram"></i>
-              Informação do projeto <?php echo $row["nome"]; ?> </div>
+              Informação do projeto <b><?php echo $row["nome"]; ?> </b></div>
             <div class="card-body">
               <div class="form-group">
-                  
+                  Nome do Projeto:   <b><?php echo $row["nome"]; ?> </b> 
+                  Nome do Projeto:   <b><?php echo $row["latitude"]; ?> </b> 
+                  Nome do Projeto:   <b><?php echo $row["longitude"]; ?> </b> 
+                  Nome do Projeto:   <b><?php echo $row["username"]; ?> </b> 
+
                         
                 
 
-
-
-
-
-
-<!--Insert Modal-->
-
-
-
-
-
-
-
-
-                     
-
-
-                          
-                      
-                  
-                      
-
-              </div>
+            </div>
       <!-- /.content-wrapper -->
 
     </div>
