@@ -10,8 +10,10 @@ function loadMap() {
       center: viana
     });
 
-    google.maps.event.addListener(map, 'click', function(event) {
-  placeMarker(map, event.latLng);
+    
+   google.maps.event.addListener(map, 'click', function(event) {
+  $('#local').modal('show');
+  //placeMarker(map, event.latLng);
 });
 
   
