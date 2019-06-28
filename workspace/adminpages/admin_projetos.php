@@ -249,8 +249,8 @@ $result = mysqli_query($connect,"SELECT idProjeto, nome, username FROM projeto, 
 while($row = mysqli_fetch_array($result))
 {
   ?>
-<tr >  
-     <td><?php echo('<a href="viewProjetos.php?idProjeto='.$row["idProjeto"].'">'.$row["nome"].'</a>');?></td>  
+<tr href="viewProjetos.php?idProjeto='.$row['idProjeto'].'">  
+     <td><?php echo $row["nome"];?></td>  
      <td><?php echo $row["username"]; ?></td>
      
      
