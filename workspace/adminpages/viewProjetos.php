@@ -5,7 +5,12 @@ if(!isset($_SESSION['ativa'])){
   header('Location: login.php');
 
 }
-
+ if(isset($_POST["nomeCientifico"]))  
+ {  
+      $query = "SELECT * FROM projeto WHERE idProjeto = '".$_POST["idProjeto"]."'";  
+      $result = mysqli_query($connect, $query);  
+      $row = mysqli_fetch_array($result);
+ }
 
 
 ?>
@@ -149,12 +154,12 @@ if(!isset($_SESSION['ativa'])){
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-project-diagram"></i>
-              Adicionar Projetos</div>
+              Informação do projeto <?php echo $row["nome"]; ?> </div>
             <div class="card-body">
               <div class="form-group">
                   
                         
-  <a  class="btn btn-primary" data-toggle="modal" data-target="#projeto">Criar Projeto</a>
+                
 
 
 
