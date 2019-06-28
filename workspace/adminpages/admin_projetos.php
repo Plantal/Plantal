@@ -229,7 +229,7 @@ if(!isset($_SESSION['ativa'])){
 <!-- /#mapa -->
 
 <div class="inline" style="display: inline-block; width: 100%;">
-<div class="table-responsive" style="float: left; width: 40%; margin-top: 30px;">
+<div class="table-responsive" style="float: left; width: 40%; margin-top: 30px; height: 500px;">
   <table class="table" >
     <caption>Lista de Projetos</caption>
   <thead class="thead-dark">
