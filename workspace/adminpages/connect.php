@@ -22,7 +22,7 @@
   $options2 = "";
 
   while ($row = mysqli_fetch_array($result2)) {
-    $options2 = $options2."<option value='$row[0]'>$row[1]</option>";
+    $options2 = $options2."<option style='background-image:$row[6];' value='$row[0]'>$row[1]</option>";
   }
 
 

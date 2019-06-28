@@ -194,7 +194,7 @@ if(!isset($_SESSION['ativa'])){
         <form>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Planta:</label>
-            <<select id="plantaInput" name="tipofolha" class="form-control">
+            <select id="plantaInput" name="tipofolha" class="form-control">
                         <option value=""></option>
                         <?php echo $options2; ?>
             </select>
