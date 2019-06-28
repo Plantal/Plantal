@@ -157,10 +157,10 @@ if(!isset($_SESSION['ativa'])){
               Informação do projeto <b><?php echo $row["nome"]; ?> </b></div>
             <div class="card-body">
               <div class="form-group">
-                  Nome do Projeto:   <b><?php echo $row["nome"]; ?> </b> 
-                  Nome do Projeto:   <b><?php echo $row["latitude"]; ?> </b> 
-                  Nome do Projeto:   <b><?php echo $row["longitude"]; ?> </b> 
-                  Nome do Projeto:   <b><?php echo $row["username"]; ?> </b> 
+                 <p> Nome do Projeto:   <b style="margin-left: 40px;"><?php echo $row["nome"]; ?> </b> </p>
+                 <p> Latitude:          <b style="margin-left: 40px;"><?php echo $row["latitude"]; ?> </b> </p>
+                 <p> Longitude:         <b style="margin-left: 40px;"><?php echo $row["longitude"]; ?> </b> </p>
+                 <p> Orientador:        <b style="margin-left: 40px;"><?php echo $row["username"]; ?> </b> </p>
 
                         
                 
