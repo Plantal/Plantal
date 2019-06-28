@@ -14,3 +14,10 @@
 
 	width: 50%;
 }
+
+
+.inline div {
+	 float: left;
+    clear: none;
+
+}
