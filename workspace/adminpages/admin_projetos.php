@@ -244,7 +244,7 @@ if(!isset($_SESSION['ativa'])){
   <tbody>
 
 <?php  
-$result = mysqli_query($connect,"SELECT idProjeto, nome, username FROM projeto, users WHERE projeto.userId = users.iduser");
+$result = mysqli_query($connect,"SELECT idProjeto, nome, username FROM projeto, users WHERE projeto.userId = users.iduser ");
 
 while($row = mysqli_fetch_array($result))
 {

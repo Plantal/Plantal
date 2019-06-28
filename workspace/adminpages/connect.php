@@ -16,6 +16,17 @@
   }
 
 
+  $query2 = "SELECT * FROM planta";
+
+  $result2 = mysqli_query($connect, $query2);
+  $options2 = "";
+
+  while ($row = mysqli_fetch_array($result2)) {
+    $options2 = $options2."<option value='$row[0]'>$row[1]</option>";
+  }
+
+
+
 
 
  ?>
