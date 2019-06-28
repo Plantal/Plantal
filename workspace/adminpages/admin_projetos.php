@@ -294,6 +294,11 @@ while($row = mysqli_fetch_array($result))
     <div id = "mapid" style="width: 50%;"></div>
 </div>
 
+</div>
+</div>
+</div>
+
+
 
 
       
