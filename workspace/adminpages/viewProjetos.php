@@ -70,7 +70,7 @@ if(!isset($_SESSION['ativa'])){
     <script src="js/edit.1.js"></script>
     <script src="js/delete.1.js"></script>
     <script src="js/insertProjeto.js"></script>
-    <script src="js/googlemap.js"></script>
+    <script src="js/addLocPlanta.js"></script>
     
 
 
@@ -157,10 +157,10 @@ if(!isset($_SESSION['ativa'])){
               Informação do projeto <b><?php echo $row["nome"]; ?> </b></div>
             <div class="card-body">
               <div class="form-group">
-                 <p> Nome do Projeto: <center>  <b><?php echo $row["nome"]; ?> </b></center> </p>
-                 <p> Latitude:        <center>  <b ><?php echo $row["latitude"]; ?> </b></center> </p>
-                 <p> Longitude:        <center> <b ><?php echo $row["longitude"]; ?> </b></center> </p>
-                 <p> Orientador:       <center> <b ><?php echo $row["username"]; ?> </b> </center></p>
+                 <p> Nome do Projeto: <b><?php echo $row["nome"]; ?> </b> </p>
+                 <p> Latitude: <b ><?php echo $row["latitude"]; ?> </b> </p>
+                 <p> Longitude: <b ><?php echo $row["longitude"]; ?> </b> </p>
+                 <p> Orientador: <b ><?php echo $row["username"]; ?> </b> </p>
 
                         
                 
@@ -176,17 +176,7 @@ if(!isset($_SESSION['ativa'])){
 
 
 
-<?php 
-      require 'projeto.php';
-      $pro = new projeto;
-      $coll = $pro->getProjetosBlankLatLng();
-      $coll = json_encode($coll, true);
-      echo '<div id="data"  style="display: none;">' . $coll . '</div>';
 
-      $allData = $pro->getAllProjetos();
-      $allData = json_encode($allData, true);
-      echo '<div id="allData"  style="display: none;">' . $allData . '</div>';      
-     ?>
     <div id = "mapid" style="width: 100%; "></div>
 
 
