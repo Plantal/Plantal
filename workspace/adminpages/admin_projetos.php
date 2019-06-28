@@ -282,7 +282,61 @@ while($row = mysqli_fetch_array($result))
 
 
 
-<!-- Modal para apagar plantas -->
+
+<!-- Modal para editar projetos -->
+
+
+<div class="modal fade" id="editProjeto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <h5 class="modal-title" id="exampleModalLabel">Editar Projeto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Nome projeto:</label>
+            <input type="text" class="form-control" id="nomeEditar">
+          </div>
+         <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Latitude:</label>
+            <input type="text" class="form-control" id="latitudeEditar">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Longitude:</label>
+            <input type="text" class="form-control" id="longitudeEditar">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Orientador:</label>
+            <select id="orientadorEditar" name="tipofolha" class="form-control">
+                        <option value=""></option>
+                        <?php echo $options; ?>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="options text-right">
+                  <button id="editarProjeto" class="btn btn-info">Alterar Projeto<i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Modal para apagar projetos -->
 
 <div id="myModal" class="modal fade">
   <div class="modal-dialog modal-confirm">
