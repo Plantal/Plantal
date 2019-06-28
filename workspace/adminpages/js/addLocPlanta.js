@@ -13,7 +13,7 @@ function loadMap() {
 
     
    google.maps.event.addListener(map, 'click', function(event) {
-   	$('#latitudeInput').val();
+   	$('#latitudeInput').val(lat);
 
 
   $('#local').modal('show');
@@ -25,13 +25,14 @@ function loadMap() {
 
 
 
+
 function placeMarker(map, location) {
   var marker = new google.maps.Marker({
     position: location,
     map: map
   });
   lat = location.lat();
-  console.log(lat);
+
   lng = location.lng();
 
 
@@ -41,3 +42,6 @@ function placeMarker(map, location) {
   });
   infowindow.open(map,marker);
 }
+
+
+console.log(lat);
