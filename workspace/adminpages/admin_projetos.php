@@ -238,7 +238,7 @@ if(!isset($_SESSION['ativa'])){
 <div class="table-responsive">
   <table class="table">
     <caption>Lista de Projetos</caption>
-  <thead>
+  <thead class="thead-dark">
     <tr>
       <th scope="col">Nome</th>
       <th scope="col">Orientador</th>  
@@ -250,14 +250,14 @@ if(!isset($_SESSION['ativa'])){
   <tbody>
 
 <?php  
-$result = mysqli_query($connect,"SELECT nome, userId  FROM projeto");
+$result = mysqli_query($connect,"SELECT nome, username FROM projeto, users WHERE projeto.userId = users.iduser");
 
 while($row = mysqli_fetch_array($result))
 {
   ?>
 <tr>  
      <td><?php echo $row["nome"]; ?></td>  
-     <td><?php echo $row["userId"]; ?></td>
+     <td><?php echo $row["username"]; ?></td>
      
      
      <td><center>
