@@ -20,7 +20,7 @@ function get_config(){
         'app.db.name' => 'plantal',
         'app.db.charset' => 'utf8',
         'app.db.user' => 'root',
-        'app.db.pwd' => '123456',
+        'app.db.pwd' => 'root',
 
         //Do not touch
         //=============================================
