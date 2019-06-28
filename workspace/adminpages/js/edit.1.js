@@ -46,10 +46,10 @@ $(document).ready(function(){
 
 
                      obj = {
-                            "nomeCientifico" : $("#especieInput").val(),
-                            "descricao" : $("#contentModal").val(),
-                            "tipofolha" : $("#folhaModal").val(),
-                            "utilizacao" : $("#utilModal").val()
+                            "nomeCientifico" : $("#especieInput1").val(),
+                            "descricao" : $("#contentModal1").val(),
+                            "tipofolha" : $("#folhaModal1").val(),
+                            "utilizacao" : $("#utilModal1").val()
                       }
                      jsonData = JSON.stringify(obj);
                      console.log(jsonData);
