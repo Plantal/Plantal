@@ -25,7 +25,7 @@ $(document).ready(function(){
                     
                     
                     $('#editarProjeto').val("Atualizar");  
-                    $('#edit_data_Modal').modal('show');  
+                    $('#editProjeto').modal('show');  
 
 
                 }  
@@ -58,7 +58,7 @@ $(document).ready(function(){
                      },
 
                      success : function () {
-                         $('#edit_data_Modal').modal('hide');
+                         $('#editProjeto').modal('hide');
                          window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_projetos.php");
                          
                      }
