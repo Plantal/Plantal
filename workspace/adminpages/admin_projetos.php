@@ -236,7 +236,7 @@ if(!isset($_SESSION['ativa'])){
 <!-- /#mapa -->
 
 <div class="table-responsive">
-  <table class="table">
+  <table class="table" style="width: 50%;">
     <caption>Lista de Projetos</caption>
   <thead class="thead-dark">
     <tr>
@@ -294,7 +294,7 @@ while($row = mysqli_fetch_array($result))
       $allData = json_encode($allData, true);
       echo '<div id="allData"  style="display: none;">' . $allData . '</div>';      
      ?>
-    <div id = "mapid"></div>
+    <div id = "mapid" style="width: 50%;"></div>
 
 
 
