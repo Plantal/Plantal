@@ -234,6 +234,55 @@ if(!isset($_SESSION['ativa'])){
     
 </div>
 <!-- /#mapa -->
+
+<div class="table-responsive">
+  <table class="table">
+    <caption>Lista de Projetos</caption>
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Orientador</th>  
+      <th scope="col">Ações</th>  
+
+    </tr>
+  </thead>
+
+  <tbody>
+
+<?php  
+$result = mysqli_query($connect,"SELECT nome, userId  FROM projeto");
+
+while($row = mysqli_fetch_array($result))
+{
+  ?>
+<tr>  
+     <td><?php echo $row["nome"]; ?></td>  
+     <td><?php echo $row["userId"]; ?></td>
+     
+     
+     <td><center>
+
+      
+
+      
+      
+      <a href="#" name="edit" class="edit_data" id="<?php echo $row["nomeCientifico"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
+
+      <a href="#" name="delete" class="delete_data" data-toggle="modal" id="<?php echo $row["nomeCientifico"]; ?>"><i class="material-icons" data-toggle="tooltip" title="Delete" style="color: red;">&#xE872;</i></a>
+     
+     </center></td>  
+       
+</tr> 
+<?php  
+}  
+?> 
+</tbody>
+
+
+  </table>
+</div>
+
+
 <?php 
       require 'projeto.php';
       $pro = new projeto;
