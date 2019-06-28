@@ -228,57 +228,7 @@ if(!isset($_SESSION['ativa'])){
 </div>
 <!-- /#mapa -->
 
-<div class="inline" style="display: inline-block; width: 100%;">
-<div class="table-responsive" style="float: left; width: 40%; margin-top: 30px; height: 500px;">
-  <table class="table" >
-    <caption>Lista de Projetos</caption>
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Nome</th>
-      <th scope="col">Orientador</th>  
-      <th scope="col">Ações</th>  
 
-    </tr>
-  </thead>
-
-  <tbody>
-
-<?php  
-$result = mysqli_query($connect,"SELECT idProjeto, nome, username FROM projeto, users WHERE projeto.userId = users.iduser");
-
-while($row = mysqli_fetch_array($result))
-{
-  ?>
-<tr >  
-     <td><?php echo('<a href="viewProjetos.php?idProjeto='.$row["idProjeto"].'">'.$row["nome"].'</a>');?></td>  
-     <td><?php echo $row["username"]; ?></td>
-     
-     
-     <td><center>
-
-      
-
-      
-      
-      <a href="#" name="edit" class="edit_data" id="<?php echo $row["nomeCientifico"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
-
-      <a href="#" name="delete" class="delete_data" data-toggle="modal" id="<?php echo $row["nomeCientifico"]; ?>"><i class="material-icons" data-toggle="tooltip" title="Delete" style="color: red;">&#xE872;</i></a>
-     
-     </center></td>  
-       
-</tr> 
-<?php  
-}  
-?> 
-</tbody>
-
-
-  </table>
-
-
-
-  
-</div>
 
 <?php 
       require 'projeto.php';
@@ -292,7 +242,7 @@ while($row = mysqli_fetch_array($result))
       echo '<div id="allData"  style="display: none;">' . $allData . '</div>';      
      ?>
     <div id = "mapid" style="width: 60%; float: right;"></div>
-</div>
+
 
 
 
