@@ -61,11 +61,11 @@ if(!isset($_SESSION['ativa'])){
 <script type="text/javascript" src="js/jquery/jquery.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/select.js"></script>
-    <script src="js/edit.1.js"></script>
-    <script src="js/delete.1.js"></script>
+    
     <script src="js/insertProjeto.js"></script>
     <script src="js/googlemap.js"></script>
+    <script src="js/deleteProjeto.js"></script>
+    
     
 
 
@@ -260,9 +260,9 @@ while($row = mysqli_fetch_array($result))
 
       
       
-      <a href="#" name="edit" class="edit_data" id="<?php echo $row["nomeCientifico"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
+      <a href="#" name="edit" class="edit_data" id="<?php echo $row["idProjeto"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
 
-      <a href="#" name="delete" class="delete_data" data-toggle="modal" id="<?php echo $row["nomeCientifico"]; ?>"><i class="material-icons" data-toggle="tooltip" title="Delete" style="color: red;">&#xE872;</i></a>
+      <a href="#" name="delete" class="delete_data" data-toggle="modal" id="<?php echo $row["idProjeto"]; ?>"><i class="material-icons" data-toggle="tooltip" title="Delete" style="color: red;">&#xE872;</i></a>
      
      </center></td>  
        
@@ -279,6 +279,36 @@ while($row = mysqli_fetch_array($result))
 
   
 </div>
+
+
+
+<!-- Modal para apagar plantas -->
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog modal-confirm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="icon-box">
+          <i class="material-icons">&#xE5CD;</i>
+        </div>        
+        <h4 class="modal-title">Tem a certeza ?</h4>  
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Quer mesmo apagar esta projeto ? Este processo não pode ser desfeito.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
+        <button type="button" id="delete" class="btn btn-danger">Apagar</button>
+      </div>
+    </div>
+  </div>
+</div>    
+
+
+
+
+
 
 <?php 
       require 'projeto.php';
