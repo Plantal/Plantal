@@ -1,5 +1,6 @@
 var map;
 
+var latLng1;
 
 
 function loadMap() {
@@ -14,10 +15,12 @@ function loadMap() {
     console.log(event.latLng.lat());
    	$('#latitudeInput').val(event.latLng.lat());
     $('#longitudeInput').val(event.latLng.lng());
+    
 
+    
   $('#local').modal('show');
 
-  $('#addLoc').click(function(event){
+  $('#addLoc').click(function(){
 
           if($('#plantaInput').val() == '')  
            {  
