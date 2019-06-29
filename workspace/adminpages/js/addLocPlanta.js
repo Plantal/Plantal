@@ -17,59 +17,12 @@ function loadMap() {
 
   $('#local').modal('show');
 
-$('#insert').click(function(event){  
-          if($('#plantaInput').val() == '')  
-           {  
-                alert("Escolha a planta!");  
-           }  
-           else if($('#latitudeInput').val() == '')  
-           {  
-                alert("Introduza a latitude da localização da planta!");  
-           } 
-           else if($('#longitudeInput').val() == '')  
-           {  
-                alert("Introduza a longitude da localização da planta!");  
-           } 
-           else {
-
-                obj = {
-                      
-                      "idPlanta" : $("#plantaInput").val(),
-                      "latitude" : $("#latitudeInput").val(),
-                      "longitude" : $("#longitudeInput").val()
-                      
-
-                     }
-                     jsonData = JSON.stringify(obj);
-                     console.log(jsonData);
-
-                      $.ajax({ 
-                     method:"POST",
-                     url:"insertLoc.php",  
-                     contentType : "application/json",
-                     data : jsonData,
-                     dataType : "json",
-                     beforeSend:function(){  
-                          $('#addLoc').val("Inserindo");  
-                     }  ,
-                     success : function (data) {
-                         $('#insert_form')[0].reset();  
-                         $('#local').modal('hide');
-                         placeMarker(map, event.latLng);
-                         //$('#dataTable').DataTable().ajax.reload();
-
-                     }                  
-                });
-
-
-                            
-              
-           }  
-      });
-
-
-
   placeMarker(map, event.latLng);
+
+
+
+
+  
 
 });
 }
