@@ -1,6 +1,6 @@
 var map;
 
-var latLng1;
+
 
 
 function loadMap() {
@@ -12,12 +12,13 @@ function loadMap() {
 
      
    google.maps.event.addListener(map, 'click', function(event) {
-    console.log(event.latLng.lat());
+    
    	$('#latitudeInput').val(event.latLng.lat());
     $('#longitudeInput').val(event.latLng.lng());
-    
+var idProjeto = $(this).attr("class");
+console.log(idProjeto);
 
-    
+
   $('#local').modal('show');
 
   $('#addLoc').click(function(){
@@ -37,7 +38,7 @@ function loadMap() {
            else {
 
               obj = {
-                      
+                      "idProjeto" : idProjeto,
                       "idPlanta" : $("#plantaInput").val(),
                       "latitude" : $("#latitudeInput").val(),
                       "longitude" : $("#longitudeInput").val()
