@@ -25,11 +25,11 @@ function loadMap() {
            }  
            else if($('#latitudeInput').val() == '')  
            {  
-                alert("Introduza a latitude da localização da planta !");  
+                alert("Introduza a latitude da localização da planta!");  
            } 
            else if($('#longitudeInput').val() == '')  
            {  
-                alert("Introduza a longitude da localização da planta !");  
+                alert("Introduza a longitude da localização da planta!");  
            } 
            else {
 
@@ -56,7 +56,7 @@ function loadMap() {
                      success : function (data) {
                          $('#insert_form')[0].reset();  
                          $('#local').modal('hide');
-                         
+                         placeMarker(map, event.latLng);
                          //$('#dataTable').DataTable().ajax.reload();
 
                      }                  
@@ -67,7 +67,7 @@ function loadMap() {
   }
 
 
-  placeMarker(map, event.latLng);
+  
 
 });
 }
