@@ -177,7 +177,7 @@ if(!isset($_SESSION['ativa'])){
 
 
 
-    <div id = "mapid" style="width: 100%; " class="<?php echo $row["idprojeto"]; ?>"></div>
+    <div id = "mapid" style="width: 100%; " class="mapa" data-service="<?php echo $row["idProjeto"]; ?>"></div>
 
 
 

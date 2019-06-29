@@ -12,10 +12,17 @@ function loadMap() {
 
      
    google.maps.event.addListener(map, 'click', function(event) {
+
+    $('.mapa').each(function() {
+        var container = $(this);
+        var idProjeto = container.data('service');
+
+console.log(idProjeto);
+    });
     
    	$('#latitudeInput').val(event.latLng.lat());
     $('#longitudeInput').val(event.latLng.lng());
-var idProjeto = "<?php echo $row['idProjeto']; ?>";
+
 console.log(idProjeto);
 
 
