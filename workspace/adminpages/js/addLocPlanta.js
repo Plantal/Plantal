@@ -11,11 +11,11 @@ function loadMap() {
     });
 
      
-   google.maps.event.addListener('click', map, function(event){
+   google.maps.event.addListener(map, 'click', function(event) {
     
    	$('#latitudeInput').val(event.latLng.lat());
     $('#longitudeInput').val(event.latLng.lng());
-var idProjeto = $(this).attr("class");
+var idProjeto = <?php Print($row['idProjeto']); ?>;
 console.log(idProjeto);
 
 
