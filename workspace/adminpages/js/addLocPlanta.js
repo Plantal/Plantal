@@ -15,7 +15,7 @@ function loadMap() {
     
    	$('#latitudeInput').val(event.latLng.lat());
     $('#longitudeInput').val(event.latLng.lng());
-var idProjeto = "<?php Print($row['idProjeto']); ?>";
+var idProjeto = "<?php echo $row['idProjeto']; ?>";
 console.log(idProjeto);
 
 
