@@ -1,5 +1,5 @@
 var map;
-
+var idProjeto;
 
 
 
@@ -15,7 +15,7 @@ function loadMap() {
 
     $('.mapa').each(function() {
         var container = $(this);
-        var idProjeto = container.data('service');
+         idProjeto = container.data('service');
 
 console.log(idProjeto);
     });
