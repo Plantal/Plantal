@@ -1,6 +1,4 @@
 var map;
-var lat;
-var lng;
 
 
 
@@ -11,27 +9,68 @@ function loadMap() {
       center: viana
     });
 
-    
+     
    google.maps.event.addListener(map, 'click', function(event) {
     console.log(event.latLng.lat());
    	$('#latitudeInput').val(event.latLng.lat());
     $('#longitudeInput').val(event.latLng.lng());
 
-
-
-
   $('#local').modal('show');
+
+  $('#addLoc').click(function(event){
+
+          if($('#plantaInput').val() == '')  
+           {  
+                alert("Escolha a planta!");  
+           }  
+           else if($('#latitudeInput').val() == '')  
+           {  
+                alert("Introduza a latitude da localização da planta !");  
+           } 
+           else if($('#longitudeInput').val() == '')  
+           {  
+                alert("Introduza a longitude da localização da planta !");  
+           } 
+           else {
+
+                obj = {
+                      
+                      "idPlanta" : $("#plantaInput").val(),
+                      "latitude" : $("#latitudeInput").val(),
+                      "longitude" : $("#longitudeInput").val()
+                      
+
+                     }
+                     jsonData = JSON.stringify(obj);
+                     console.log(jsonData);
+
+                      $.ajax({ 
+                     method:"POST",
+                     url:"insertLoc.php",  
+                     contentType : "application/json",
+                     data : jsonData,
+                     dataType : "json",
+                     beforeSend:function(){  
+                          $('#addLoc').val("Inserindo");  
+                     }  ,
+                     success : function (data) {
+                         $('#insert_form')[0].reset();  
+                         $('#local').modal('hide');
+                         
+                         //$('#dataTable').DataTable().ajax.reload();
+
+                     }                  
+                });
+
+
+           }
+  }
+
+
   placeMarker(map, event.latLng);
 
-
-
-
 });
-
-  
 }
-
-
 
 
 function placeMarker(map, location) {
@@ -39,10 +78,7 @@ function placeMarker(map, location) {
     position: location,
     map: map
   });
-  lat = location.lat();
-
-  lng = location.lng();
-
+  
 
   var infowindow = new google.maps.InfoWindow({
     content: 'Latitude: ' + location.lat() +
@@ -52,4 +88,3 @@ function placeMarker(map, location) {
 }
 
 
-console.log(lat);

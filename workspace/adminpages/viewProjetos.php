@@ -185,7 +185,7 @@ if(!isset($_SESSION['ativa'])){
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header" >
-        <h5 class="modal-title" id="exampleModalLabel">Criar Projeto</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Adicionar localização da planta</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -211,7 +211,7 @@ if(!isset($_SESSION['ativa'])){
       </div>
       <div class="modal-footer">
         <div class="options text-right">
-                  <button id="addProjeto" class="btn btn-info">Criar Projeto<i class="fas fa-sign-in ml-1"></i></button>
+                  <button id="addLoc" class="btn btn-info">Adicionar localização<i class="fas fa-sign-in ml-1"></i></button>
               </div>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
