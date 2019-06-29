@@ -11,7 +11,7 @@ function loadMap() {
     });
 
      
-   google.maps.event.addListener(map, 'click', function(event) {
+   google.maps.event.on('click', map, function(event){
     
    	$('#latitudeInput').val(event.latLng.lat());
     $('#longitudeInput').val(event.latLng.lng());
