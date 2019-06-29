@@ -17,7 +17,57 @@ function loadMap() {
 
   $('#local').modal('show');
 
-  placeMarker(map, event.latLng);
+  $('#addLoc').click(function(event){
+
+          if($('#plantaInput').val() == '')  
+           {  
+                alert("Introduza a planta a ser localizada !");  
+           }  
+           else if($('#latitudeInput').val() == '')  
+           {  
+                alert("Introduza a latitude da planta !");  
+           } 
+           else if($('#longitudeInput').val() == '')  
+           {  
+                alert("Introduza a longitude da planta !");  
+           } 
+           else {
+
+              obj = {
+                      
+                      "idPlanta" : $("#plantaInput").val(),
+                      "latitude" : $("#latitudeInput").val(),
+                      "longitude" : $("#longitudeInput").val()
+                      
+                     }
+                     jsonData = JSON.stringify(obj);
+                     console.log(jsonData);
+
+                      $.ajax({ 
+                     method:"POST",
+                     url:"insertLoc.php",  
+                     contentType : "application/json",
+                     data : jsonData,
+                     dataType : "json",
+                     beforeSend:function(){  
+                          $('#insert').val("Inserindo");  
+                     }  ,
+                     success : function (data) {
+                          
+                         $('#local').modal('hide');
+                         placeMarker(map, event.latLng);
+                         //$('#dataTable').DataTable().ajax.reload();
+
+                     }                  
+                });
+
+
+           }
+
+  });
+
+
+  
 
 
 
