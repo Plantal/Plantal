@@ -17,8 +17,7 @@ function loadMap() {
 
   $('#local').modal('show');
 
-  $('#addLoc').click(function(event){
-
+$('#insert').click(function(event){  
           if($('#plantaInput').val() == '')  
            {  
                 alert("Escolha a planta!");  
@@ -63,11 +62,14 @@ function loadMap() {
                 });
 
 
-           }
-  
+                            
+              
+           }  
+      });
 
 
-  
+
+  placeMarker(map, event.latLng);
 
 });
 }
