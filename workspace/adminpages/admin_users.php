@@ -70,6 +70,7 @@ if(!isset($_SESSION['ativa'])){
     
     <script src="js/edit_util.js"></script>
     <script src="js/delete_util.js"></script>
+    <script src="js/verPassword.js"></script>
     
     
 
@@ -288,7 +289,7 @@ while($row = mysqli_fetch_array($result))
                   <td width="30%"><b>Password:</b></td>
                   <td  width="70%">
                   <input type="password"  style="width:90%;" name="password" id="passwordInput"></input>
-                  <i style="margin-top: 25px;" class="material-icons">remove_red_eye</i>
+                  <a onclick="verPassword()"><i class="material-icons">remove_red_eye</i></a>
                 </td>
                  
               </div>
