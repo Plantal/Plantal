@@ -289,8 +289,8 @@ while($row = mysqli_fetch_array($result))
                   <td width="30%"><b>Password:</b></td>
                   <td  width="70%">
                   <form class="form-inline">
-                  <input type="password" class="form-control" style="width:75%;" name="password" id="passwordInput"></input>
-                  <a style="right:8px;top:8px;" class="fa fa-user "></a>
+                  <input type="password" class="form-control" style="width:85%;" name="password" id="passwordInput"></input>
+                  <a style="left: 8px; top:8px;" class="fa fa-user "></a>
                   </form>               
                 </td>
                 
