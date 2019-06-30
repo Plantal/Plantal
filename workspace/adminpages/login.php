@@ -49,7 +49,7 @@ session_start();
  </head>
  <body style="background-image: url(css/nature.jpg)">
   <div class="container" style="margin-top: 150px">
-   <div id="box" style="border-radius: 25px;height:500px;width:500px;background:linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%); padding: 35px">
+   <div id="box" style="border-radius: 25px;height:530px;width:500px;background:linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%); padding: 35px">
    <div><p style="text-align:center"><img align="center" src="imgs/logo.png" style="width: 130px;  margin-top: 15px; max-height: 130px; margin-left: ;"></p></div>
 
     <form method="post" style="padding-left:80px" >
