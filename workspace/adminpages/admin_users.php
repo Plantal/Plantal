@@ -289,7 +289,7 @@ while($row = mysqli_fetch_array($result))
                   <td width="30%"><b>Password:</b></td>
                   <td  width="70%">
                   
-                  <input type="password" class="form-control" style="width:96%;" name="password" id="passwordInput"></input>
+                  <input type="password" class="form-control" name="password" id="passwordInput"></input>
               
 
                   <div class="input-group-append">
