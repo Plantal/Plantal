@@ -285,12 +285,12 @@ while($row = mysqli_fetch_array($result))
               </div>
               </tr>
               <tr>
-              <div class="form-inline">
+              <div class="form-group">
                   <td width="30%"><b>Password:</b></td>
                   <td  width="70%">
                   <input type="password" class="form-control" style="width:75%;" name="password" id="passwordInput"></input>
                   
-                  <span style="right:8px;top:8px;" class="fa fa-user "></span>
+                  <a style="right:8px;top:8px;" class="fa fa-user "></a>
                 </td>
                  
               </div>
