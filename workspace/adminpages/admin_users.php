@@ -24,7 +24,7 @@ if(!isset($_SESSION['ativa'])){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Plantas</title>
+    <title>Utilizadores</title>
 
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -287,7 +287,7 @@ while($row = mysqli_fetch_array($result))
               <div class="form-group">
                   <td width="30%"><b>Password:</b></td>
                   <td  width="70%">
-                  <textarea class="form-control" rows="1" style="min-width:100%" name="password" id="passwordInput"></textarea></td>
+                  <input type="password" class="form-control" rows="1" style="min-width:70%" name="password" id="passwordInput"></input></td>
                  
               </div>
               </tr>
@@ -317,7 +317,7 @@ while($row = mysqli_fetch_array($result))
 
 
 
-<!-- Modal para apagar plantas -->
+<!-- Modal para apagar utilizadores -->
 
 
 
