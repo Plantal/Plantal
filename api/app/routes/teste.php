@@ -56,6 +56,11 @@ $app->get('/plant/:q/',function($q){
     $db->get_plant($q);
 });
 
+$app->get('/account/:user',function($user){
+    $db=new \App\Controllers\CPlantal();
+    $db->get_account($user);
+});
+
 $app->post('/register',function() use ($app){
     $body = $app->request->getBody();
     $db=new \App\Controllers\CPlantal();

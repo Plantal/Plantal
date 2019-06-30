@@ -49,6 +49,48 @@ function check_login($user_id,$pass){
 
 }
 
+function get_account($user){
+
+	$db=database();
+
+    $data = array();
+
+	$sql = "select * from users where iduser = :user";
+
+	
+	$statement = $db->prepare($sql);
+
+    $statement->bindValue(':user', $user);	
+
+    $statement->execute();
+
+
+
+	while($item = $statement->fetch(\PDO::FETCH_OBJ)){
+
+		
+
+		$obj = (Object)[
+
+     			"username"=>$item->username,
+				"password" =>$item->password
+				"email" =>$item->email
+				"nome" =>$item->nome
+				"tipo" =>$item->tipo
+				"ano" =>$item->ano
+				"turma" =>$item->turma
+				"data_nascimento" =>$item->data_nascimento
+
+
+				];
+
+		array_push($data,$obj);	
+
+	}
+
+	echo json_encode($data);	
+
+}
 function get_plant($q){
     
 	$db=database();

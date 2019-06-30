@@ -27,6 +27,12 @@ class CPlantal extends Controller {
 
     $db->get_plant($q);
   }
+  function get_account($user){
+
+    $db=new MPlantal();
+
+    $db->get_account($user);
+  }
   //____________________POST ____________________
   function register($body){
     $db=new MPlantal();
