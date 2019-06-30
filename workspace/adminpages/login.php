@@ -31,7 +31,7 @@ session_start();
    margin:0 auto;
    padding:0 20px;
    box-sizing:border-box;
-   height:270px;
+   height:300px;
   }
 
   #container1 {
@@ -111,7 +111,7 @@ $(document).ready(function(){
     },
     success:function(data)
     {
-        console.log(data);
+        
      if(data)
      {
          if(data == "carlaramos"){
