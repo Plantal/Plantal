@@ -135,7 +135,7 @@ $(document).ready(function(){
       }
       $("#box").effect("shake", options, 800);
       $('#login').val("Login");
-      $('#error').html("<span class='text-danger'>Invalid username or Password</span>");
+      $('#error').html("<span class='text-danger'><b>Username ou Password inválidos</b></span>");
      }
     }
    });
