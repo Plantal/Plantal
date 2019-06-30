@@ -64,12 +64,13 @@ console.log(idProjeto);
                      
                      success : function () {
                           
-                         $('#local').modal('hide');
+                        
                          placeMarker(map, event.latLng);
                          //$('#dataTable').DataTable().ajax.reload();
 
                      }                  
                 });
+                      $('#local').modal('hide');
 
 
            }
