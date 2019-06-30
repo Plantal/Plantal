@@ -288,7 +288,7 @@ while($row = mysqli_fetch_array($result))
               <div class="form-group">
                   <td width="30%"><b>Password:</b></td>
                   <td  width="70%">
-                  <input type="password" class="form-control" style="width:80%;" name="password" id="passwordInput"></input>
+                  <input type="password" class="form-control" style="width:75%;" name="password" id="passwordInput"></input>
                   <a onclick="verPassword()"><i class="material-icons">remove_red_eye</i></a>
                 </td>
                  
