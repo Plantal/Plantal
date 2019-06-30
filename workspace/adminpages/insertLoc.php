@@ -27,7 +27,7 @@ $longitude = $content['longitude'];
 
 
     	$insert = "INSERT INTO geolocal (latitude, longitude) VALUES
-						($latitude','$longitude')";
+						('$latitude','$longitude')";
      
      	if (mysqli_query($connect, $insert)) {
     $last_id = mysqli_insert_id($connect);
