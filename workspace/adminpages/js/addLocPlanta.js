@@ -61,9 +61,7 @@ console.log(idProjeto);
                      contentType : "application/json",
                      data : jsonData,
                      dataType : "json",
-                     beforeSend:function(){  
-                          $('#insert').val("Inserindo");  
-                     }  ,
+                     
                      success : function () {
                           
                          $('#local').modal('hide');
