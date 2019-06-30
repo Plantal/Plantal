@@ -278,7 +278,7 @@ while($row = mysqli_fetch_array($result))
                 <tr>
         
                   <div class="form-group">
-                  <td width="30%"><b>Username</b></td>
+                  <td   width="30%"><b>Username</b></td>
                   <td width="70%"><input type="text" class="form-control"  style="min-width:100%" name="username" id="usernameInput"></input></td>
                   
                   
@@ -287,13 +287,13 @@ while($row = mysqli_fetch_array($result))
               <tr>
               <div class="form-group">
                   <td width="30%"><b>Password:</b></td>
-                  <form class="form-inline">
                   <td  width="70%">
+                  <form class="form-inline">
                   <input type="password" class="form-control" style="width:75%;" name="password" id="passwordInput"></input>
-                  
                   <a style="right:8px;top:8px;" class="fa fa-user "></a>
+                  </form>               
                 </td>
-                </form>
+                
                  
               </div>
               </tr>
