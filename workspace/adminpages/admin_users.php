@@ -290,6 +290,7 @@ while($row = mysqli_fetch_array($result))
                   <td  width="70%">
                   <input type="password" class="form-control" style="width:75%;" name="password" id="passwordInput"></input>
                   <a onclick="verPassword()"><i class="material-icons">remove_red_eye</i></a>
+                  <span style="position:absolute; right:8px;top:8px;" class="fa fa-user "></span>
                 </td>
                  
               </div>
