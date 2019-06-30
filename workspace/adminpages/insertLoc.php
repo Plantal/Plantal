@@ -31,10 +31,16 @@ $longitude = $content['longitude'];
      
      	if (mysqli_query($connect, $insert)) {
     $last_id = mysqli_insert_id($connect);
-    echo "New record created successfully. Last inserted ID is: " . $last_id;
+
+    $insert2 = "INSERT INTO projeto_plantal (geocodeId, plantaId, projetoId) VALUES
+						('$last_id','$idPlanta','$idProjeto')";
+						echo $insert2;
+					mysqli_query($connect, $insert2);
+
+   
 } else {
     echo "Error: " . $insert . "<br>" . mysqli_error($connect);
-}
+		}
       
  ?>
 
