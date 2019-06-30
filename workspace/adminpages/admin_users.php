@@ -279,7 +279,7 @@ while($row = mysqli_fetch_array($result))
         
                   <div class="form-group">
                   <td width="30%"><b>Username</b></td>
-                  <td width="70%"><textarea class="form-control" rows="1" style="min-width:100%" name="username" id="usernameInput"></textarea></td>
+                  <td width="70%"><input type="text" class="form-control"  style="min-width:100%" name="username" id="usernameInput"></input></td>
                   
                   
               </div>
@@ -288,7 +288,7 @@ while($row = mysqli_fetch_array($result))
               <div class="form-group">
                   <td width="30%"><b>Password:</b></td>
                   <td  width="70%">
-                  <input type="password"  style="width:90%;" name="password" id="passwordInput"></input>
+                  <input type="password"  style="width:97%;" name="password" id="passwordInput"></input>
                   <a onclick="verPassword()"><i class="material-icons">remove_red_eye</i></a>
                 </td>
                  
@@ -298,7 +298,7 @@ while($row = mysqli_fetch_array($result))
               <div class="form-group">
                   <td width="30%"><b>Email:</b></td>
                   <td width="70%">
-                  <textarea class="form-control" rows="1" style="min-width:100%" name="email" id="emailInput"></textarea></td>
+                  <input type="text" class="form-control" rows="1" style="min-width:100%" name="email" id="emailInput"></input></td>
                 
                   
               </div>
