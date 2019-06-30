@@ -14,6 +14,8 @@ $content = json_decode($jsonData, true);
 
 require_once("connect.php"); 
 
+
+$idProjeto = $content['idProjeto'];
 $idPlanta = $content['idPlanta']; 
 $latitude = $content['latitude']; 
 $longitude = $content['longitude']; 
@@ -23,24 +25,17 @@ $longitude = $content['longitude'];
 echo $idPlanta;
 
 
-/*$verificar = "SELECT nome  FROM projeto WHERE nome='".$nomeProjeto."' ";
-$result = mysqli_query($connect,$verificar);
-if ($result->num_rows >0) { 
-      echo "<h3>Esta projeto já está registado!</h3>";
-      echo json_encode(false);
-    }else{
-    	$insert = "INSERT INTO projeto (nome, latitude, longitude, userId) VALUES
-						('$nomeProjeto','$latitude','$longitude', '$orientador' )";
-      echo $insert;
+
+    	$insert = "INSERT INTO geolocal (latitude, longitude) VALUES
+						($latitude','$longitude')";
+     
      
       if (mysqli_query($connect, $insert)) {
-          echo $insert;
+          	$last_id = mysqli_insert_id($connect);
+   			 echo "New record created successfully. Last inserted ID is: " . $last_id;
 
       }
-      echo json_encode(true);
       
-    }
-*/
  ?>
 
 
