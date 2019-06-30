@@ -29,13 +29,12 @@ $longitude = $content['longitude'];
     	$insert = "INSERT INTO geolocal (latitude, longitude) VALUES
 						($latitude','$longitude')";
      
-     	$result = mysqli_query($connect, $insert);
-     	echo $insert;
-      if ($result->num_rows >0) {
-          	$last_id = mysqli_insert_id($connect);
-   			 echo "New record created successfully. Last inserted ID is: " . $last_id;
-
-      }
+     	if (mysqli_query($connect, $insert)) {
+    $last_id = mysqli_insert_id($connect);
+    echo "New record created successfully. Last inserted ID is: " . $last_id;
+} else {
+    echo "Error: " . $insert . "<br>" . mysqli_error($connect);
+}
       
  ?>
 

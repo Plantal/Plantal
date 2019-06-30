@@ -44,7 +44,8 @@ console.log(idProjeto);
            } 
            else {
 
-              obj = {
+              obj = { 
+                      
                       "idProjeto" : idProjeto,
                       "idPlanta" : $("#plantaInput").val(),
                       "latitude" : $("#latitudeInput").val(),
