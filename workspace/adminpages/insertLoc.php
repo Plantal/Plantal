@@ -22,15 +22,16 @@ $longitude = $content['longitude'];
 
 
 
-echo $idPlanta;
+
 
 
 
     	$insert = "INSERT INTO geolocal (latitude, longitude) VALUES
 						($latitude','$longitude')";
      
-     
-      if (mysqli_query($connect, $insert)) {
+     	$result = mysqli_query($connect, $insert);
+     	echo $insert;
+      if ($result->num_rows >0) {
           	$last_id = mysqli_insert_id($connect);
    			 echo "New record created successfully. Last inserted ID is: " . $last_id;
 
