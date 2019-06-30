@@ -45,7 +45,7 @@ console.log(idProjeto);
            else {
 
               obj = { 
-                      
+
                       "idProjeto" : idProjeto,
                       "idPlanta" : $("#plantaInput").val(),
                       "latitude" : $("#latitudeInput").val(),
@@ -64,7 +64,7 @@ console.log(idProjeto);
                      beforeSend:function(){  
                           $('#insert').val("Inserindo");  
                      }  ,
-                     success : function (data) {
+                     success : function () {
                           
                          $('#local').modal('hide');
                          placeMarker(map, event.latLng);
