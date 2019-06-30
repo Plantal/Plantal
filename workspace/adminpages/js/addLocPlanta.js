@@ -64,7 +64,7 @@ console.log(idProjeto);
                      
                      success : function () {
                           
-                         $('#local').modal('hide');
+                         $('#local')..remove();
                          placeMarker(map, event.latLng);
                          //$('#dataTable').DataTable().ajax.reload();
 
