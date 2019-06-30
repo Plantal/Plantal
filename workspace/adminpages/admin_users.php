@@ -54,7 +54,9 @@ if(!isset($_SESSION['ativa'])){
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+<style>
+ .hidetext { -webkit-text-security: disc;  }
+  </style>
 
 
 
@@ -209,7 +211,7 @@ while($row = mysqli_fetch_array($result))
 <tr>  
        
      <td><?php echo $row["username"]; ?></td>
-     <td><?php echo $row["password"]; ?></td>
+     <td class="hidetext"><?php echo $row["password"]; ?></td>
      <td><?php echo $row["email"]; ?></td>
      
      <td><center>
