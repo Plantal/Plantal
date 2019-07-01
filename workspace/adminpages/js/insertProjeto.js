@@ -48,9 +48,10 @@ $(document).ready(function(){
 
                      }                  
                 });
-               $('#projeto').modal('hide');
-              window.location.reload();
-                              
+               setTimeout(function(){
+                      window.location.reload(true);
+                }, 3000);          
+              
               
            }  
       });

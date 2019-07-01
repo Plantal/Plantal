@@ -35,6 +35,26 @@ $(document).ready(function(){
 
            $('#editarProjeto').click( function(event){
 
+               if($('#nomeEditar').val() == '')  
+           {  
+                alert("Introduza o nome do projeto !");  
+           }  
+           else if($('#latitudeEditar').val() == '')  
+           {  
+                alert("Introduza a latitude do projeto !");  
+           } 
+           else if($('#longitudeEditar').val() == '')  
+           {  
+                alert("Introduza a longitude do projeto !");  
+           } 
+           else if($('#orientadorEditar').val() == '')  
+           {  
+                alert("Introduza o orientador do projeto !");  
+           } 
+           else {
+
+
+
 
                      obj = {
                             "idProjeto" : idProjeto,
@@ -66,7 +86,7 @@ $(document).ready(function(){
                       window.location.reload(true);
                 }, 3000);          
               
-                         
+             }            
           }); 
       });
 
