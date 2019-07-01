@@ -67,8 +67,8 @@ $(document).ready(function(){
                      },
 
                      success : function () {
-                         $('#edit_data_Modal').modal('hide');
-                         window.location.replace("http://flora.ipvc.pt/workspace/adminpages/tables.php");
+                         
+                        
                          
                      }
                 
@@ -77,7 +77,7 @@ $(document).ready(function(){
                      
                 });
                  
-                         
+               $('#edit_data_Modal').modal('hide');          
           }); 
       });
 
