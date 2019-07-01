@@ -1,16 +1,16 @@
 $(document).ready(function(){
 	
 	$(document).on('click', '.edit_data', function(){  
-             var idLocal = $(this).attr("id");
+             var id = $(this).attr("id");
            
            $.ajax({  
                 url:"fetchLocal.php",  
                 method:"POST",  
-                data:{idProjeto:idProjeto},  
+                data:{id:id},  
                 dataType:"json",  
                 success:function(res){  
                    
-                    $("#nomeEditar").val(res.nome);
+                    $("#plantaEditar").val(res.nomeCientifico);
                     
 
                    
@@ -19,29 +19,28 @@ $(document).ready(function(){
                     $("#longitudeEditar").val(res.longitude);
 
                    
-                    $("#orientadorEditar").val(res.username);
+                    
 
 
 
                     
                     
-                    $('#editarProjeto').val("Atualizar");  
-                    $('#editProjeto').modal('show');  
+                      
+                    $('#editLocal').modal('show');  
 
 
                 }  
            }); 
 
 
-           $('#editarProjeto').click( function(event){
+           $('#editLoc').click( function(event){
 
 
                      obj = {
-                            "idProjeto" : idProjeto,
-                            "nome" : $("#nomeEditar").val(),
+                            "id" : id,
                             "latitude" : $("#latitudeEditar").val(),
                             "longitude" : $("#longitudeEditar").val(),
-                            "userId" : $("#orientadorEditar").val()
+                            "plantaId" : $("#plantaEditar").val()
                       }
                      jsonData = JSON.stringify(obj);
                      console.log(jsonData);
@@ -50,7 +49,7 @@ $(document).ready(function(){
 
                    $.ajax({      
                      method:"POST",
-                     url:"editProjeto.php",   
+                     url:"editLocal.php",   
                      contentType : "application/json",
                      data : jsonData,
                      dataType : "json"
@@ -62,8 +61,8 @@ $(document).ready(function(){
                      
                 });
                     
-               $('#editProjeto').modal('hide');
-               window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_projetos.php");
+               $('#editLoc').modal('hide');
+               window.location.reload(true);
                          
           }); 
       });

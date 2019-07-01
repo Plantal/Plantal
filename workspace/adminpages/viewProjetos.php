@@ -351,24 +351,24 @@ while($row = mysqli_fetch_array($result))
         <form>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Planta:</label>
-            <select id="plantaInput" name="tipofolha" class="form-control">
+            <select id="plantaEditar" name="tipofolha" class="form-control">
                        
                         <?php echo $options2; ?>
             </select>
           </div>
          <div class="form-group">
             <label for="recipient-name" class="col-form-label">Latitude:</label>
-            <input type="text" class="form-control" id="latitudeInput">
+            <input type="text" class="form-control" id="latitudeEditar">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Longitude:</label>
-            <input type="text" class="form-control" id="longitudeInput">
+            <input type="text" class="form-control" id="longitudeEditar">
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <div class="options text-right">
-                  <button id="addLoc" class="btn btn-info">Atualizar localização</button>
+                  <button id="editLoc" class="btn btn-info">Atualizar localização</button>
               </div>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
