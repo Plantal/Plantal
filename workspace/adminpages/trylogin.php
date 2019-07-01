@@ -15,6 +15,8 @@ if(isset($_POST["username"]) && isset($_POST["password"]))
   $data = mysqli_fetch_array($result);
   
   $_SESSION["username"] = $data["username"];
+  $_SESSION["iduser"] = $data["iduser"];
+
   $_SESSION["ativa"] = "ativa";
   echo $data["username"];
  } 

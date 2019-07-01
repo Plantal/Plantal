@@ -119,6 +119,12 @@ if(!isset($_SESSION['ativa'])){
             <i class="fas fa-fw fa-table"></i>
             <span>Plantas</span></a>
         </li>
+
+        <li class="nav-item ">
+          <a class="nav-link" href="projetoUser.php">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Projetos</span></a>
+        </li>
       </ul>
 
       <div id="content-wrapper">
