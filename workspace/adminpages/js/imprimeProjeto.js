@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 var idProjeto = 0;
 
-$("imprimir").click( function(){
+$("#imprimir").click( function(){
    
         var container = $(this).attr("class");
          
