@@ -59,13 +59,14 @@ $(document).ready(function(){
 
                      success : function () {
                         
-                         
+                         console.log("sdasasd");
                      }
                 
                      
                           
                      
                 });
+                    console.log("sdassdfsfasd");
                 $('#editProjeto').modal('hide');
                           window.location.reload();
 
