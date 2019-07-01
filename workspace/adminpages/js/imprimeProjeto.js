@@ -2,12 +2,12 @@
 
 $(document).ready(function(){
 
-var idProjeto;
+var idProjeto = 0;
 
 $("#imprimir").click( function(){
    $('#imprimir').each(function() {
         var container = $(this);
-         var idProjeto = container.data('service');
+         idProjeto = container.data('service');
 console.log(container);
          console.log(idProjeto);
     });
