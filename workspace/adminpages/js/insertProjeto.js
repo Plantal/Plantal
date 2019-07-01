@@ -40,9 +40,7 @@ $(document).ready(function(){
                      contentType : "application/json",
                      data : jsonData,
                      dataType : "json",
-                     beforeSend:function(){  
-                          $('#addProjeto').val("Inserindo");  
-                     }  ,
+                    
                      success : function (data) { 
                      	
                          $('#projeto').modal('hide');
@@ -51,8 +49,9 @@ $(document).ready(function(){
 
                      }                  
                 });
-
-                            
+               $('#projeto').modal('hide');
+              window.location.reload();
+                              
               
            }  
       });
