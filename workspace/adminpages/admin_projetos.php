@@ -290,7 +290,7 @@ while($row = mysqli_fetch_array($result))
 
 
 <div class="modal fade" id="editProjeto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header" >
         <h5 class="modal-title" id="exampleModalLabel">Editar Projeto</h5>
@@ -342,7 +342,7 @@ while($row = mysqli_fetch_array($result))
 <!-- Modal para apagar projetos -->
 
 <div id="myModal" class="modal fade">
-  <div class="modal-dialog modal-confirm">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <div class="icon-box">
