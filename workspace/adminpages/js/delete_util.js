@@ -18,7 +18,7 @@ $(document).ready(function(){
                      data:{iduser: iduser},  
                           success:function(data){  
                             $('#deleteutilizador').modal('hide');
-                            window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_users.php");
+                            
                             
                             
                             
