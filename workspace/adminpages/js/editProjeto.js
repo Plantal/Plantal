@@ -54,7 +54,11 @@ $(document).ready(function(){
                      contentType : "application/json",
                      data : jsonData,
                      dataType : "json"
-                     
+                     success: function(){
+                        $('#editProjeto').modal('hide');
+                          w$('#grupo').load(document.URL +  ' #grupo');
+
+                     }
 
                   
                 
@@ -62,9 +66,8 @@ $(document).ready(function(){
                           
                      
                 });
-                    console.log("sdassdfsfasd");
-                $('#editProjeto').modal('hide');
-                          w$('#grupo').load(document.URL +  ' #grupo');
+                    
+                
 
                          
           }); 
