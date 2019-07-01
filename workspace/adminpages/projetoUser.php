@@ -161,7 +161,7 @@ echo $_SESSION['iduser'];
   <tbody>
 
 <?php  
-$result = mysqli_query($connect,"SELECT idProjeto, projeto.nome, username FROM projeto, users WHERE projeto.userId = '".$_SESSION['iduser']."'");
+$result = mysqli_query($connect,"SELECT idProjeto, projeto.nome FROM projeto WHERE projeto.userId = '".$_SESSION['iduser']."'");
 
 
 
@@ -170,7 +170,7 @@ while($row = mysqli_fetch_array($result))
   ?>
 <tr>  
      <td><?php echo('<a href="viewProjetos.php?idProjeto='.$row["idProjeto"].'">'.$row["nome"].'</a>');?></td>  
-     <td><?php echo $row["username"]; ?></td>
+     
      
      
      
