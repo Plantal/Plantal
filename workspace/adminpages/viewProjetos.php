@@ -278,7 +278,16 @@ if(!isset($_SESSION['ativa'])){
                   <tbody>
 
 <?php  
-$result = mysqli_query($connect,"SELECT id, nomeCientifico, latitude, longitude FROM projeto_plantal, planta, geolocal WHERE projetoId = '".$_GET["idProjeto"]."'
+$result = mysqli_query($connect,"select *
+from
+    planta a
+        inner join
+    projeto_plantal b
+        on a.idPlanta = b.plantaId
+        inner join 
+    geolocal c
+        on b.geocodeId = c.idGeolocal   
+        WHERE b.projetoId  = '".$_GET["idProjeto"]."'
 ");
 
 
