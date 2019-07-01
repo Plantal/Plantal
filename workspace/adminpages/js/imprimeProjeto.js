@@ -5,12 +5,12 @@ $(document).ready(function(){
 var idProjeto = 0;
 
 $("#imprimir").click( function(){
-   $('#imprimir').each(function() {
+   
         var container = $(this).attr("data-service");
          
 console.log(container);
          console.log(idProjeto);
-    });
+
             
               
         
