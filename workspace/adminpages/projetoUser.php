@@ -208,30 +208,7 @@ while($row = mysqli_fetch_array($result))
 
 
 
-          <!-- Tabela com as plantas -->
-
-
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-table"></i>
-              Tabela das plantas</div>
-            <div class="card-body">
-              <div class="table-responsive">
-
-                
-                
-
-
-        
-
-</div>
-      <!-- /.content-wrapper -->
-
-
-    </div>
-
-
-    <!-- /#wrapper -->
+          
 
 
 
