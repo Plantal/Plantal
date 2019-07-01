@@ -295,7 +295,7 @@ while($row = mysqli_fetch_array($result))
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Nome projeto:</label>
+            <label for="recipient-name" class="col-form-label">Nome do projeto:</label>
             <input type="text" class="form-control" id="nomeInput">
           </div>
          <div class="form-group">
