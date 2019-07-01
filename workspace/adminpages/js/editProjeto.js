@@ -60,9 +60,7 @@ $(document).ready(function(){
                      },
 
                      success : function (data) {
-                         $('#editProjeto').modal('hide');
-                          window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_projetos.php");
-                            
+                        
                          
                      }
                 
@@ -70,7 +68,9 @@ $(document).ready(function(){
                           
                      
                 });
-                 
+                $('#editProjeto').modal('hide');
+                          window.location.reload();
+
                          
           }); 
       });
