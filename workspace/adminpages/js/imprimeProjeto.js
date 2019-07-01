@@ -6,8 +6,8 @@ var idProjeto = 0;
 
 $("#imprimir").click( function(){
    
-        var container = $(this).attr("class");
-         
+        var container = $(this);
+         idProjeto = container.data('service');
 console.log(container);
          console.log(idProjeto);
 
