@@ -68,8 +68,8 @@ if(!isset($_SESSION['ativa'])){
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/select.js"></script>
-    <script src="js/edit.1.js"></script>
-    <script src="js/delete.1.js"></script>
+    
+    
     <script src="js/insertProjeto.js"></script>
     <script src="js/addLocPlanta.js"></script>
     <script src="js/imprimeProjeto.js"></script>
