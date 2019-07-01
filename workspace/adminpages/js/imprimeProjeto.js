@@ -4,9 +4,9 @@ $(document).ready(function(){
 
 var idProjeto = 0;
 
-$(".btn btn-danger").click( function(){
+$("imprimir").click( function(){
    
-        var container = $(this).attr("id");
+        var container = $(this).attr("class");
          
 console.log(container);
          console.log(idProjeto);
