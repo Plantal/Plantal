@@ -34,7 +34,7 @@ $(document).ready(function(){
            }); 
 
 
-           $('#editarProjeto').on("click", function(event){
+           $('#editarProjeto').click( function(event){
 
 
                      obj = {
