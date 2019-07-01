@@ -127,7 +127,7 @@ if(!isset($_SESSION['ativa'])){
 
         <li class="nav-item active">
           <a class="nav-link" href="projetoUser.php">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-fw fa-project-diagram"></i>
             <span>Projetos</span></a>
              
         </li>
@@ -140,7 +140,7 @@ if(!isset($_SESSION['ativa'])){
           <!-- Breadcrumbs-->
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fas fa-tree"></i>
+              <i class="fas fa-project-diagram"></i>
               Meus Projetos</div>
             <div class="card-body">
               <div class="form-group">
