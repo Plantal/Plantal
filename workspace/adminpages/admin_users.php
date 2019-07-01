@@ -292,7 +292,7 @@ while($row = mysqli_fetch_array($result))
    <input type="password" class="form-control" name="password" id="passwordInput"></input>
               
     <div class="input-group-append">
-      <span class="input-group-text"><i class="fa fa-key fa-fw"></i></span>
+      <span onclick="verPassword()" class="input-group-text"><i class="fa fa-eye fa-fw"></i></span>
     </div>
   </div>
                   
