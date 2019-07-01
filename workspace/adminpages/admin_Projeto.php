@@ -262,7 +262,7 @@ while($row = mysqli_fetch_array($result))
 
       
       
-      <a  data-toggle="modal" data-target="#projeto" name="edit" class="edit_data" id="<?php echo $row["idProjeto"]; ?>" ><i class="material-icons"  title="Edit" style="color:yellow;">&#xE254;</i></a>
+      <a  data-toggle="modal" data-target="#editarProj" name="edit" class="edit_data" id="<?php echo $row["idProjeto"]; ?>" ><i class="material-icons"  title="Edit" style="color:yellow;">&#xE254;</i></a>
 
       <a href="#myModal" name="delete" class="delete_data"   id="<?php echo $row["idProjeto"]; ?>"><i class="material-icons"  title="Delete" style="color: red;">&#xE872;</i></a>
      
@@ -283,17 +283,11 @@ while($row = mysqli_fetch_array($result))
 </div>
 
 
-
-
-
-<!-- Modal para editar projetos -->
-
-
-<div class="modal fade left" id="editProjeto" tabindex="-1" role="dialog"  aria-hidden="true">
-  <div class="modal-dialog modal-full-height modal-left" role="document">
+<div class="modal fade" id="editarProj" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header" >
-        <h5 class="modal-title" id="exampleModalLabel">Editar Projeto</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Criar Projeto</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -302,20 +296,20 @@ while($row = mysqli_fetch_array($result))
         <form>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Nome projeto:</label>
-            <input type="text" class="form-control" id="nomeEditar">
+            <input type="text" class="form-control" id="nomeInput">
           </div>
          <div class="form-group">
             <label for="recipient-name" class="col-form-label">Latitude:</label>
-            <input type="text" class="form-control" id="latitudeEditar">
+            <input type="text" class="form-control" id="latitudeInput">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Longitude:</label>
-            <input type="text" class="form-control" id="longitudeEditar">
+            <input type="text" class="form-control" id="longitudeInput">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Orientador:</label>
-            <select id="orientadorEditar" name="tipofolha" class="form-control">
-                        
+            <select id="orientadorInput" name="tipofolha" class="form-control">
+                        <option value=""></option>
                         <?php echo $options; ?>
             </select>
           </div>
@@ -323,14 +317,20 @@ while($row = mysqli_fetch_array($result))
       </div>
       <div class="modal-footer">
         <div class="options text-right">
-                  <button id="editarProjeto" class="btn btn-info">Alterar Projeto</button>
+                  <button id="addProjeto" class="btn btn-info">Alterar Projeto<i class="fas fa-sign-in ml-1"></i></button>
               </div>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
         
       </div>
     </div>
   </div>
 </div>
+
+
+<!-- Modal para editar projetos -->
+
+
+
 
 
 
