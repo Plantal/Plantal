@@ -309,7 +309,9 @@ while($row = mysqli_fetch_array($result))
                   </tbody>
                 </table>
               </div>
-                <a  id="imprimir" name="create_pdf" class="<?php echo $row["idProjeto"]; ?>"  data-service="<?php echo $row["idProjeto"]; ?>" value="Imprimir QrCodes">  </a>
+
+
+                <p><a  id="imprimir" name="create_pdf" class="<?php echo $row["idProjeto"]; ?>"  data-service="<?php echo $row["idProjeto"]; ?>" value="Imprimir QrCodes">fdsbkvjbsdvbsdbv  </a></p>
 
                    
                             
