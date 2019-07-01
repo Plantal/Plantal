@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$('#addProjeto').click(function(event){  
+	$('#addProjeto').click(function(){  
            //event.preventDefault(); 
           // event.stopImmediatePropagation();
            if($('#nomeInput').val() == '')  
@@ -41,10 +41,9 @@ $(document).ready(function(){
                      data : jsonData,
                      dataType : "json",
                     
-                     success : function (data) { 
+                     success : function () { 
                      	
-                         $('#projeto').modal('hide');
-                         $('#addProjeto').val("Inserir");
+                         
                          
 
                      }                  
