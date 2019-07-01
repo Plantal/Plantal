@@ -55,11 +55,9 @@ $(document).ready(function(){
                      contentType : "application/json",
                      data : jsonData,
                      dataType : "json",
-                     beforeSend:function(){  
-                          $('#editarProjeto').val("Atualizando");  
-                     },
+                     
 
-                     success : function (data) {
+                     success : function () {
                         
                          
                      }
