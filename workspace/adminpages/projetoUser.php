@@ -169,7 +169,7 @@ while($row = mysqli_fetch_array($result))
 {
   ?>
 <tr>  
-     <td><?php echo('<a href="viewProjetos.php?idProjeto='.$row["idProjeto"].'">'.$row["nome"].'</a>');?></td>  
+     <td><?php echo('<a href="viewProjetoUser.php?idProjeto='.$row["idProjeto"].'">'.$row["nome"].'</a>');?></td>  
      
      
      
