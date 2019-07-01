@@ -10,7 +10,7 @@ if(!isset($_SESSION['ativa'])){
       $query = "SELECT idProjeto, projeto.nome, latitude, longitude, username FROM projeto, users WHERE  projeto.userId = users.iduser AND idProjeto = '".$_GET["idProjeto"]."' ";  
       $result = mysqli_query($connect, $query);  
       $row = mysqli_fetch_array($result);
-      
+
  }
 
 
@@ -309,7 +309,7 @@ while($row = mysqli_fetch_array($result))
                   </tbody>
                 </table>
               </div>
-                <input type="button" id="imprimir" name="create_pdf" class="<?php echo $row["idProjeto"]; ?>"  data-service="<?php echo $row["idProjeto"]; ?>" value="Imprimir QrCodes">  </input>
+                <a  id="imprimir" name="create_pdf" class="<?php echo $row["idProjeto"]; ?>"  data-service="<?php echo $row["idProjeto"]; ?>" value="Imprimir QrCodes">  </a>
 
                    
                             
