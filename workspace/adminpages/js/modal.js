@@ -101,8 +101,7 @@ $(document).ready(function(){
                          $('#insert_form')[0].reset();  
                          $('#addModal').modal('hide');
                          $('#insert').val("Inserir");
-                         //$('#dataTable').DataTable().ajax.reload();
-
+                         
                      }                  
                 });
 

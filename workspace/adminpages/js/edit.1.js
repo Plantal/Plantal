@@ -77,7 +77,8 @@ $(document).ready(function(){
                      
                 });
                  
-                $('#edit_data_Modal').modal('hide');         
+                $('#edit_data_Modal').modal('hide');    
+                 window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_tables.php");     
           }); 
       });
 
