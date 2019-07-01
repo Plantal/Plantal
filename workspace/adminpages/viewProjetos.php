@@ -232,7 +232,7 @@ if(!isset($_SESSION['ativa'])){
     </script>
 
 
-    <div class="card mb-3" >
+    <div style="margin-top: 30px;" class="card mb-3" >
             <div class="card-header">
               <i class="fas fa-table"></i>
               Tabela das plantas</div>
@@ -274,7 +274,7 @@ if(!isset($_SESSION['ativa'])){
                   <tbody>
 
 <?php  
-$result = mysqli_query($connect,"SELECT nomeCientifico, nomeComum, familia FROM planta");
+$result = mysqli_query($connect,"SELECT * FROM projeto_plantal, planta WHERE projetoId = '".$_GET["idProjeto"]."' ");
 
 while($row = mysqli_fetch_array($result))
 {
