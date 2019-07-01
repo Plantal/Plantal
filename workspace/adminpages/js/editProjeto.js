@@ -63,7 +63,7 @@ $(document).ready(function(){
                 });
                     
                $('#editProjeto').modal('hide');
-                $('#grupo').load(document.URL +  ' #grupo');
+                location.reload(true);
                          
           }); 
       });
