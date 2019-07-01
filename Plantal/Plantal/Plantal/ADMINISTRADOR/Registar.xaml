@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plantal.Registar">
+    <Grid >
+        <Image Source="hK8Wk5.jpg" Aspect="Fill" Opacity="0.7"></Image>
+
+        <ScrollView>
+       
+
+            <StackLayout>
+                <ContentView x:Name="x"  BackgroundColor="#006600" VerticalOptions="Fill">
+
+                    <Button Text="voltar" WidthRequest="80" BackgroundColor="#006600" Clicked="Button_Clicked"
+            HorizontalOptions="End"  CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+                </ContentView>
+
+
+                <Label Text="Nome" FontAttributes="Bold" FontSize="12" TextColor="white" XAlign="Start" />
+                <Entry Placeholder=""  x:Name="nome" FontSize="10" TextColor="white"/>
+
+                <Label Text="Tipo" FontAttributes="Bold" FontSize="12" TextColor="white" XAlign="Start" />
+                <Picker Title="" x:Name="tipo" FontSize="10"  TextColor="white"/>
+
+                <Label Text="Utilizador" FontAttributes="Bold" FontSize="12" TextColor="white" XAlign="Start" />
+                <Entry Placeholder=""  x:Name="username" FontSize="10" TextColor="white" />
+
+                <Label Text="Ano" FontAttributes="Bold" FontSize="12" TextColor="white" XAlign="Start" />
+                <Entry Placeholder=""  x:Name="ano" TextColor="white" FontSize="10"/>
+
+                <Label Text="Turma" FontAttributes="Bold" FontSize="12" TextColor="white" XAlign="Start" />
+                <Entry Placeholder="" x:Name="turma" TextColor="white" FontSize="10" />
+
+                <Label Text="Data de Nascimento" FontAttributes="Bold" FontSize="12" TextColor="white" XAlign="Start" />
+                <Grid Grid.Column="3" Grid.Row="1">
+                    <DatePicker HorizontalOptions="FillAndExpand" Format="yyyy-MM-dd" x:Name="data_nascimento" Focused="Data_nascimento_Focused"/>
+                    <Label x:Name="data_title" Text="" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" InputTransparent="True" FontSize="18"  TextColor="white"/>
+                </Grid>
+                <Label Text="Email" FontSize="12" FontAttributes="Bold" TextColor="white" XAlign="Start" />
+                <Entry  Placeholder="" x:Name="email" TextColor="white" FontSize="10" />
+
+                <Label Text="Password" FontSize="12" FontAttributes="Bold" TextColor="white" XAlign="Start" />
+                <Entry IsPassword="True" Placeholder="" x:Name="password" TextColor="white" FontSize="10" />
+
+                <Label Text="Confirmar Password" FontSize="12" FontAttributes="Bold" TextColor="white" XAlign="Start" />
+                <Entry IsPassword="True" Placeholder=""  x:Name="confirma_password" TextColor="white" FontSize="10"></Entry>
+
+                <Grid Grid.Column="2" Grid.Row="1" Padding="20" HeightRequest="60">
+                    <Button Text="Registar" WidthRequest="120"  HeightRequest="15" BackgroundColor="#006600"  HorizontalOptions="StartAndExpand"  CornerRadius="2" BorderColor="Gray" TextColor="White" Clicked="Button_Clicked_1"/>
+                    <Button Text="Cancelar" WidthRequest="120"  HeightRequest="15" BackgroundColor="#006600"  HorizontalOptions="EndAndExpand"  CornerRadius="2" BorderColor="Gray" TextColor="White" Clicked="Button_Clicked_2"/>
+                </Grid>
+                <Label Text="" x:Name="erro" FontAttributes="Bold" TextColor="Red"/>
+                <ContentView HeightRequest="100" BackgroundColor="#006600" HorizontalOptions="Fill" VerticalOptions="Fill">
+                    <Label Text="Agrupamento de escolas de Abelheira" HorizontalOptions="Fill" TextColor="White" YAlign="Center" XAlign="Center"/>
+                </ContentView>
+            </StackLayout>
+       
+    </ScrollView>
+    </Grid>
+</ContentPage>

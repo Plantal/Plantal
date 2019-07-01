@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plantal.MenuAdmin"
+             >
+    <ContentPage.Content>
+        <Grid >
+            <Image Source="naturee5.jpg" Aspect="Fill"></Image>
+        
+        <StackLayout>
+            
+            <ContentView x:Name="x"  BackgroundColor="#006600" VerticalOptions="Fill">
+                
+                <Button Text="sair" WidthRequest="80" BackgroundColor="#006600" Clicked="Button_Clicked_4"
+            HorizontalOptions="End"  CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+            </ContentView>
+            <ContentView HeightRequest="100"></ContentView>
+                
+                <Button Text="Criar Utilizador" Clicked="Button_Clicked_1"  BackgroundColor="#00e64d" TextColor="White" HeightRequest="50" WidthRequest="25"
+        VerticalOptions="Start" Grid.Row="1" Margin="15"/>
+
+                <Button Text="Estatisticas" Clicked="Button_Clicked_3" BackgroundColor="#00e64d" TextColor="White" HeightRequest="50" WidthRequest="25"
+        VerticalOptions="Start" Grid.Row="1" Margin="15" />
+                <Button Text="Adicionar Planta" Clicked="Button_Clicked_2" BackgroundColor="#00e64d" TextColor="White" HeightRequest="50" WidthRequest="25"
+        VerticalOptions="Start" Grid.Row="1" Margin="15"/>
+           
+            <ContentView HeightRequest="300"></ContentView>
+            <ContentView HeightRequest="100" BackgroundColor="#006600" HorizontalOptions="Fill" VerticalOptions="Fill">
+                <Label Text="Agrupamento de escolas de Abelheira" HorizontalOptions="Fill" TextColor="White" YAlign="Center" XAlign="Center"/>
+            </ContentView>
+                
+        </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plantal.CLIENTE.QrCodes">
+
+    <Grid >
+        <Image Source="pinus.jpg" Aspect="Fill" Opacity="0.9"></Image>
+
+        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" >
+
+        <ContentView x:Name="x"  BackgroundColor="#006600" VerticalOptions="Fill">
+
+            <Button Text="voltar" WidthRequest="80" BackgroundColor="#006600" Clicked="Button_Clicked"
+            HorizontalOptions="End"  CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+        </ContentView>
+
+        <ContentView HeightRequest="250">
+                <Label Text="Qr code" FontAttributes="Bold" FontSize="20" TextColor="White" XAlign="Center" HorizontalOptions="CenterAndExpand"/>
+        </ContentView>
+
+        <Button Text="Click para ler o qrcode"  
+                x:Name="btnScan"  
+                Clicked="btnScan_Clicked" HeightRequest="100" WidthRequest="200" HorizontalOptions="Center" BackgroundColor="#009933"/>
+        <ContentView HeightRequest="300"></ContentView>
+
+        <ContentView HeightRequest="100" BackgroundColor="#006600" HorizontalOptions="Fill" VerticalOptions="Fill">
+            <Label Text="Agrupamento de escolas de Abelheira" HorizontalOptions="Fill" TextColor="White" YAlign="Center" XAlign="Center"/>
+        </ContentView>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

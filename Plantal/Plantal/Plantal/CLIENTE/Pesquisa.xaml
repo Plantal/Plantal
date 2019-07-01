@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plantal.CLIENTE.Pesquisa">
+
+    <Grid >
+        <Image Source="_12.jpg" Aspect="Fill" Opacity="0.7"></Image>
+        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
+            <ContentView x:Name="x"  BackgroundColor="#006600" VerticalOptions="Fill">
+
+                <Button Text="voltar" WidthRequest="80" BackgroundColor="#006600" Clicked="Button_Clicked"
+            HorizontalOptions="End"  CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+            </ContentView>
+            <Label Text="Pesquisa" FontSize="20" TextColor="ForestGreen" XAlign="Center" />
+
+
+
+            <Entry Placeholder="Introduza o que pretende procurar" x:Name="q"/>
+            <Button Text="Pesquisar"  Clicked="Q_Clicked" />
+
+            <Label Text="" x:Name="erro" TextColor="Red"/>
+
+            <ContentView HeightRequest="350"></ContentView>
+            <ContentView HeightRequest="100" BackgroundColor="#006600" HorizontalOptions="Fill" VerticalOptions="Fill">
+                <Label Text="Agrupamento de escolas de Abelheira" HorizontalOptions="Fill" TextColor="White" YAlign="Center" XAlign="Center"/>
+            </ContentView>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>
+

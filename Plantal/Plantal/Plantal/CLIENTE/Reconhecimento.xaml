@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plantal.CLIENTE.Reconhecimento">
+
+
+    <Grid >
+        <Image Source="quercus.png" Aspect="Fill" Opacity="1"></Image>
+
+        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" >
+
+            <ContentView x:Name="x"  BackgroundColor="#006600" VerticalOptions="Fill">
+
+                <Button Text="voltar" WidthRequest="80" BackgroundColor="#006600" Clicked="Button_Clicked"
+            HorizontalOptions="End"  CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+            </ContentView>
+
+            <ContentView HeightRequest="250">
+                <Label Text="Reconhecimento de Plantas" FontAttributes="Bold" FontSize="20" TextColor="white" XAlign="Center" HorizontalOptions="CenterAndExpand"/>
+            </ContentView>
+            <Button x:Name="CameraButton" Text="Tirar foto" Grid.Row="1" HeightRequest="100" WidthRequest="200" HorizontalOptions="Center" BackgroundColor="#009933" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Image x:Name="PhotoImage" />
+
+            </Grid>
+            <Label Text="" FontAttributes="Bold" FontSize="20" TextColor="white" XAlign="Center" x:Name="nome_c" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="" x:Name="erro" TextColor="Red" HorizontalOptions="CenterAndExpand"/>
+            <ContentView HeightRequest="300"></ContentView>
+            <ContentView HeightRequest="100" BackgroundColor="#006600" HorizontalOptions="Fill" VerticalOptions="Fill">
+                <Label Text="Agrupamento de escolas de Abelheira" HorizontalOptions="Fill" TextColor="White" YAlign="Center" XAlign="Center"/>
+            </ContentView>
+        </StackLayout>
+    </Grid>
+</ContentPage>
