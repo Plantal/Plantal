@@ -311,7 +311,7 @@ while($row = mysqli_fetch_array($result))
               </div>
 
 
-                <p><a href="http://flora.ipvc.pt/workspace/adminpages/pdfProjeto.php?idProjeto='$row['idProjeto']'">Imrpimir</a></p>
+                <p><a href="http://flora.ipvc.pt/workspace/adminpages/pdfProjeto.php?idProjeto='<?php echo $row["nomeCientifico"]; ?>'">Imrpimir</a></p>
 
                    
                             
