@@ -10,17 +10,16 @@ $(document).ready(function(){
                 dataType:"json",  
                 success:function(res){  
                    
-                    $("#nomeEditar").val(res.nome);
+                    $("#nomeEditar").val(res[0]);
                     
 
-                   // $("#folhaModal").html(res.tipofolha);
-                    $("#latitudeEditar").val(res.latitude);
-
-                    $("#longitudeEditar").val(res.longitude);
-
-                 //   $("#tituloModal").html(res.especie);
                    
-                    $("#orientadorEditar").val(res.username);
+                    $("#latitudeEditar").val(res[1]);
+
+                    $("#longitudeEditar").val(res[2]);
+
+                   
+                    $("#orientadorEditar").val(res[3]);
 
 
 
