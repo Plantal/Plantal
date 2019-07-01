@@ -18,7 +18,7 @@ $(document).ready(function(){
                      data:{idProjeto: idProjeto},  
                           success:function(data){  
                             $('#myModal').modal('hide');
-                           // window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_projetos.php");
+                             window.location.reload();
                             
                             
                             
