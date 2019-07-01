@@ -231,34 +231,6 @@ if(!isset($_SESSION['ativa'])){
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx67Sngc8Ij0vkQDl2Uy9Ffwc6Eb_GPxo&callback=loadMap">
     </script>
 
-        
-        
-
-      
-      <!-- /.content-wrapper -->
-
- 
-
-
-
-    </div>
-
-
-</div>
-
-
- </div>
-
-<div class="form-group">
-
-        
-
-</div>
-      <!-- /.content-wrapper -->
-
-
-    </div>
-
 
     <div class="card mb-3" >
             <div class="card-header">
@@ -359,6 +331,37 @@ while($row = mysqli_fetch_array($result))
 
 
     </div>
+
+        
+        
+
+      
+      <!-- /.content-wrapper -->
+
+ 
+
+
+
+    </div>
+
+
+</div>
+
+
+ </div>
+
+<div class="form-group">
+
+        
+
+</div>
+      <!-- /.content-wrapper -->
+
+
+    </div>
+
+
+
 
 
     <!-- /#wrapper -->
