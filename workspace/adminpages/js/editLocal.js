@@ -8,15 +8,15 @@ $(document).ready(function(){
                 method:"POST",  
                 data:{id:id},  
                 dataType:"json",  
-                success:function(res){  
+                success:function(result){  
                    
                     
                     
 
                    
-                    $("#latitudeEditar").val(res.latitude);
+                    $("#latitudeEditar").val(result.latitude);
 
-                    $("#longitudeEditar").val(res.longitude);
+                    $("#longitudeEditar").val(result.longitude);
 
                    
                     
