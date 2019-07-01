@@ -180,7 +180,14 @@ while($row = mysqli_fetch_array($result))
 }  
 ?> 
 
-                  
+        </tbody>
+
+        </table>
+
+
+
+  
+</div>          
 
 
 
