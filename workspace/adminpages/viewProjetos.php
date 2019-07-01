@@ -10,6 +10,7 @@ if(!isset($_SESSION['ativa'])){
       $query = "SELECT idProjeto, projeto.nome, latitude, longitude, username FROM projeto, users WHERE  projeto.userId = users.iduser AND idProjeto = '".$_GET["idProjeto"]."' ";  
       $result = mysqli_query($connect, $query);  
       $row = mysqli_fetch_array($result);
+      echo $row['idProjeto'];
  }
 
 

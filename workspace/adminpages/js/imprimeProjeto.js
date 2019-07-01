@@ -5,9 +5,9 @@ $(document).ready(function(){
 var idProjeto;
 
 $("#imprimir").click( function(){
-   $('#imprimir').each(function() {
+   $('.btn btn-danger').each(function() {
         var container = $(this);
-         idProjeto = container.data('service');
+         var idProjeto = container.data('service');
 
          console.log(idProjeto);
     });
