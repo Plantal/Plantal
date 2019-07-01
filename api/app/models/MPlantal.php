@@ -132,7 +132,7 @@ function get_project(){
 
     $data = array();
 
-	$sql = "SELECT p.idProjeto, p.nome, p.latitude, p.longitude, pl.nomeCientifico, pl.nomeComum, g.latitude as 'lat_plant', g.longitude as 'lon_plant' FROM projeto p left join projeto_plantal pp on pp.projetoId = p.idProjeto left join geolocal g on g.idGeolocal = pp.geocodeId left join planta pl on pl.idPlanta = pp.plantaId";
+	$sql = "SELECT p.idProjeto, p.nome, p.latitude, p.longitude, pl.nomeCientifico, pl.nomeComum, g.latitude as 'lat_plant', g.longitude as 'lon_plant' FROM projeto p left join projeto_plantal pp on pp.projetoId = p.idProjeto left join geolocal g on g.idGeolocal = pp.geocodeId left join planta pl on pl.idPlanta = pp.plantaId where p.idProjeto = 7";
 
 	
 	$statement = $db->prepare($sql);
