@@ -10,7 +10,7 @@ $(document).ready(function(){
                 dataType:"json",  
                 success:function(res){  
                    
-                    $("#plantaEditar").val(res.nomeCientifico);
+                    
                     
 
                    
