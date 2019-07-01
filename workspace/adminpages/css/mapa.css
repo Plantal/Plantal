@@ -21,3 +21,9 @@
     clear: none;
 
 }
+
+#editProjeto {
+	display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}

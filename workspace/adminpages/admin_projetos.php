@@ -342,7 +342,7 @@ while($row = mysqli_fetch_array($result))
 <!-- Modal para apagar projetos -->
 
 <div id="myModal" class="modal fade">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-confirm">
     <div class="modal-content">
       <div class="modal-header">
         <div class="icon-box">
