@@ -365,7 +365,7 @@ while($row = mysqli_fetch_array($result))
                 </table>
               </div>
               
-                     <input type="button" name="create_pdf" class="btn btn-danger"  type="application/pdf"> <a href="http://flora.ipvc.pt/workspace/adminpages/pdf.php">Imprimir QrCodes</a> </input>
+                     <input type="button" name="create_pdf" class="btn btn-danger"  onclick="window.open('http://flora.ipvc.pt/workspace/adminpages/pdf.php')">  </input>
 
                    
                             
