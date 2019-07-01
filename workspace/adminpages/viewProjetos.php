@@ -307,7 +307,7 @@ while($row = mysqli_fetch_array($result))
                   </tbody>
                 </table>
               </div>
-<input type="button" name="create_pdf" class="btn btn-danger" value="Imprimir QrCodes"  onclick="window.open('http://flora.ipvc.pt/workspace/adminpages/pdfProjeto.php?idProjeto='$_GET['idProjeto']')">  </input>
+                <input type="button" id="imprimir" name="create_pdf" class="btn btn-danger"  data-service="<?php echo $row["idProjeto"]; ?>" value="Imprimir QrCodes"  onclick="window.open('http://flora.ipvc.pt/workspace/adminpages/pdfProjeto.php?idProjeto='')">  </input>
 
                    
                             
