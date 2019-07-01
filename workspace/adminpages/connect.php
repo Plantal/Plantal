@@ -9,7 +9,7 @@
 	$query = "SELECT * FROM users";
 
   $result = mysqli_query($connect, $query);
-  $options = "";
+  
 
   while ($row = mysqli_fetch_array($result)) {
     $options = $options."<option value='$row[0]'>$row[1]</option>";
