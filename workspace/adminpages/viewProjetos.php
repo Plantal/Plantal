@@ -275,7 +275,7 @@ if(!isset($_SESSION['ativa'])){
 
 <?php  
 $result = mysqli_query($connect,"SELECT MIN(idPlanta) AS id, nomeCientifico, nomeComum, familia FROM projeto_plantal, planta WHERE projetoId = '".$_GET["idProjeto"]."'  GROUP BY nomeCientifico, nomeComum, familia");
-var_dump($result);
+
 while($row = mysqli_fetch_array($result))
 {
   ?>
@@ -308,7 +308,7 @@ while($row = mysqli_fetch_array($result))
                 </table>
               </div>
               
-                     <input type="button" name="create_pdf" class="btn btn-danger" value="Imprimir QrCodes"  onclick="window.open('http://flora.ipvc.pt/workspace/adminpages/pdf.php')">  </input>
+                     <input type="button" name="create_pdf" class="btn btn-danger" value="Imprimir QrCodes"  onclick="window.open('http://flora.ipvc.pt/workspace/adminpages/pdfProjeto.php')">  </input>
 
                    
                             
