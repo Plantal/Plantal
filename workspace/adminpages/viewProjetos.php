@@ -311,7 +311,7 @@ while($row = mysqli_fetch_array($result))
               </div>
 
 
-                <p><a  id="imprimir" name="create_pdf" class="<?php echo $row["idProjeto"]; ?>"  data-service="<?php echo $row["idProjeto"]; ?>" value="Imprimir QrCodes">fdsbkvjbsdvbsdbv  </a></p>
+                <p><a href="http://flora.ipvc.pt/workspace/adminpages/pdfProjeto.php?idProjeto='.$row['idProjeto'].'">Imrpimir</a></p>
 
                    
                             
