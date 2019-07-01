@@ -53,7 +53,7 @@ $(document).ready(function(){
                      url:"editProjeto.php",   
                      contentType : "application/json",
                      data : jsonData,
-                     dataType : "json"
+                     dataType : "json",
                      success: function(){
                         $('#editProjeto').modal('hide');
                           w$('#grupo').load(document.URL +  ' #grupo');
