@@ -71,6 +71,7 @@ if(!isset($_SESSION['ativa'])){
     <script src="js/delete.1.js"></script>
     <script src="js/insertProjeto.js"></script>
     <script src="js/addLocPlanta.js"></script>
+    <script src="js/imprimeProjeto.js"></script>
     
 
 
