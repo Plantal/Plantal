@@ -274,7 +274,7 @@ if(!isset($_SESSION['ativa'])){
                   <tbody>
 
 <?php  
-$result = mysqli_query($connect,"SELECT MIN(idPlanta) AS id, nomeCientifico, nomeComum, familia FROM projeto_plantal, planta WHERE projetoId = '".$_GET["idProjeto"]."' GROUP BY nomeCientifico");
+$result = mysqli_query($connect,"SELECT MIN(idPlanta) AS id, nomeCientifico FROM projeto_plantal, planta WHERE projetoId = '".$_GET["idProjeto"]."'  GROUP BY nomeCientifico");
 var_dump($result);
 while($row = mysqli_fetch_array($result))
 {
