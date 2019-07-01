@@ -56,9 +56,30 @@ $app->get('/plant/:q/',function($q){
     $db->get_plant($q);
 });
 
+$app->get('/project',function(){
+    $db=new \App\Controllers\CPlantal();
+    $db->get_project();
+});
+
+$app->get('/stats',function(){
+    $db=new \App\Controllers\CPlantal();
+    $db->get_stats();
+});
+
 $app->get('/account/:user',function($user){
     $db=new \App\Controllers\CPlantal();
     $db->get_account($user);
+});
+
+$app->delete('/account/:user',function($user){
+    $db=new \App\Controllers\CPlantal();
+    $db->del_account($user);
+});
+
+$app->put('/account',function() use ($app){
+    $body = $app->request->getBody();
+    $db=new \App\Controllers\CPlantal();
+    $db->set_account($body);
 });
 
 $app->post('/register',function() use ($app){

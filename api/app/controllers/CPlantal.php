@@ -33,6 +33,16 @@ class CPlantal extends Controller {
 
     $db->get_account($user);
   }
+  function get_project(){
+    $db=new MPlantal();
+
+    $db->get_project();
+  }
+  function get_stats(){
+    $db=new MPlantal();
+
+    $db->get_stats();
+  }
   //____________________POST ____________________
   function register($body){
     $db=new MPlantal();
@@ -44,5 +54,17 @@ class CPlantal extends Controller {
 
     $db->addPlant($body);
   }
+   //____________________PUT ____________________
 
+   function set_account($body){
+    $db=new MPlantal();
+
+    $db->set_account($body);
+  }
+    //____________________DELETE ____________________
+    function del_account($user){
+      $db=new MPlantal();
+  
+      $db->del_account($user);
+    }
 }
