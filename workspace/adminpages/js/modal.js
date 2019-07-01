@@ -101,11 +101,12 @@ $(document).ready(function(){
                          $('#insert_form')[0].reset();  
                          $('#addModal').modal('hide');
                          $('#insert').val("Inserir");
+                         window.location.reload();
                          
                      }                  
                 });
 
-                window.location.reload();            
+                            
               
            }  
       });
