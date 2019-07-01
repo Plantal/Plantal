@@ -56,7 +56,7 @@ $(document).ready(function(){
                      dataType : "json",
                      success: function(){
                         $('#editProjeto').modal('hide');
-                          w$('#grupo').load(document.URL +  ' #grupo');
+                          $('#grupo').load(document.URL +  ' #grupo');
 
                      }
 
