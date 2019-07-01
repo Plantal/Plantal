@@ -64,7 +64,7 @@ $(document).ready(function(){
                 });
                     console.log("sdassdfsfasd");
                 $('#editProjeto').modal('hide');
-                          window.location.reload();
+                          w$('#grupo').load(document.URL +  ' #grupo');
 
                          
           }); 
