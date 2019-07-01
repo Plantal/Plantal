@@ -365,7 +365,7 @@ while($row = mysqli_fetch_array($result))
                 </table>
               </div>
               
-                  <form action="pdf.php" method="POST">  
+                  <form action="http://flora.ipvc.pt/workspace/adminpages/pdf.php" method="POST">  
                           <input type="submit" name="create_pdf" class="btn btn-danger" value="Imprimir QrCodes" />  
                      </form>    
               
