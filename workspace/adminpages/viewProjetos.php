@@ -67,7 +67,7 @@ if(!isset($_SESSION['ativa'])){
 <script type="text/javascript" src="js/jquery/jquery.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+    <script src="js/select.js"></script>
     <script src="js/edit.1.js"></script>
     <script src="js/delete.1.js"></script>
     <script src="js/insertProjeto.js"></script>
@@ -311,7 +311,7 @@ while($row = mysqli_fetch_array($result))
               </div>
 
 
-                <p><a href="http://flora.ipvc.pt/workspace/adminpages/pdfProjeto.php?idProjeto='<?php echo $row["nomeCientifico"]; ?>'">Imrpimir</a></p>
+                
 
                    
                             
