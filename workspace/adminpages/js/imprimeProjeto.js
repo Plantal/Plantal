@@ -1,6 +1,8 @@
-var idProjeto;
+
 
 $(document).ready(function(){
+
+var idProjeto;
 
 $("#imprimir").click( function(){
    $('#imprimir').each(function() {
