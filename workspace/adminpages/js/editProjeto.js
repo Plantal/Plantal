@@ -57,10 +57,7 @@ $(document).ready(function(){
                      dataType : "json",
                      
 
-                     success : function () {
-                        
-                         console.log("sdasasd");
-                     }
+                  
                 
                      
                           
