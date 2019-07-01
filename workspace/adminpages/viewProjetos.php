@@ -7,7 +7,7 @@ if(!isset($_SESSION['ativa'])){
 }
  if(isset($_GET["idProjeto"]))  
  {  
-      $query = "SELECT * FROM projeto, users WHERE  projeto.userId = users.iduser AND idProjeto = '".$_GET["idProjeto"]."' ";  
+      $query = "SELECT projeto.nome, latitude, longitude, username FROM projeto, users WHERE  projeto.userId = users.iduser AND idProjeto = '".$_GET["idProjeto"]."' ";  
       $result = mysqli_query($connect, $query);  
       $row = mysqli_fetch_array($result);
  }
@@ -255,6 +255,107 @@ if(!isset($_SESSION['ativa'])){
 
 </div>
       <!-- /.content-wrapper -->
+
+
+    </div>
+
+
+    <div class="card mb-3" >
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              Tabela das plantas</div>
+            <div class="card-body">
+              <div class="table-responsive" >
+
+                
+                <table class="table table-striped" id="dataTable" name="dataTable"  data-toggle="table" data-search="true" data-show-refresh="true" data-show-columns="true" cellspacing="0" >
+
+                  <thead bgcolor="#00a156">
+
+                    <tr>
+                      <th>Nome Cientifico:</th>
+                      <th>Nome Comum:</th>
+                      
+                      <th>Familia:</th>
+                      
+                      
+                      <th>Ações:</th>
+
+                      
+                    </tr>
+                  
+                  </thead>
+                  <tfoot bgcolor="#00a156">
+                    <tr>
+                      <th>Nome Cientifico</th>
+                      <th>Nome Comum</th>
+                      
+                      <th>Familia</th>
+                      
+                      
+                      
+                     
+                      <th></th>
+                     
+                    </tr>
+                  </tfoot bgcolor="#00a156">
+                  <tbody>
+
+<?php  
+$result = mysqli_query($connect,"SELECT nomeCientifico, nomeComum, familia FROM planta");
+
+while($row = mysqli_fetch_array($result))
+{
+  ?>
+<tr>  
+     <td><?php echo $row["nomeCientifico"]; ?></td>  
+     <td><?php echo $row["nomeComum"]; ?></td>
+     <td><?php echo $row["familia"]; ?></td>
+     
+     <td><center>
+
+      
+
+      <a href="#dataModal" name="view" class="view" id="<?php echo $row["nomeCientifico"]; ?>" data-toggle="modal">
+      <i class="material-icons" data-toggle="tooltip" style="color: blue;">visibility</i></a>
+      
+      <a href="#edit_data_Modal" name="edit" class="edit_data" id="<?php echo $row["nomeCientifico"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
+
+      <a href="#myModal" name="delete" class="delete_data" data-toggle="modal" id="<?php echo $row["nomeCientifico"]; ?>"><i class="material-icons" data-toggle="tooltip" title="Delete" style="color: red;">&#xE872;</i></a>
+     
+     </center></td>  
+       
+</tr> 
+<?php  
+}  
+?> 
+            
+                    
+
+                  </tbody>
+                </table>
+              </div>
+              
+                     <input type="button" name="create_pdf" class="btn btn-danger" value="Imprimir QrCodes"  onclick="window.open('http://flora.ipvc.pt/workspace/adminpages/pdf.php')">  </input>
+
+                   
+                            
+                         
+              
+
+            </div>
+            
+          </div>
+
+
+          
+
+        </div>
+
+        
+
+      </div>
+
 
 
     </div>
