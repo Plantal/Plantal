@@ -53,13 +53,8 @@ $(document).ready(function(){
                      url:"editProjeto.php",   
                      contentType : "application/json",
                      data : jsonData,
-                     dataType : "json",
-                     success: function(){
-                        $('#editProjeto').modal('hide');
-                          $('#grupo').load(document.URL +  ' #grupo');
-
-                     }
-
+                     dataType : "json"
+                    
                   
                 
                      
@@ -67,8 +62,8 @@ $(document).ready(function(){
                      
                 });
                     
-                
-
+               $('#editProjeto').modal('hide');
+                $('#grupo').load(document.URL +  ' #grupo');
                          
           }); 
       });
