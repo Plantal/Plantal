@@ -97,7 +97,7 @@ function get_stats(){
 
     $data = array();
 
-	$sql = "SELECT p.nome,count(1) AS 'n_plantas' FROM projeto p JOIN projeto_planta pp ON pp.projetoId = p.idProjeto GROUP BY p.nome";
+	$sql = "SELECT p.nome,count(1) AS 'n_plantas' FROM projeto p JOIN projeto_plantal pp ON pp.projetoId = p.idProjeto GROUP BY p.nome";
 
 	
 	$statement = $db->prepare($sql);
