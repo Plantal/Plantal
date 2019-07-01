@@ -14,12 +14,12 @@ $(document).ready(function(){
                     
 
                    
-                    $("#latitudeEditar").val(res[1]);
+                    $("#latitudeEditar").val(res.latitude);
 
-                    $("#longitudeEditar").val(res[2]);
+                    $("#longitudeEditar").val(res.longitude);
 
                    
-                    $("#orientadorEditar").val(res[3]);
+                    $("#orientadorEditar").val(res.username);
 
 
 
