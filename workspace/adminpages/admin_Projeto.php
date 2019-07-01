@@ -65,8 +65,7 @@ if(!isset($_SESSION['ativa'])){
     <script src="js/insertProjeto.js"></script>
     <script src="js/googlemap.js"></script>
     <script src="js/deleteProjeto.js"></script>
-     <script src="js/editProjeto.js"></script>
-    
+   <!--  <script src="js/editProjeto.js"></script> -->
     
 
 
