@@ -9,10 +9,10 @@ session_start();
 
  if(isset($_POST["iduser"]))  
  {  
-         echo $_POST["iduser"];
+         $id = $_POST["iduser"];
 
 
-      $query = "DELETE FROM users WHERE iduser = '".$_POST["iduser"]."'";  
+      $query = "DELETE FROM users WHERE iduser = '$id'";  
 
       echo $query;
       $result = mysqli_query($connect, $query);  
