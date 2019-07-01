@@ -289,8 +289,8 @@ while($row = mysqli_fetch_array($result))
 <!-- Modal para editar projetos -->
 
 
-<div class="modal fade" id="editProjeto" tabindex="-1" role="dialog"  aria-hidden="true">
-  <div class="modal-dialog modal-full-height modal-left " role="document">
+<div class="modal fade left" id="editProjeto" tabindex="-1" role="dialog"  aria-hidden="true">
+  <div class="modal-dialog modal-full-height modal-left" role="document">
     <div class="modal-content">
       <div class="modal-header" >
         <h5 class="modal-title" id="exampleModalLabel">Editar Projeto</h5>
