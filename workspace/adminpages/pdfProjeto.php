@@ -15,7 +15,7 @@ $db = new PDO('mysql:host=localhost;dbname=plantal','root','root');
 //var_dump($_GET);
 $projeto = ($_GET["idProjeto"]);    
              
-          
+   /*       
 class myPDFF extends FPDF{
                function headerTable(){
                     $this->SetFont('Times','B',12);
@@ -58,7 +58,7 @@ $pdf->headerTable();
 $pdf->viewTable($db, $projeto);
 $pdf->Output();
  
-
+*/
 ?>
 
 
