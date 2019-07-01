@@ -1,12 +1,16 @@
+var idProjeto;
+
 $(document).ready(function(){
 
 $("#imprimir").click( function(){
-            
-              var container = $(this);
-              idProjeto = container.data('service');
+   $('#imprimir').each(function() {
+        var container = $(this);
+         idProjeto = container.data('service');
 
-        
-              console.log(idProjeto);
+
+    });
+            
+              
         
  
 
