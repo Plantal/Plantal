@@ -336,7 +336,24 @@ while($row = mysqli_fetch_array($result))
     </div>
 
         
-        
+        <div id="dataModal" class="modal fade">  
+      <div class="modal-dialog">  
+           <div class="modal-content">  
+                <div class="modal-header">  
+                       
+                     <h4 class="modal-title" style="color: green;">Informação da Planta</h4>  
+                </div>  
+                <div class="modal-body" id="planta_detalhe">  
+                </div>  
+                <div class="modal-footer"> 
+                     
+                <button type="button" class="btn btn-primary" id="imprimir">Imprimir</button>
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>  
+                </div>  
+           </div>  
+      </div>  
+ </div>
+
 
       
       <!-- /.content-wrapper -->
