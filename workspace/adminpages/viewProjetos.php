@@ -73,6 +73,8 @@ if(!isset($_SESSION['ativa'])){
     <script src="js/insertProjeto.js"></script>
     <script src="js/addLocPlanta.js"></script>
     <script src="js/imprimeProjeto.js"></script>
+     <script src="js/editLocal.js"></script>
+    
     
 
 
