@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plantal.ADMINISTRADOR.AddPlanta">
+    
+        <ScrollView>
+
+            <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White">
+                <ContentView x:Name="x"  BackgroundColor="Blue" VerticalOptions="Fill">
+
+                    <Button Text="voltar" WidthRequest="80" BackgroundColor="Blue" 
+            HorizontalOptions="End"  CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+                </ContentView>
+             
+
+                <Label Text="Nome Cientifico" FontSize="12" TextColor="Black" XAlign="Start" />
+                <Entry Placeholder=""  x:Name="nomeCientifico" />
+                <Label Text="Nome Comum" FontSize="12" TextColor="Black" XAlign="Start" />
+                <Entry Placeholder=""  x:Name="nome" />
+                <Label Text="Especie" FontSize="12" TextColor="Black" XAlign="Start" />
+                <Entry Placeholder=""  x:Name="especie" />
+                <Label Text="Familia" FontSize="12" TextColor="Black" XAlign="Start" />
+                <Entry Placeholder=""  x:Name="familia" />
+                <Label Text="Ordem" FontSize="12" TextColor="Black" XAlign="Start" />
+                <Entry Placeholder=""  x:Name="ordem" />
+                <Label Text="Fotos URL" FontSize="12" TextColor="Black" XAlign="Start" />
+                <Entry Placeholder=""  x:Name="fotos" />
+                <Label Text="QrCode" FontSize="12" TextColor="Black" XAlign="Start" />
+                <Entry Placeholder=""  x:Name="qrcode" />
+                <Label Text="Descrição" FontSize="12" TextColor="Black" XAlign="Start" />
+                <Entry Placeholder=""  x:Name="descricao" />
+
+            <Grid Grid.Column="2" Grid.Row="1" Padding="20" HeightRequest="60">
+                <Button Text="Registar" WidthRequest="100"  HeightRequest="15" BackgroundColor="Blue"  HorizontalOptions="StartAndExpand"  CornerRadius="2" BorderColor="Gray" TextColor="White" Clicked="Button_Clicked_1"/>
+                <Button Text="Cancelar" WidthRequest="100"  HeightRequest="15" BackgroundColor="Blue"  HorizontalOptions="EndAndExpand"  CornerRadius="2" BorderColor="Gray" TextColor="White" Clicked="Button_Clicked"/>
+            </Grid>
+            <Label Text="" x:Name="erro" TextColor="Red"/>
+
+
+
+
+                <ContentView HeightRequest="100" BackgroundColor="Blue" HorizontalOptions="Fill" VerticalOptions="Fill">
+                    <Label Text="Agrupamento de escolas de Abelheira" HorizontalOptions="Fill" TextColor="White" YAlign="Center" XAlign="Center"/>
+                </ContentView>
+
+            </StackLayout>
+        </ScrollView>
+</ContentPage>

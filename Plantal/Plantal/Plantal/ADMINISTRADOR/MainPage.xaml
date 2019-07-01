@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Plantal"
+             x:Class="Plantal.MainPage"
+             >
+    <Grid >
+        <Image Source="maxresdefault.jpg" Aspect="Fill" Opacity="0.7"></Image>
+
+        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
+        
+        <ContentView x:Name="x" BackgroundColor="#006600" VerticalOptions="Fill" HeightRequest="0" >
+           
+            
+        </ContentView>
+        <!-- Place new controls here -->
+        <Image  Source="logo1.png" x:Name="logo" HeightRequest="120" Margin="50" />
+
+
+            <Entry Placeholder="Utilizador" x:Name="username" Margin="20" PlaceholderColor="White" TextColor="White" />
+            <Entry   IsPassword="True" Placeholder="Password" x:Name="senha" Margin="20" PlaceholderColor="White" TextColor="White"/>
+            <Button Text="Entrar" Clicked="login_Clicked" BackgroundColor="#009933" TextColor="White" HeightRequest="50" WidthRequest="25"
+        VerticalOptions="Start" Grid.Row="1" Margin="40" />
+        <Label Text="" x:Name="erro" TextColor="Red"/>
+        <ContentView HeightRequest="300"></ContentView>
+
+        <ContentView HeightRequest="100" BackgroundColor="#006600" HorizontalOptions="Fill" VerticalOptions="Fill">
+            <Label Text="Agrupamento de escolas de Abelheira" HorizontalOptions="Fill" TextColor="White" YAlign="Center" XAlign="Center" />
+        </ContentView>
+    </StackLayout>
+    </Grid>
+
+</ContentPage>

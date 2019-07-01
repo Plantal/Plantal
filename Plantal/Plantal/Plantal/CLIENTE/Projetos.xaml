@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             x:Class="Plantal.CLIENTE.Projetos">
+   
+        <StackLayout>
+            <ContentView x:Name="x"  BackgroundColor="#006600" VerticalOptions="Fill" >
+
+                <Button Text="voltar" WidthRequest="80" BackgroundColor="#006600" Clicked="Button_Clicked"
+            HorizontalOptions="End"  CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+            </ContentView>
+        <ContentView HeightRequest="20">
+            <Label Text="Projetos" FontAttributes="Bold" FontSize="18" TextColor="Black" XAlign="Center" />
+        </ContentView>
+
+        
+        <Picker Title="" x:Name="pro"  TextColor="Black" BackgroundColor="LightGreen" SelectedIndexChanged="Pro_SelectedIndexChanged"/>
+
+            
+        <maps:Map x:Name="map"
+                      VerticalOptions="FillAndExpand" />
+        <ContentView HeightRequest="100" BackgroundColor="#006600" HorizontalOptions="Fill" VerticalOptions="Fill">
+            <Label Text="Agrupamento de escolas de Abelheira" HorizontalOptions="Fill" TextColor="White" YAlign="Center" XAlign="Center"/>
+        </ContentView>
+    </StackLayout>
+  
+</ContentPage>

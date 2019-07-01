@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="Plantal.ADMINISTRADOR.Estatisticas">
+    
+
+    <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White">
+
+        <ContentView x:Name="x"  BackgroundColor="#006600" VerticalOptions="Fill">
+
+            <Button Text="voltar" WidthRequest="80" BackgroundColor="#006600" Clicked="Button_Clicked"
+            HorizontalOptions="End"  CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+        </ContentView>
+        <Label Text="Estatisticas" FontSize="20" TextColor="ForestGreen" XAlign="Center" />
+
+        <microcharts:ChartView x:Name="chartView" VerticalOptions="FillAndExpand"></microcharts:ChartView>
+
+       
+        <ContentView HeightRequest="80" BackgroundColor="Blue" HorizontalOptions="Fill" VerticalOptions="Fill">
+            <Label Text="Agrupamento de escolas de Abelheira" HorizontalOptions="Fill" TextColor="White" YAlign="Center" XAlign="Center"/>
+        </ContentView>
+    </StackLayout>
+</ContentPage>

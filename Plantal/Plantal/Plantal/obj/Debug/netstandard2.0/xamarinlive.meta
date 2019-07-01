@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XamlProjectMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Files>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\ADMINISTRADOR\AddPlanta.xaml</FilePath>
+      <Hash>CE-B9-EF-6A-55-61-29-59-71-97-0E-92-A1-58-D0-78</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\ADMINISTRADOR\App.xaml</FilePath>
+      <Hash>01-BC-F1-DC-5B-7A-B5-E4-0A-9F-BC-C9-36-DD-EB-6E</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\ADMINISTRADOR\CriarProjecto.xaml</FilePath>
+      <Hash>7F-FF-37-8A-4D-5C-62-B3-49-3B-BA-5E-F0-B9-E3-DA</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\ADMINISTRADOR\Estatisticas.xaml</FilePath>
+      <Hash>D9-DF-CB-96-BD-35-BC-19-83-96-74-73-B3-EF-B5-3F</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\ADMINISTRADOR\MainPage.xaml</FilePath>
+      <Hash>84-68-4D-46-AA-77-9C-3E-EF-A5-4C-C0-9D-A0-BD-D4</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\ADMINISTRADOR\MenuAdmin.xaml</FilePath>
+      <Hash>B7-F4-EA-6D-73-7E-40-AD-D9-E7-F0-BE-02-1B-89-AA</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\ADMINISTRADOR\Projeto.xaml</FilePath>
+      <Hash>2F-BB-D8-09-07-F2-E6-CF-43-E6-61-14-0C-41-7F-5F</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\ADMINISTRADOR\Registar.xaml</FilePath>
+      <Hash>40-9B-67-7E-9B-C1-EC-D8-B3-B8-A5-8A-5C-2D-28-08</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\CLIENTE\Contatos.xaml</FilePath>
+      <Hash>3C-90-93-CF-88-DD-55-B9-DF-54-C0-87-F6-0C-C1-1D</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\CLIENTE\Editar_Eliminar_User.xaml</FilePath>
+      <Hash>8A-20-CB-72-B6-C5-39-09-19-91-90-BD-CB-6D-61-26</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\CLIENTE\MenuCliente.xaml</FilePath>
+      <Hash>86-A5-3A-83-85-FE-0E-FF-B3-6F-90-F4-94-99-F4-8F</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\CLIENTE\Pesquisa.xaml</FilePath>
+      <Hash>F4-09-D7-D7-C8-A3-00-23-33-91-C5-14-BC-DE-42-8C</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\CLIENTE\PesquisaDetalhe.xaml</FilePath>
+      <Hash>17-97-A5-4B-E9-1F-9D-AC-E9-D2-73-D0-8B-45-0A-B6</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\CLIENTE\Projetos.xaml</FilePath>
+      <Hash>C2-A5-B6-10-01-8B-F3-9C-D6-9D-CB-51-8B-10-8D-93</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\CLIENTE\QrCodes.xaml</FilePath>
+      <Hash>F7-8A-78-A1-BA-06-E3-EE-1C-E4-49-54-FB-0D-94-7D</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\CASTRO\Documents\projeto4\project4\Plantal\Plantal\Plantal\CLIENTE\Reconhecimento.xaml</FilePath>
+      <Hash>C6-72-C3-FB-B3-DF-D7-90-DF-63-3E-A2-C9-20-21-72</Hash>
+      <Properties />
+    </XamlFileMeta>
+  </Files>
+</XamlProjectMeta>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plantal.CLIENTE.Contatos">
+
+
+    <Grid >
+        <Image Source="img1.jfif" Aspect="Fill" Opacity="0.9"></Image>
+
+        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" >
+
+            <ContentView x:Name="x"  BackgroundColor="#006600" VerticalOptions="Fill">
+
+                <Button Text="voltar" WidthRequest="80" BackgroundColor="#006600" Clicked="Button_Clicked"
+            HorizontalOptions="End"  CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+            </ContentView>
+
+            <Label Text="Contato" FontSize="21" TextColor="White" FontAttributes="Bold"  XAlign="Center" />
+            <Label Text="" />
+            <Label Text="" />
+            <Label Text="ESCOLA EB2/3 DA ABELHEIRA" FontSize="20" FontAttributes="Bold" TextColor="White" XAlign="Center" />
+            <Label Text="Coordenadas: 41.704646, -8.827745" FontSize="17" Margin="7" FontAttributes="Bold" TextColor="White" XAlign="Start" />
+            <Label Text="Morada: Rua José Augusto Vieira - Abelheira" FontSize="17" Margin="7" FontAttributes="Bold" TextColor="White" XAlign="Start" />
+            <Label Text="Viana do Castelo 4900-444 Portugal" FontSize="17" FontAttributes="Bold" Margin="7" TextColor="White" XAlign="Start" />
+            <Label Text="Telefone: 258821591 - Telemóvel: 932314669" FontSize="17" FontAttributes="Bold" Margin="7" TextColor="White" XAlign="Start" />
+            <Label Text="Email: servadm@escolasabelheira.com" FontSize="17" FontAttributes="Bold" Margin="7" TextColor="White" XAlign="Start" />
+
+            <Label Text="Site: http://www.escolasabelheira.com" FontSize="17" Margin="7" FontAttributes="Bold" TextColor="White" XAlign="Start" />
+            <ContentView HeightRequest="240"></ContentView>
+            <ContentView HeightRequest="100" BackgroundColor="#006600" HorizontalOptions="Fill" VerticalOptions="Fill">
+                <Label Text="Agrupamento de escolas de Abelheira" HorizontalOptions="Fill" TextColor="White" YAlign="Center" XAlign="Center"/>
+            </ContentView>
+        </StackLayout>
+    </Grid>
+</ContentPage>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plantal.CLIENTE.PesquisaDetalhe">
+    <ScrollView>
+        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White">
+            <ContentView x:Name="x"  BackgroundColor="#006600" VerticalOptions="Fill">
+
+                <Button Text="voltar" WidthRequest="80" BackgroundColor="#006600" Clicked="Button_Clicked"
+            HorizontalOptions="End"  CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+            </ContentView>
+            
+            <Label Text="Nome Cientifico" FontSize="12" TextColor="Black" XAlign="Start" />
+            <Entry Placeholder=""  x:Name="nomeCientifico" />
+            <Label Text="Nome Comum" FontSize="12" TextColor="Black" XAlign="Start" />
+            <Entry Placeholder=""  x:Name="nome" FontSize="10" />
+            <Label Text="Especie" FontSize="12" TextColor="Black" XAlign="Start" />
+            <Entry Placeholder=""  x:Name="especie" FontSize="10" />
+            <Label Text="Familia" FontSize="12" TextColor="Black" XAlign="Start" />
+            <Entry Placeholder=""  x:Name="familia" FontSize="10" />
+            <Label Text="Ordem" FontSize="12" TextColor="Black" XAlign="Start" />
+            <Entry Placeholder=""  x:Name="ordem" FontSize="10" />
+            <Label Text="Fotos URL" FontSize="12" TextColor="Black" XAlign="Start" />
+            <Entry Placeholder=""  x:Name="fotos" FontSize="10" />
+            <Label Text="QrCode" FontSize="12" TextColor="Black" XAlign="Start" />
+            <Entry Placeholder=""  x:Name="qrcode" FontSize="10" />
+            <Label Text="Descrição" FontSize="12" TextColor="Black" XAlign="Start" />
+            <Entry Placeholder=""  x:Name="descricao" FontSize="10" />
+            <ContentView HeightRequest="100" BackgroundColor="Blue" HorizontalOptions="Fill" VerticalOptions="Fill">
+                <Label Text="Agrupamento de escolas de Abelheira" HorizontalOptions="Fill" TextColor="White" YAlign="Center" XAlign="Center"/>
+            </ContentView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
+    

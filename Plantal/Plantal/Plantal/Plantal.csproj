@@ -1,0 +1,115 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveXAML" Version="2.1.72" />
+    <PackageReference Include="Microcharts" Version="0.7.1" />
+    <PackageReference Include="Microcharts.Forms" Version="0.7.1" />
+    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Plugin.Permissions" Version="5.0.0-beta" />
+    <PackageReference Include="Xam.Plugin.Media" Version="4.3.0-beta" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
+    <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="3.2.0" />
+    <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CLIENTE\Editar_Eliminar_User.xaml.cs">
+      <DependentUpon>Editar_Eliminar_User.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ADMINISTRADOR\AddPlanta.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ADMINISTRADOR\Registar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ADMINISTRADOR\CriarProjecto.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CLIENTE\Contatos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CLIENTE\MenuCliente.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CLIENTE\Pesquisa.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CLIENTE\PesquisaDetalhe.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CLIENTE\Projetos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CLIENTE\QrCodes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CLIENTE\Reconhecimento.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ADMINISTRADOR\AddPlanta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ADMINISTRADOR\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ADMINISTRADOR\CriarProjecto.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ADMINISTRADOR\Editar_Eliminar_User.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ADMINISTRADOR\Estatisticas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ADMINISTRADOR\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ADMINISTRADOR\MenuAdmin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ADMINISTRADOR\Projeto.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ADMINISTRADOR\Registar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="CLIENTE\Contatos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="CLIENTE\MenuCliente.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="CLIENTE\Pesquisa.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="CLIENTE\Projetos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="CLIENTE\QrCodes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="CLIENTE\Reconhecimento.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Core"
+             x:Class="Plantal.ADMINISTRADOR.Projeto">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White">
+                <Label Text="Projetos" FontSize="50" TextColor="Blue" XAlign="Center" />
+                <Label Text="Nome"  x:Name="nome_projeto"/>
+
+                <!--<Picker Title="Projeto" x:Name="tipo"  TextColor="Black"/>--> 
+
+                <Grid Grid.Column="3" Grid.Row="2" Padding="5"  >
+                    <Button Text="Criar novo" WidthRequest="110" BackgroundColor="Blue" HeightRequest="40" HorizontalOptions="StartAndExpand"  CornerRadius="2" BorderColor="Gray" TextColor="White" />
+                    <Button Text="Editar" WidthRequest="110" BackgroundColor="Blue" HeightRequest="40"  HorizontalOptions="CenterAndExpand"   CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+                    <Button Text="Eliminar" WidthRequest="110" BackgroundColor="Blue"  HeightRequest="40" HorizontalOptions="EndAndExpand"    CornerRadius="2" BorderColor="Gray" TextColor="White"/>
+                    
+                </Grid>
+
+                    <ListView  x:Name="projetos"  >
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition  />
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout VerticalOptions="FillAndExpand" Padding="5" Grid.Column="0">
+                                        <Label FontSize="17"  Text="{Binding Name}" />
+                                        
+                                    </StackLayout>
+                                   
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
