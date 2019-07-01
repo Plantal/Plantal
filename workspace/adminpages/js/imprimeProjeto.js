@@ -5,10 +5,10 @@ $(document).ready(function(){
 var idProjeto;
 
 $("#imprimir").click( function(){
-   $('.btn btn-danger').each(function() {
+   $('#imprimir').each(function() {
         var container = $(this);
          var idProjeto = container.data('service');
-
+console.log(container);
          console.log(idProjeto);
     });
             
