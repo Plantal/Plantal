@@ -106,7 +106,9 @@ $(document).ready(function(){
                      }                  
                 });
 
-                            
+                setTimeout(function(){
+                      window.location.reload(true);
+                }, 3000);          
               
            }  
       });
