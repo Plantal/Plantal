@@ -16,6 +16,8 @@ if(isset($_POST["username"]) && isset($_POST["password"]))
   
   $_SESSION["username"] = $data["username"];
   $_SESSION["iduser"] = $data["iduser"];
+  echo $_SESSION['iduser'];
+
 
   $_SESSION["ativa"] = "ativa";
   echo $data["username"];
