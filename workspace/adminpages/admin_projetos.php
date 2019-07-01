@@ -323,7 +323,7 @@ while($row = mysqli_fetch_array($result))
       </div>
       <div class="modal-footer">
         <div class="options text-right">
-                  <button id="editarProjeto" class="btn btn-info">Alterar Projeto<i class="fas fa-sign-in ml-1"></i></button>
+                  <button id="editarProjeto" class="btn btn-info">Alterar Projeto</button>
               </div>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         

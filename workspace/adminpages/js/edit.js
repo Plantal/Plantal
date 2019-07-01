@@ -42,7 +42,7 @@ $(document).ready(function(){
            }); 
 
 
-           $('#insert').on("click", function(event){
+           $('#insert').click( function(event){
 
 
                      obj = {
@@ -77,7 +77,8 @@ $(document).ready(function(){
                      
                 });
                  
-               $('#edit_data_Modal').modal('hide');          
+               $('#edit_data_Modal').modal('hide'); 
+               window.location.reload();         
           }); 
       });
 
