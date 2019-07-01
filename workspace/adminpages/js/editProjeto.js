@@ -62,8 +62,10 @@ $(document).ready(function(){
                      
                 });
                     
-               $('#editProjeto').modal('hide');
-               window.location.replace("http://flora.ipvc.pt/workspace/adminpages/admin_projetos.php");
+              setTimeout(function(){
+                      window.location.reload(true);
+                }, 3000);          
+              
                          
           }); 
       });
