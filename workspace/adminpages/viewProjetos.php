@@ -278,7 +278,7 @@ if(!isset($_SESSION['ativa'])){
                   <tbody>
 
 <?php  
-$result = mysqli_query($connect,"SELECT MIN(idPlanta),id,  nomeCientifico, , latitude, longitude FROM projeto_plantal, planta, geolocal WHERE projetoId = '".$_GET["idProjeto"]."'  GROUP BY nomeCientifico, latitude, longitude#, id");
+$result = mysqli_query($connect,"SELECT MIN(idPlanta),id,  nomeCientifico, , latitude, longitude FROM projeto_plantal, planta, geolocal WHERE projetoId = '".$_GET["idProjeto"]."'  GROUP BY nomeCientifico, latitude, longitude, id");
 
 
 
