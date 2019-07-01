@@ -10,7 +10,7 @@ $(document).ready(function(){
                 dataType:"json",  
                 success:function(res){  
                    
-                    $("#nomeEditar").val(res[0]);
+                    $("#nomeEditar").val(res.nome);
                     
 
                    
