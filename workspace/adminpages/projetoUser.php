@@ -7,7 +7,6 @@ if(!isset($_SESSION['ativa'])){
 
 }
 
-echo $_SESSION['iduser'];
 
 
 
