@@ -125,7 +125,7 @@ if(!isset($_SESSION['ativa'])){
             <span>Plantas</span></a>
         </li>
          <li class="nav-item active">
-          <a class="nav-link" href="admin_projetos.php">
+          <a class="nav-link" href="admin_projeto.php">
             <i class="fas fa-fw fa-project-diagram"></i>
             <span>Projetos</span></a>
         </li>
@@ -291,7 +291,7 @@ while($row = mysqli_fetch_array($result))
 
 
 <div class="modal fade" id="editProjeto" tabindex="-1" role="dialog"  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog " role="document">
     <div class="modal-content">
       <div class="modal-header" >
         <h5 class="modal-title" id="exampleModalLabel">Editar Projeto</h5>
