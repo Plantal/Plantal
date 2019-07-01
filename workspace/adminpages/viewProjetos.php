@@ -355,7 +355,7 @@ while($row = mysqli_fetch_array($result))
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Planta:</label>
             <select id="plantaEditar" name="tipofolha" class="form-control">
-                       
+                       <option value=""></option>
                         <?php echo $options2; ?>
             </select>
           </div>
