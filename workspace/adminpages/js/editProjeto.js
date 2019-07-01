@@ -63,7 +63,7 @@ $(document).ready(function(){
                 });
                     
                $('#editProjeto').modal('hide');
-                location.reload(true);
+                location.reload();
                          
           }); 
       });
