@@ -250,9 +250,9 @@ if(!isset($_SESSION['ativa'])){
 
                     <tr>
                       <th>Nome Cientifico:</th>
-                      <th>Nome Comum:</th>
+                      <th>Latitude:</th>
                       
-                      <th>Familia:</th>
+                      <th>Longitude:</th>
                       
                       
                       <th>Ações:</th>
@@ -264,9 +264,9 @@ if(!isset($_SESSION['ativa'])){
                   <tfoot bgcolor="#00a156">
                     <tr>
                       <th>Nome Cientifico</th>
-                      <th>Nome Comum</th>
+                      <th>Latitude</th>
                       
-                      <th>Familia</th>
+                      <th>Longitude</th>
                       
                       
                       
@@ -278,15 +278,18 @@ if(!isset($_SESSION['ativa'])){
                   <tbody>
 
 <?php  
-$result = mysqli_query($connect,"SELECT MIN(idPlanta), id, nomeCientifico, nomeComum, familia FROM projeto_plantal, planta WHERE projetoId = '".$_GET["idProjeto"]."'  GROUP BY nomeCientifico, nomeComum, familia, id");
+$result = mysqli_query($connect,"SELECT MIN(idPlanta),id,  nomeCientifico, , latitude, longitude FROM projeto_plantal, planta, geolocal WHERE projetoId = '".$_GET["idProjeto"]."'  GROUP BY nomeCientifico, latitude, longitude#, id");
+
+
+
 
 while($row = mysqli_fetch_array($result))
 {
   ?>
 <tr>  
      <td><?php echo $row["nomeCientifico"]; ?></td>  
-     <td><?php echo $row["nomeComum"]; ?></td>
-     <td><?php echo $row["familia"]; ?></td>
+     <td><?php echo $row["latitude"]; ?></td>
+     <td><?php echo $row["longitude"]; ?></td>
      
      <td><center>
 
@@ -295,9 +298,9 @@ while($row = mysqli_fetch_array($result))
       <a href="#dataModal" name="view" class="view" id="<?php echo $row["nomeCientifico"]; ?>" data-toggle="modal">
       <i class="material-icons" data-toggle="tooltip" style="color: blue;">visibility</i></a>
       
-      <a href="#editLocal" name="edit" class="edit_data" id="<?php echo $row["id"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
+      <a href="#editLocal" name="edit" class="edit_data" id="<?php echo $row2["id"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit" style="color:yellow;">&#xE254;</i></a>
 
-      <a href="#myModal" name="delete" class="delete_data" data-toggle="modal" id="<?php echo $row["id"]; ?>"><i class="material-icons" data-toggle="tooltip" title="Delete" style="color: red;">&#xE872;</i></a>
+      <a href="#myModal" name="delete" class="delete_data" data-toggle="modal" id="<?php echo $row2["id"]; ?>"><i class="material-icons" data-toggle="tooltip" title="Delete" style="color: red;">&#xE872;</i></a>
      
      </center></td>  
        
