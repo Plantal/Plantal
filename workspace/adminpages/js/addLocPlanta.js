@@ -70,7 +70,13 @@ console.log(idProjeto);
 
                      }                  
                 });
-                      $('#local').modal('hide');
+
+
+                      setTimeout(function(){
+                     $('#local').modal('hide');
+                     $('#dataTable').load(document.URL +  ' #dataTable');
+                }, 3000);
+                      
                       placeMarker(map, event.latLng);
 
 
